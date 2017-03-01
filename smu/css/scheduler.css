@@ -1,0 +1,187 @@
+/* 일정 */
+.m_info-wrap{display:none}
+.sche-top{height:60px;border:1px solid #d9d9d9;background:#f3fafd}
+.sche-top .left-box{float:left;padding:0 30px}
+.sche-top .left-box .btn-prev{display:inline-block;width:9px;height:18px;background:url(../images/common/sche-arr-left.png) no-repeat 0 0;vertical-align:-2px}
+.sche-top .left-box .btn-next{display:inline-block;width:9px;height:18px;background:url(../images/common/sche-arr-right.png) no-repeat 0 0;vertical-align:-2px}
+.sche-top .left-box h3{display:inline-block;width:280px;font-size:20px;color:#303030;text-align:center;line-height:54px}
+.sche-top .left-box h3 span{font-weight:bold;letter-spacing:0}
+.sche-top .right-box{float:left;padding-left:25px}
+.sche-top .right-box li{position:relative;float:left;padding:0 15px;font-size:14px;line-height:54px}
+.sche-top .right-box li:first-child{padding-left:0}
+.sche-top .right-box li:after{display:inline-block;position:absolute;top:22px;right:0;width:1px;height:13px;background:#d9d9d9;content:""}
+.sche-top .right-box li:last-child:after{display:none}
+.sche-top .right-box li a{color:#303030 !important}
+.sche-top .right-box li.current a{font-weight:bold;color:#2c6abe !important}
+
+.sche-by-mon{position:relative;margin-top:50px;padding:30px 0 10px;border:1px solid #d9d9d9}
+.sche-by-mon.week-6{min-height:354px}
+.sche-by-mon .left-box{float:left;width:364px;padding:0 30px}
+.sche-by-mon .left-box h4{padding:0 0 14px;font-size:15px;font-weight:bold;color:#505050;letter-spacing:0}
+.sche-by-mon.selected{border:2px solid #649eef}
+.sche-by-mon.selected .left-box{width:363px}
+.sche-by-mon.selected .left-box h4{padding:0 0 14px;font-size:17px;font-weight:bold;color:#2c6abe;letter-spacing:0}
+
+.footnote{position:absolute;bottom:38px;left:27px;}
+.footnote span{display:inline-block;font-family:'Nanum Gothic';font-size:14px;color:#333;letter-spacing:-0.50px;}
+.footnote .color_dot{width:11px;height:11px;background:#649eef;
+							-moz-border-radius:50%;
+				            -webkit-border-radius:50%;
+							border-radius:50%;}
+
+table.sche-mon{width:100%;border-top:1px dotted #ccc}
+table.sche-mon thead th{font-size:13px;color:#505050;line-height:40px;text-align:center}
+table.sche-mon tbody{font-weight:bold;}
+table.sche-mon tbody td{position:relative;font-size:14px;color:#505050;line-height:30px;text-align:center;letter-spacing:0}
+table.sche-mon tbody td.today:before{display:inline-block;position:absolute;top:50%;left:50%;width:30px;height:30px;margin:-15px 0 0 -15px;background:url(../images/common/cal-today-bg.png) no-repeat 0 0;content:""}
+table.sche-mon tbody td a{display:block;position:relative;height:100%;z-index:99}
+table.sche-mon tbody td.today a{color:#505050}
+table.sche-mon tbody td.event:after{display:inline-block;position:absolute;top:50%;left:50%;width:30px;height:30px;margin:-15px 0 0 -14px;background:url(../images/common/cal-event-bg.png) no-repeat 0 0;content:""}
+table.sche-mon tbody td a{display:block;position:relative;height:100%;z-index:99}
+table.sche-mon tbody td a.event{display:inline-block;position:absolute;top:50%;left:50%;width:30px;height:30px;margin:-15px 0 0 -15px;background:url(../images/common/cal-event-bg.png) no-repeat 0 0;content:""}
+
+/* unvisited link */
+table.sche-mon tbody td a:link {
+    text-decoration:none !important;
+    color:inherit;
+}
+
+/* visited link */
+table.sche-mon tbody td a:visited {
+    text-decoration:none !important;
+    color:inherit;
+}
+
+/* mouse over link */
+table.sche-mon tbody td a:hover {
+    text-decoration:none !important;
+    color:inherit;
+}
+
+/* selected link */
+table.sche-mon tbody td a:active {
+    text-decoration:none !important;
+    color:inherit;
+}
+
+table.sche-mon tbody td.event a{color:#fff}
+table.sche-mon tbody td.today.event a{color:#000}
+table.sche-mon tbody td:first-child a{color:#e3372e}
+
+.sche-by-mon .right-box{float:left;position:relative;width:364px;padding:0 30px}
+.sche-by-mon .right-box h5{padding:0 0 14px;font-size:15px;font-weight:bold;color:#505050}
+.sche-by-mon.selected .right-box{width:363px}
+.sche-by-mon.selected .right-box h5{padding:0 0 14px;font-size:17px;font-weight:bold;color:#303030}
+.sche-by-mon ul{width:100%;border-top:1px dotted #ccc;height:250px;overflow-y:auto;}
+.sche-by-mon li{position:relative;margin:11px 0;padding:0 0 0 10px;background:url(../images/common/arr-right-gray.gif) no-repeat 0 7px;font-size:12px;color:#505050}
+.sche-by-mon li.event{color:#2c6abe}
+.sche-by-mon .event_date{display:block;float:left;width:134px;line-height:18px;letter-spacing:0}
+.sche-by-mon .event_dsc{float:left;position:relative;line-height:18px}
+.sche-by-mon .btn-pop{top:50%;right:-80px;margin-top:-12px}
+
+.sche-by-mon .popup-sche-dsc{display:none;position:absolute;top:45px;right:30px;width:305px}
+.sche-by-mon .popup-sche-dsc .inner{position:relative}
+.sche-by-mon .popup-sche-dsc h6{height:45px;line-height:45px;padding:0 0 0 20px;border:1px solid #5d92dd;background:#649eef;font-size:15px;font-weight:bold;color:#fff}
+.sche-by-mon .popup-sche-dsc .con{padding:17px 20px;border:1px solid #d9d9d9;border-top:0;background:#fff;font-size:12px}
+.sche-by-mon .popup-sche-dsc .con span{color:#505050;letter-spacing:0;line-height:28px}
+.sche-by-mon .popup-sche-dsc .con p{color:#505050;line-height:28px}
+.sche-by-mon .popup-sche-dsc button{position:absolute;top:14px;right:19px;width:16px;height:16px;background:url(../images/common/btn-pop-clse.png) no-repeat 0 0}
+.sche-by-mon .popup-sche-dsc .popup_close{display:block;position:absolute;top:0;right:0;}
+.sche-by-mon .popup-sche-dsc .popup_close .fa-times{}
+
+
+@media screen and (max-width:747px){
+.info-wrap{display:none}	
+.m_info-wrap {display:block;background-color:#ffffff;border-top:1px solid #ffffff;border-bottom:1px solid #ffffff;padding-bottom:30px;}
+.sche-top{border-top:1px solid #d9d9d9;background:#f3fafd;
+	vertical-align:middle;margin-top:15px;display:table;width:100%;text-align:center;
+	border-bottom:1px solid #cccccc
+	}
+.sche-top .left-box{
+	height:35px;
+	text-align:center;display:inline-block;width:100%;
+}
+.sche-top .left-box .btn-prev{
+	display:inline-block;width:23px;height:23px;
+	background:url(../images/common/m_sche-arr-left.png) no-repeat 0 0;
+	background-size:23px 23px;
+	vertical-align:-7px;
+}
+.sche-top .left-box .btn-next{
+	display:inline-block;width:23px;height:23px;
+	background:url(../images/common/m_sche-arr-right.png) no-repeat 0 0;
+	background-size:23px 23px;
+	vertical-align:-7px;
+}
+.sche-top .left-box h3{display:inline-block;text-align:center;font-size:15px;color:#303030;
+	text-align:center;line-height:30px;padding-left:10px;padding-right:10px;width:auto}
+.sche-top .left-box h3 span{font-weight:bold;letter-spacing:0;}
+.sche-top .right-box{float:none;padding-left:0;
+	background:#f3fafd;display:inline-table;
+	text-align:center;
+}
+.sche-top .right-box li{position:relative;float:left;padding:0 15px;font-size:14px;line-height:33px}
+.sche-top .right-box li a{color:#303030 !important}
+.sche-top .right-box li.current a{font-weight:bold;color:#2c6abe !important;}
+.sche-top .right-box li:after{display:none}
+.sche-top .right-box.eat ul li {line-height:28px;padding-top:5px;padding-bottom:5px;}
+.sche-top .right-box.eat ul li img {height:28px;}
+
+.sche-by-mon{clear:both;margin-top:10px;margin:20px 0 10px;padding:10px 0;}
+.sche-by-mon.week-6{}
+.sche-by-mon .left-box{width:100%;padding:0 10px;float:none;}
+.sche-by-mon .left-box h4{padding-bottom:15px;width:100%;text-align:center;font-size:16px;font-weight:bold;color:#505050;letter-spacing:0}
+.sche-by-mon.selected{border:2px solid #649eef}
+.sche-by-mon.selected .left-box{width:363px}
+.sche-by-mon.selected .left-box h4{padding:0 0 14px;font-size:17px;font-weight:bold;color:#2c6abe;letter-spacing:0}
+
+table.sche-mon{width:100%;border:1px solid #ccc}
+table.sche-mon thead th{font-size:13px;color:#505050;line-height:40px;text-align:center;background-color:#eaeaea;font-weight:bold;}
+table.sche-mon tbody td{position:relative;font-size:14px;color:#505050;line-height:37px;text-align:center;letter-spacing:0}
+table.sche-mon tbody td.today:before{display:inline-block;position:absolute;top:50%;left:50%;width:30px;height:30px;margin:-15px 0 0 -15px;background:url(../images/common/cal-today-bg.png) no-repeat 0 0;content:""}
+table.sche-mon tbody td a{display:block;position:relative;height:100%;z-index:99}
+table.sche-mon tbody td.today a{color:#505050}
+table.sche-mon tbody td.event:after{
+	display:inline-block;position:absolute;top:50%;left:50%;width:30px;height:30px;margin:-15px 0 0 -14px;
+	background:url(../images/common/cal-event-bg.png) no-repeat 0 0;content:""
+}
+table.sche-mon tbody td a{display:block;position:relative;height:100%;z-index:99}
+table.sche-mon tbody td.event a{color:#fff;}
+table.sche-mon tbody td.today.event a{color:#000}
+table.sche-mon thead th:first-child, table.sche-mon tbody td:first-child a{color:#e3372e}
+
+table.sche-mon.eat td {position:relative;border:1px solid #ccc;height:95px;width:13%;}
+table.sche-mon.eat td .wrap-eat{position:absolute;width:100%;line-height:2;top:38px;}
+table.sche-mon.eat td img {width:25px;}
+table.sche-mon.eat tbody td.event:after{
+	top:20px;
+}
+
+.sche-by-mon .right-box{position:relative;width:100%;padding:0 15px;margin-top:70px;margin-bottom:20px;float:none;}
+.sche-by-mon .right-box h5{padding:0 0 4px;font-size:15px;font-weight:bold;color:#505050}
+.sche-by-mon.selected .right-box{width:100%}
+.sche-by-mon.selected .right-box h5{padding:0 0 14px;font-size:17px;font-weight:bold;color:#303030}
+.sche-by-mon ul{width:100%;border-bottom:1px dotted #ccc}
+.sche-by-mon li{position:relative;margin:11px 0;padding:0 0 0 20px;background:url(../images/common/arr-right-gray.gif) no-repeat 10px 7px;
+	font-size:12px;color:#505050}
+.sche-by-mon li.event{color:#2c6abe}
+.sche-by-mon .event_date{display:block;float:left;width:134px;line-height:18px;letter-spacing:0}
+.sche-by-mon .event_dsc{float:left;position:relative;line-height:18px}
+.sche-by-mon .btn-pop{top:50%;right:-80px;margin-top:-12px}
+
+.sche-by-mon .popup-sche-dsc{position:absolute;top:45px;right:30px;width:305px}
+.sche-by-mon .popup-sche-dsc .inner{position:relative}
+.sche-by-mon .popup-sche-dsc h6{height:45px;line-height:45px;padding:0 0 0 20px;border:1px solid #5d92dd;background:#649eef;font-size:15px;font-weight:bold;color:#fff}
+.sche-by-mon .popup-sche-dsc .con{padding:17px 20px;border:1px solid #d9d9d9;border-top:0;background:#fff;font-size:12px}
+.sche-by-mon .popup-sche-dsc .con span{color:#505050;letter-spacing:0;line-height:28px}
+.sche-by-mon .popup-sche-dsc .con p{color:#505050;line-height:28px}
+
+.wrap-eat-list {margin-top:20px;padding:10px ;}
+.wrap-eat-list p {font-size:16px;margin-bottom:10px}
+.wrap-eat-list ul li {padding:10px 5px 10px 5px;min-height:42px;line-height:1.4;border-top:1px dashed #cccccc;padding-left:80px;position:relative}
+.wrap-eat-list ul li div.label {position:absolute;top:8px;left:0;}
+.wrap-eat-list ul li div.label span {font-size:15px;font-weight:bold;margin-right:7px;margin-left:4px;}
+.wrap-eat-list ul li img {width:27px;vertical-align:middle;}
+
+}
+

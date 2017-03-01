@@ -1,0 +1,186 @@
+input[type="checkbox"] {
+  position: absolute;
+   width: 1px;
+   height: 1px;
+   padding: 0;
+   margin: -1px;
+   overflow: hidden;
+   clip:rect(0,0,0,0);
+   border: 0
+}
+input[type="checkbox"] + label {
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+}
+
+input[type="checkbox"] + label:hover{
+	color:#353535;
+} 
+
+input[type="checkbox"] + label:before { 
+  content: ' ';
+  display: inline-block;
+  width: 11px;  /* 체크박스의 너비를 지정 */
+  height: 11px;  /* 체크박스의 높이를 지정 */
+  line-height: 11px; /* 세로정렬을 위해 높이값과 일치 */
+  margin: -2px 2px 0 5px;
+  text-align: center; 
+  vertical-align: middle;
+  background: #fff;
+  border: 1px solid #c2c2c2;
+}
+input[type="checkbox"] + label:active:before{
+	
+}
+input[type="checkbox"]:checked + label:active:before {}
+
+input[type="checkbox"]:checked + label:active{}
+
+input[type="checkbox"]:checked + label:before {  /* 체크박스를 체크했을때 */ 
+  content: '\2714';  /* 체크표시 유니코드 사용 */
+  /* text-shadow: 1px 1px #fff; */
+  background: #fff;
+  border-color: #c2c2c2;
+}
+
+.sub04_01_write{width:100%;}
+.write_box1{width:100%;}
+.write_box1 p{font-family:'Nanum Gothic';font-size:14.5px;color:#525252;font-weight:bold;margin-bottom:25px;line-height:1.8em}
+.write_box1 p span{color:#f01515;}
+
+.write_box2{width:100%;margin-top:40px;margin-bottom:100px;}
+.write_box2 .write{width:100%;overflow-x:auto;}
+
+.write table{width:748px;border:1px solid #ccc;}
+.write table thead{background:#f6f6f6;font-family:'Nanum Gothic';font-size:14px;color:#414141;font-weight:bold;letter-spacing:-0.50px;}
+.write table thead tr th{border-bottom:1px solid #ccc;height:40px;vertical-align:middle;}
+.write table tbody tr{height:50px;border-bottom:1px solid #ccc;}
+.write table tbody tr th{border-right:1px solid #ccc;vertical-align:middle;letter-spacing:-0.50px;
+						font-family:'Nanum Gothic';font-size:14px;color:#414141;font-weight:bold;}							 
+.write table tbody tr th.row{background:#f6f6f6;vertical-align:middle;letter-spacing:-0.50px;}
+.write table tbody tr td{text-align:left;vertical-align:middle;font-family:'Nanum Gothic';font-size:13px;color:#4e4e4e;letter-spacing:-0.50px;
+								line-height:31px;}							 
+.write table tbody tr td textarea{vertical-align:bottom;text-align:right;line-height:31px;border:1px solid #ddd;line-height:27px;vertical-align:middle;text-align:center;}
+.write2{}
+.write2 table, .write3 table{border-top:none}
+.write2 table thead tr th, .write3 table thead tr th{border-right:1px solid #ccc;}
+.write2 table thead tr th:first-child, .write3 table thead tr th:first-child{border-bottom:none;}
+.write2 table thead tr th{height:41px;}
+.write2 table tbody tr{height:80px;}
+.write2 table tbody tr td{padding:0 15px;}
+.write2 table tbody tr td textarea{}
+.write2 table tbody tr td.right_b{border-right:1px solid #ccc;}
+.write2 table tbody tr td p{line-height:1.5em;}
+.write2 table tbody tr td p.color_p{color:#3a5285;}
+.write2 table tbody tr td p.last_p{margin-left:15px;}
+.write2 table tbody tr td p textarea{vertical-align:-2px;line-height:1.1em;}
+.write3 table thead tr th{height:40px;}
+.write3 table tbody tr{height:40px;}
+.write3 table tbody tr td{border-right:1px solid #ccc;}
+.write3 table tbody tr td:last-child{padding-left:15px;}
+
+.write .write_btn{margin-top:30px;margin-left:305px;}
+.write .write_btn a{display:block;width:140px;height:43px;color:#fff;background:#455e92;text-align:center;
+						 font-family:'Nanum Gothic';font-size:14px;color:#fff;font-weight:bold;padding-top:13px;}
+
+.sub04_01_write p.write_box_title{width:100%;background:url(../images/sub/title_bg.png) left top no-repeat;height:39px;padding-left:43px;
+						  					 font-family:'Nanum Gothic';font-size:18px;color:#404040;font-weight:bold;margin-bottom:24px;}	
+
+.write_box3{width:100%;}
+.write_box3 p{font-family:'Nanum Gothic';font-size:14.5px;color:#525252;font-weight:bold;margin-bottom:25px;line-height:1.8em}
+.write_box3 p span{color:#f01515;}
+.write_box3 ul{padding-left:14px;}
+.write_box3 ul li{font-family:'Nanum Gothic';font-size:14.5px;color:#525252;font-weight:bold;line-height:2.0em}
+.write_box3 ul li.color{color:#f01515;}
+.write_box3 ul li.color span{color:#1e15d8;}
+
+.write_table{width:100%;border-top:1px solid #ccc;border-bottom:1px solid #ccc;margin-bottom:50px;}
+.write_table table{width:100%;font-family:'Nanum Gothic';font-size:14px;color:#414141;font-weight:bold;border:none;}
+.write_table table thead{background:#e7eaf1;border-bottom:1px solid #ccc;}
+.write_table table thead tr th{border-right:1px solid #ccc;height:61px;vertical-align:middle;}
+.write_table table thead tr th:last-child{border-right:none;}
+.write_table table thead tr:last-child th:first-child{border-right:none;}
+.write_table table thead tr th.col{border-bottom:1px solid #ccc;}
+.write_table table tbody{text-align:center;}
+.write_table table tbody tr td{border-bottom:1px solid #ccc;border-right:1px solid #ccc;font-size:13px;font-weight:normal;
+										  vertical-align:middle;height:50px;text-align:center;}
+.write_table table tbody tr:last-child{border-bottom:none;}
+.write_table table tbody tr:last-child td{border-bottom:none;}
+.write_table table tbody tr td.row{border-bottom:none;color:#e61e1e;border-right:none;}
+
+.write_table2{margin-top:15px;}
+.write_table2 table thead tr th{width:50%;height:50px;}
+.write_table2 table thead tr th:first-child{border-right:1px solid #ccc !important;}
+.write_table2 table tbody tr{border-bottom:1px solid #ccc;}
+.write_table2 table tbody tr th{height:50px;text-align:left;vertical-align:middle;padding-left:25px;}
+.write_table2 table tbody tr th:first-child{border-right:1px solid #ccc;}
+
+/*print시 추가되는 부분*/
+
+#print{width:749px;margin-top:0;margin-bottom:0;}
+#print .write_box_title{font-family:'Nanum Gothic';font-size:25px;color:#404040;font-weight:bold;text-align:center;margin-bottom:20px;line-height:1.0em;}
+#print .write1 table thead{background:#f3dbdb;}
+#print .write table thead tr th{height:40px;}
+#print .write table tbody tr{height:35px;}
+#print .write table tbody tr td{height:35px;}
+#print .write2 table thead tr th{height:35px;}
+#print .write3 table thead tr th{height:31px;}
+#print .write3 table tbody tr{height:31px;}
+#print .write3 table tbody tr td{height:31px;}
+
+.top_table{width:424px !important;border:1px solid #ccc;border-bottom:none;margin-left:324px;}
+.top_table thead{background:#f6f6f6;font-family:'Nanum Gothic';font-size:14px;color:#414141;font-weight:bold;letter-spacing:-0.50px;}
+.top_table th, .write .top_table .row{background:#fff !important;}
+.top_table tbody tr{height:45px;border-bottom:1px solid #ccc;}
+.top_table tbody tr:first-child{height:30px;}
+.top_table tbody tr:last-child{border-bottom:none;height:52px;}
+.top_table tbody tr:last-child td{border-right:1px solid #ccc;}
+.top_table tbody tr th{border-right:1px solid #ccc;vertical-align:middle;letter-spacing:-0.50px;
+						font-family:'Nanum Gothic';font-size:14px;color:#414141;font-weight:bold;}
+
+.write4 ul{border-left:1px solid #ccc;border-right:1px solid #ccc;}
+.write4 ul.write4_wrap{border:none;padding-left:40px;padding-top:7px;}
+.write4 ul li{border-bottom:1px solid #ccc;height:35px;text-align:center;line-height:35px;}
+.write4 ul li:first-child span{font-family:'Noto Sans';font-size:18px;color:#414141;font-weight:bold;}
+.write4 ul li.color_li {height:height:35px;line-height:35px;}
+.write4 ul li.color_li span{font-size:14px;font-weight:bold;color:#0b05ff;}
+.write4 ul li.color_li strong{text-decoration:underline;}
+
+.write4 ul li:last-child{border-bottom:none;height:145px;}
+.write4 ul.write4_wrap li{border-bottom:none;list-style:decimal;text-align:left;height:auto;line-height:1.4em;
+								font-size:14px;color:#414141;letter-spacing:-0.50px;}
+.write4 ul.write4_wrap .wrap_li2 span{font-weight:bold;color:#353535;}
+.write4 ul.write4_wrap .wrap_li2 strong{text-decoration:underline;}
+.write4 ul.write4_wrap .wrap_li3 span{font-weight:bold;color:#fd0000;}
+.write4 table .row_r{background:#f3dbdb;}
+.write4 table .row_c{background:#e0eed1;}
+.write4 table .row_g{background:#eee;}
+.write4 table tr td{font-size:14px;color:#353535;font-weight:bold;text-align:center;}
+.write4 p{height:50px;line-height:50px;font-size:22px;font-family:'Noto Sans';font-weight:bold;color:#414141;text-align:center;
+					border:1px solid #ccc;border-top:none;}
+
+.write4 table{width:748px;border:1px solid #ccc;}
+.write4 table thead{background:#f6f6f6;font-family:'Nanum Gothic';font-size:14px;color:#414141;font-weight:bold;letter-spacing:-0.50px;}
+.write4 table thead tr th{border-bottom:1px solid #ccc;vertical-align:middle;}
+.write4 table thead tr th{height:35px;}
+.write4 table tbody tr{height:35px;border-bottom:1px solid #ccc;}
+.write4 table tbody tr th{border-right:1px solid #ccc;vertical-align:middle;letter-spacing:-0.50px;
+						font-family:'Nanum Gothic';font-size:14px;color:#414141;font-weight:bold;}							 
+.write4 table tbody tr td{text-align:left;vertical-align:middle;font-family:'Nanum Gothic';font-size:13px;color:#4e4e4e;letter-spacing:-0.50px;
+								line-height:31px;}							 
+.write4 table tbody tr td textarea{vertical-align:bottom;text-align:right;line-height:31px;border:1px solid #ddd;line-height:27px;vertical-align:middle;text-align:center;}
+
+
+@media screen and (max-width:1024px) {
+	.sub04_01_write .write_box2 .write{-webkit-overflow-scrolling:touch;}
+}	
+
+@media screen and (max-width:747px) {
+	.sub04_01_write .write_box2 .write{-webkit-overflow-scrolling:touch;}
+	.write_table2 dl dd.last_d{padding-top:2px;}
+}	
+
