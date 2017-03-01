@@ -1,0 +1,292 @@
+@charset "utf-8";
+/* CSS Document */
+@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+@import url(http://fonts.googleapis.com/earlyaccess/nanummyeongjo.css);
+@import url(http://fonts.googleapis.com/earlyaccess/notosanskr.css);
+@import url(//cdn.jsdelivr.net/nanumsquare/1.0/nanumsquare.css);
+
+/* base */
+html, body {
+  overflow-x: hidden;
+}
+body {
+  position: relative;
+  overflow-y:hidden;
+}
+body,input,textarea,select,button,table{font-family:'돋움',Dotum,'굴림',Gulim,AppleGothic,sans-serif; font-size:12px; color:#333}
+body,div,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,dt,dd,p,form,fieldset,input,table,tr,th,td{margin:0;padding:0;}
+h1,h2,h3,h4,h5,h6{font-weight:normal;font-size:100%}
+ul,ol{list-style:none}
+fieldset,img{border:0; vertical-align:top;}
+address{font-style:normal}
+li,p,dd{ line-height:1.5em; text-align:justify}
+.hidden{ position:absolute; top:0; left:-1000%; display:block; width:1px;
+			height:1px; overflow:hidden; color:#fff}
+
+input, textarea, select, button, table{
+    font-size:inherit;
+    font-family:inherit;
+    line-height:inherit;
+}
+
+section, nav, article, aside, header, footer{
+    display:block
+}
+
+textarea{
+    background:none;
+    -webkit-apprearance:none;
+}
+
+textarea{
+    resize:none;
+}
+
+label{
+    cursor:pointer;
+}
+
+table{
+    /*border-collapse: collapse;table-layout:fixed; */
+    display:table;
+    border-spacing:0;
+    border-collapse:collapse;
+	font-size:12px;
+}
+
+.blind{
+    display:block;
+    width:1px;
+    height:1px;
+    overflow:hidden;
+    position:absolute;
+    top:0;
+    left:-1000em
+}
+button{border:0;outline:0;cursor: pointer;}
+caption{position:absolute; left:-1000%; top:0; width:1px;height:1px; overflow:hidden}
+
+/* a-style */
+a{color:#333;text-decoration:none}
+a:hover,a:active,a:focus{text-decoration:none}
+
+
+/* skip nav 영역*/
+   #skipNav{position:relative;width:100%;overflow:hidden;}
+   #skipNav a{display:block; height:1px; margin-bottom:-1px; 
+      overflow:hidden; text-align:center; text-decoration:none; color:#333; font-size:12px;}
+   #skipNav a:hover,#skipNav a:focus,#skipNav a:active{
+     display:block;height:auto;padding:5px 0; background:none repeat scroll 0 0 #f2f2f2;}
+	 
+/* font-face */
+@font-face{
+	font-family:'NanumGothic';
+	src:url('../font/NanumGothic.eot'); 
+	src:local(※),
+		url('../font/NanumGothic.eot') format(’embedded-opentype’),
+    	url('../font/NanumGothic.woff') format(‘woff’),
+		url('../font/NanumGothic.ttf') format("truetype");	
+}	 
+@font-face{
+	font-family:'NanumBarunGothic';
+	src:url('../font/NanumBarunGothic.eot');
+	src:local(※),
+		url('../font/NanumBarunGothic.eot') format(’embedded-opentype’),
+		url('../font/NanumBarunGothic.woff') format(‘woff’),
+		url('../font/NanumBarunGothic.ttf') format("truetype");
+}	
+@font-face{
+	font-family: 'Nanum Myeongjo';
+	src:url('../font/NanumMyeongjo.eot');
+	src:local(※),
+		url('../font/NanumMyeongjo.eot') format(’embedded-opentype’),
+		url('../font/NanumMyeongjo.woff') format(‘woff’),
+		url('../font/NanumMyeongjo.ttf') format("truetype");
+}
+@font-face{
+	font-family:'NanumSquare';
+	src:url('../font/NanumSquareB.eot');
+	src:local(※),
+		url('../font/NanumSquareB.eot') format(’embedded-opentype’),
+		url('../font/NanumSquareB.woff') format(‘woff’),
+		url('../font/NanumSquareB.ttf') format("truetype");
+}
+@font-face{
+	font-family:'NanumSquareEB';
+	src:url('../font/NanumSquareEB.eot');
+	src:local(※),
+		url('../font/NanumSquareEB.eot') format(’embedded-opentype’),
+		url('../font/NanumSquareEB.woff') format(‘woff’),
+		url('../font/NanumSquareEB.ttf') format("truetype");
+}		
+@font-face{
+	font-family:'gulim';
+	src:url('../font/gulim.ttc');
+	src:local(※),
+		url('../font/gulim.ttc') format("truetype");
+}	
+@font-face{
+	font-family:'gungseo';
+	src:url('../font/gungseo.ttc');
+	src:local(※),
+		url('../font/gungseo.ttc') format("truetype");
+		url('../font/gungseo.eot') format(’embedded-opentype’),
+		url('../font/gungseo.woff') format(‘woff’),
+}	
+
+@font-face{
+	font-family:'Noto Sans KR';
+	src:url('../font/NotoSansMonoCJKkr-Regular.eot');
+	src:local(※),
+		url('../font/NotoSansMonoCJKkr-Regular.eot') format(’embedded-opentype’),
+		url('../font/NotoSansMonoCJKkr-Regular.woff') format(‘woff’),
+		url('../font/NotoSansMonoCJKkr-Regular.ttf') format("truetype");
+}
+
+/*layout setting*/
+
+.ellipsis{text-overflow: ellipsis; white-space: nowrap; overflow: hidden}
+
+.clearfix:before,.clearfix:after {content:" "; display:table}
+.clearfix:after {clear:both}
+.clearfix {*zoom:1}
+
+.blind, legend, hr{display:block; width:1px; height:1px; overflow:hidden; position:absolute; top:0; left:-1000em}
+caption{width:0;height:0;font-size:0;line-height:0;text-indent:-9999px;overflow:hidden}
+.ellipsis{text-overflow: ellipsis; white-space: nowrap; overflow: hidden}
+
+/* multi ellipsis */
+.ellip {
+  display: block;
+  height: 100%;
+}
+.ellip-line {
+  display: inline-block;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  word-wrap: normal;
+  max-width: 100%;
+}
+.ellip,
+.ellip-line {
+  position: relative;
+  overflow: hidden;
+}
+
+.transparent {
+    filter: alpha(opacity=50); /* internet explorer */
+    -khtml-opacity: 0.5;      /* khtml, old safari */
+    -moz-opacity: 0.5;       /* mozilla, netscape */
+    opacity: 0.5;           /* fx, safari, opera */
+}
+
+/* reset */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video, input, textarea {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  outline: none;
+  -webkit-text-size-adjust:none;
+  box-sizing:border-box;
+  -o-box-sizing:border-box;
+  -ms-box-sizing:border-box;
+  -moz-box-sizing:border-box;
+  -webkit-box-sizing:border-box;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display: block; }
+ol, ul { list-style: none; }
+blockquote, q { quotes: none; }
+blockquote:before, blockquote:after, q:before, q:after { content: ''; content: none; }
+strong { font-weight: bold; }
+table { border-collapse: collapse; border-spacing: 0; }
+img { border: 0; max-width: 100%;vertical-align:top }
+img, fieldset {border:0}
+ul, ol, li, dl { list-style:none; }
+h1, h2, h3, h4, h5, h6 {
+ font-size:100%;
+ font-weight:normal; }
+hr { display:none; }
+a { color:inherit; }
+a, a:link {text-decoration:none;}
+a:visited {color:#333;}
+a:active {color:#333;text-decoration:none;}
+em, i, address {font-style:normal;font-weight:normal;}
+legend, caption {display:none;clear:both;}
+input, textarea, select, button, table {
+ font-size:inherit;
+ font-family:inherit;
+ line-height:inherit; }
+section, nav, article, aside, hgroup, header, footer { display:block }
+textarea, input {
+ background:url(none);
+ -webkit-border-radius:1px;
+ -webkit-apprearance:none; }
+textarea { resize:none; }
+label { cursor:pointer; }
+table { /*border-collapse: collapse;table-layout:fixed; */ 
+      display: table;border-spacing:0;border-collapse:collapse}
+caption { display: table-caption; }
+colgroup { display: table-column-group; }
+col { display: table-column; }
+thead { display: table-header-group; }
+tbody { display: table-row-group; }
+tfoot { display: table-footer-group; }
+tr { display: table-row; padding:0; margin: 0 }
+td, th { display: table-cell;  padding:0; margin: 0}
+
+
+  .topbtn #toTop{display:block;width:50px;height:50px;line-height:50px;text-align:center;
+      position:fixed;bottom:20px;right:20px;overflow:hidden;
+      background:#a40000;}
+  .topbtn #toTop .fa-angle-up{font-size:18px;color:#fff;}    
+
+/*header영역*/
+header{height:101px;background:#fff;}
+.header_inner{position:relative;max-width:1700px;height:101px;overflow:hidden;margin:0 auto;padding-top:31px;}
+.logo_box{position:absolute;left:0;top:31px;}
+.logo_box h1{width:218px;}
+.logo_box h1 img{width:218px;height:39px;}
+nav{width:1200px;margin:0 auto;}
+nav ul{overflow:hidden;width:613px;margin:0 auto;}
+nav ul li{float:left;}
+nav ul li a{display:block;padding:0 34px;font-family:'Nanum Gothic';font-size:15px;font-weight:bold;color:#4f4f4f;letter-spacing:-0.50px;line-height:39px;}
+nav ul li a:hover{color:#898989;}
+.top_menu{position:absolute;right:0;top:31px;width:288px;}
+.top_menu ul{overflow:hidden;}
+.top_menu ul li{float:left;position:relative;margin-left:11px;}
+.top_menu ul li:after{display:inline-block;position:absolute;width:1px;height:9px;background:#d7d7d7;top:15px;right:0;content:""}
+.top_menu ul li:first-child{magin-left:0;}
+.top_menu ul li:last-child:after{background:none;}
+.top_menu ul li:last-child a{padding:0;}
+.top_menu ul li a{display:block;line-height:39px;font-family:'Nanum Gothic';font-size:13px;font-weight:bold;color:#7a7a7a;letter-spacing:-0.50px;
+						padding-right:11px;}
+
+/*container영역*/
+#container{position:relative;}
+.container_inner{width:1200px;margin:0 auto;}
+
+/*footer영역*/
+footer{width:100%;height:310px;background:url(../images/common/footer_line.png) left top repeat-x;}
+.footer_inner{width:1200px;margin:0 auto;}
+.footer_inner ul{padding:48px 0;}
+.footer_inner ul li{margin-top:30px;text-align:center;}
+.footer_inner ul li:first-child{margin-top:0;}
+.footer_inner ul li:last-child{margin-top:48px;}
+.footer_inner ul li p{font-family:'Noto Sans KR';font-size:14px;color:#4e4e4e;line-height:22px;text-align:center;}
+.footer_inner ul li p span{color:#ff8a00;}
+.footer_inner ul li > a{margin-left:20px;}
+.footer_inner ul li > a > .fa{font-size:22px;color:#ababab;}
+.footer_inner ul li:last-child a:first-child{margin-left:0;}
+
+@media screen and (max-width:1699px) {
+	.header_inner{max-width:1200px;}
+	nav{width:613px;margin:0 auto;}
+}
+@media screen and (max-width:1499px) {
+}
+@media screen and (max-width:1199px) {
+	.header_inner{min-width:1200px;}
+}

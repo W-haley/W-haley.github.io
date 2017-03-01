@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+
+		<!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame
+		Remove this if you use the .htaccess -->
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+		<title>sub</title>
+		<meta name="description" content="">
+		<meta name="author" content="DESIGN02">
+
+		<meta name="viewport" content="width=device-width; initial-scale=1.0">
+
+		<!-- Replace favicon.ico & apple-touch-icon.png in the root of your domain and delete these references -->
+		<link rel="shortcut icon" href="/favicon.ico">
+		<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+		<link rel="stylesheet" href="css/common.css">
+		<link rel="stylesheet" href="css/layout.css">
+		<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+		
+		<script src="js/jquery-1.8.3.min.js"></script>
+		<script src="js/main.js"></script>	
+		<script src="js/caption.js"></script>
+		<script src="js/clickup.js"></script>
+		<script src="js/move-top.js"></script>
+		<script src="js/easing.js"></script>
+	
+	</head>
+
+	<body>
+		<div>
+			<header>
+				<div class="header_inner">
+					<div class="logo_box">
+						<h1><a href="index.html"><img src="images/common/header_logo.png" alt="로고이미지" /></a></h1>
+					</div>
+					<nav>
+						<ul>
+							<li>
+								<a href="sub01.html">건축정보</a>
+							</li>
+							<li>
+								<a href="sub02.html">건축상담</a>
+							</li>
+							<li>
+								<a href="sub03.html">포트폴리오</a>
+							</li>
+							<li>
+								<a href="sub04.html">미디어</a>
+							</li>
+							<li>
+								<a href="sub05_01.html">고객지원</a>
+							</li>
+						</ul>
+					</nav><!--nav e-->
+					<div class="top_menu">
+						<ul>
+							<li><a href="login.html">로그인</a></li>
+							<li class="top_my"><a href="mypage.html">마이페이지</a></li>
+							<li><a href="join.html">회원가입</a></li>
+							<li><a href="alliance.html">제휴사문의</a></li>
+						</ul>
+					</div>
+				</div><!--header_inner e-->
+				
+			</header><!--header e-->
+			<div id="container">
+				<div class="my_title">
+					<p>마이페이지</p>
+				</div>
+				<div class="container_inner">
+					<div class="mypage_box">
+						<div class="sub_menu_box">
+							<ul>
+								<li class="sub_current"><a href="mypage.html">회원정보</a></li>
+								<!--<li class="sub_menu sub_menu1"><a href="mypage2.html">사무소 관리</a></li>-->
+								<li class="sub_menu"><a href="sub02_list.html">상담기록</a></li>
+							</ul>
+						</div>
+						<div class="customer_board">
+							<p class="b_title b_title2">회원정보</p>
+			            	<div class="mypage">
+			            		<div class="join_table">
+									<table summary="유저관리">
+										<caption class="hidden">유저관리</caption>
+										<colgroup>
+					                		<col width="166px">
+											<col width="*">
+					                	</colgroup>
+					                	<tbody>
+					                		<tr>
+												<th>아이디</th>
+												<td>
+													<input type="text" name="name" value="" class="input" maxlength="16">
+													<span>(영문 소문자/ 숫자, 4~16자)</span>
+												</td>
+											</tr>
+											<tr>
+												<th>비밀번호</th>
+												<td>
+													<input type="password" name="pwd[]" id="pwd1" class="input" maxlength="16">
+													<span>(영문 대소문자/숫자/특수문자 중 2가지 이상 조합,10가지 ~ 16자)</span>
+												</td>
+											</tr>
+					                		<tr>
+												<th>비밀번호확인</th>
+												<td><input type="password" name="pwd[]" id="pwd2" class="input" maxlength="16">
+												</td>
+											</tr>
+											<tr>
+												<th>이름</th>
+												<td>
+													<input type="text" name="name" value="" class="input" maxlength="16">
+												</td>
+											</tr>
+					                		<tr>
+					                			<th>휴대전화</th>
+					                			<td>
+					                				<select name="phone" class="select1">
+														<option value="010">010</option>
+														<option value="011">011</option>
+														<option value="016">016</option>
+														<option value="017">017</option>
+														<option value="018">018</option>
+														<option value="019">019</option>
+													</select><input type="text" name="phone" id="phone" value="" class="input2" ><input type="text" name="phone" id="phone1" value="" class="input3" >
+					                			</td>
+					                		</tr>
+					                		<tr>
+												<th>이메일</th>
+												<td>
+												<input type="text" name="email1" value="" class="input4">&nbsp; &nbsp;@ &nbsp;
+												<input type="text" name="email2" value="" class="input4">&nbsp;
+												<select name="email3" class="select2">
+												<option value=''>직접입력</option>
+												<option value='naver.com'>naver.com (네이버)</option>
+												<option value='hanmail.net'>hanmail.net (다음)</option>
+												<option value='nate.com'>nate.com (네이트)</option>
+												<option value='yahoo.co.kr'>yahoo.co.kr (야후코리아)</option>
+												<option value='paran.com'>paran.com (파란)</option>
+												<option value='empal.com'>empal.com (엠파스)</option>
+												<option value='dreamwiz.com'>dreamwiz.com (드림위즈)</option>
+												<option value='freechal.com'>freechal.com (프리챌)</option>
+												<option value='hotmail.com'>hotmail.com (핫메일)</option>
+												<option value='hanafos.com'>hanafos.com (하나포스닷컴)</option>
+												<option value='korea.com'>korea.com (코리아닷컴)</option>
+												<option value='chollian.net'>chollian.net (천리안)</option>
+											</select>
+												</td>
+											</tr>
+											<tr class="last_tr">
+												<th>이메일 수신여부</th>
+												<td>
+													<p>
+														<input type="radio" name="chk_info" class="chk_info chk_info1" value="수신함" checked="checked">수신함
+														<input type="radio" name="chk_info" class="chk_info chk_info2" value="수신안함">수신안함
+													</p>
+													<p>대한건축거래소에서 제공하는 소식을 이메일로 받으실 수 있습니다.</p>
+												</td>
+											</tr>
+					                	</tbody>
+									</table>
+								</div><!--join_table e-->
+			      			</div><!--mypage_box e-->
+			               	<div class="btn_box2">
+								<a href="#aa" class="my_btn">수정하기</a>
+							</div>				                
+						</div>
+						<!--customer_board e-->
+				</div><!--sub_cont-->
+					
+				</div><!--container_inner e-->
+			</div><!--container e-->
+
+			<footer>
+				<div class="footer_inner">
+					<ul>
+						<li><img src="images/common/footer_logo.png" alt="대건소로고이미지" /></li>
+						<li><img src="images/common/footer_icon1.png" alt="위치아이콘" /></li>
+						<li>
+							<p>서울특별시 용산구 청파로 47길 90 숙명여대 창업보육센터 401호  ㅣ e-mail : yoyo2886@naver.com  ㅣ  phone : 010 2031 9079</p>
+							<p>Copyright &copy; 2016 Daegunso all right reserved. Produted by <span>DOSTORY</span></p>
+						</li>
+						<li>
+							<a href="#aa"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+							<a href="#aa"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+						</li>
+					</ul>
+				</div>
+			</footer>
+		</div>
+		<!-- scroll_top_btn -->
+	    <div class="topbtn">
+			 <a href="#" id="toTop">
+	         <span id="toTopHover"><i class="fa fa-angle-up" aria-hidden="true"></i></span></a>
+		</div>		
+	</body>
+</html>

@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+
+		<!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame
+		Remove this if you use the .htaccess -->
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+		<title>sub</title>
+		<meta name="description" content="">
+		<meta name="author" content="DESIGN02">
+
+		<meta name="viewport" content="width=device-width; initial-scale=1.0">
+
+		<!-- Replace favicon.ico & apple-touch-icon.png in the root of your domain and delete these references -->
+		<link rel="shortcut icon" href="/favicon.ico">
+		<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+		<link rel="stylesheet" href="css/common.css">
+		<link rel="stylesheet" href="css/layout.css">
+		<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+		
+		<script src="js/jquery-1.8.3.min.js"></script>
+		<script src="js/main.js"></script>	
+		<script src="js/caption.js"></script>
+		<script src="js/clickup.js"></script>
+		<script src="js/move-top.js"></script>
+		<script src="js/easing.js"></script>
+	
+	</head>
+
+	<body>
+		<div>
+			<header>
+				<div class="header_inner">
+					<div class="logo_box">
+						<h1><a href="index.html"><img src="images/common/header_logo.png" alt="로고이미지" /></a></h1>
+					</div>
+					<nav>
+						<ul>
+							<li>
+								<a href="sub01.html">건축정보</a>
+							</li>
+							<li>
+								<a href="sub02.html">건축상담</a>
+							</li>
+							<li>
+								<a href="sub03.html">포트폴리오</a>
+							</li>
+							<li>
+								<a href="sub04.html">미디어</a>
+							</li>
+							<li>
+								<a href="sub05_01.html">고객지원</a>
+							</li>
+						</ul>
+					</nav><!--nav e-->
+					<div class="top_menu">
+						<ul>
+							<li><a href="login.html">로그인</a></li>
+							<li class="top_my"><a href="mypage.html">마이페이지</a></li>
+							<li><a href="join.html">회원가입</a></li>
+							<li><a href="alliance.html">제휴사문의</a></li>
+						</ul>
+					</div>
+				</div><!--header_inner e-->
+				
+			</header><!--header e-->
+			<div id="container" class="sub02">
+				<div class="container_inner">
+					<div class="sub02_cont">
+						<div class="sub02_top">
+							<div class="sub02_top_left">
+								<dl class="sub02_title1">
+									<dt>Consulting Request</dt>
+									<dd>대한건축거래소 건축상담 의뢰하기</dd>
+								</dl>
+								<ul>
+									<li>내 집 짓기, 어려우셨다구요? 이젠 대한건축거래소가 해결해 드리겠습니다.</li>
+									<li>대한건축거래소(이하 대건소)는 고객(건축주)과 상담을 통해 최적의 건축사를 매칭해 드리는 건축 중개 플랫폼입니다.</li>
+									<li>건축주가 하고자 하시는 건축을 대건소에 의뢰해 주시면상담내용을 바탕으로 전담건축사를 선정, 컨설팅을 진행해 드립니다. </li>
+									<li>대건소를 통해 어려움없이 나만의 드림하우스를 준비하세요!  더 나의 삶이 당신을 기다리고 있습니다.</li>
+								</ul>
+							</div>
+							<div class="sub02_top_right">
+								<img src="images/sub/sub02_img1.jpg" alt="컨설팅이미지" />
+							</div>
+						</div>
+						<div class="sub02_bottom">
+							<dl class="sub02_title2">
+								<dt>건축주 인적사항</dt>
+								<dd>건축주 확인을 위한 기본적인 인적사항을 입력해 주세요.</dd>
+							</dl>
+							<div class="sub02_table">
+								<table summary="건축주 인적사항">
+									<caption class="hidden">대건소 건축주 인적사항</caption>
+									<colgroup>
+				                		<col width="200px">
+										<col width="*">
+				                	</colgroup>
+				                	<tbody>
+				                		<tr>
+				                			<th>성별</th>
+				                			<td>
+				                				<input type="radio" name="chk_info" class="chk_info1" value="남" checked="checked"> 남
+												<input type="radio" name="chk_info" class="chk_info2" value="여"> 여
+				                			</td>
+				                		</tr>
+				                		<tr>
+				                			<th>이름</th>
+				                			<td>
+				                				<input type="text" name="name" value="" class="input1">
+				                			</td>
+				                		</tr>
+				                		<tr>
+				                			<th>출생년도</th>
+				                			<td>
+				                				<input type="text" name="birth" value="" class="input1">
+				                			</td>
+				                		</tr>
+				                		<tr>
+				                			<th>전화번호</th>
+				                			<td>
+				                				<select name="phone" onChange="">
+													<option value="">선택</option>
+													<option value="010">010</option>
+													<option value="011">011</option>
+													<option value="016">016</option>
+													<option value="017">017</option>
+													<option value="018">018</option>
+													<option value="019">019</option>
+												</select><input type="text" name="phone1" id="phone1" value="" class="input5" ><input type="text" name="phone2" id="phone2" value="" class="input5" >
+				                			</td>
+				                		</tr>
+				                		<tr>
+				                			<th>주소</th>
+				                			<td class="address">
+				                				<input id="postcode1" name="postcode1" class="inputTypeText" readonly="readonly" value="" type="text" /><input type="button" value="우편번호" class="input_button" />
+				                				<br />
+												<input type="text" name="add" value="" class="input3"><input type="text" name="add" value="" class="input4">
+				                			</td>
+				                		</tr>
+				                		<tr>
+											<th>이메일</th>
+											<td>
+											<input type="text" name="email1" value="" class="input6" style="width:235px; height: 40px">&nbsp; &nbsp;@ &nbsp;
+											<input type="text" name="email2" value="" class="input6" style="width:235px; height: 40px">&nbsp;
+											<select name="email3" onChange="" style="width:235px; height: 40px">
+												<option value=''>직접입력</option>
+												<option value='naver.com'>naver.com (네이버)</option>
+												<option value='hanmail.net'>hanmail.net (다음)</option>
+												<option value='nate.com'>nate.com (네이트)</option>
+												<option value='yahoo.co.kr'>yahoo.co.kr (야후코리아)</option>
+												<option value='paran.com'>paran.com (파란)</option>
+												<option value='empal.com'>empal.com (엠파스)</option>
+												<option value='dreamwiz.com'>dreamwiz.com (드림위즈)</option>
+												<option value='freechal.com'>freechal.com (프리챌)</option>
+												<option value='hotmail.com'>hotmail.com (핫메일)</option>
+												<option value='hanafos.com'>hanafos.com (하나포스닷컴)</option>
+												<option value='korea.com'>korea.com (코리아닷컴)</option>
+												<option value='chollian.net'>chollian.net (천리안)</option>
+											</select>
+											</td>
+										</tr>
+				                	</tbody>
+								</table>
+							</div><!--sub02_table e-->
+						</div><!--sub02_bottom e-->
+						<div class="btn_box">
+							<a href="sub02_01.html" class="sub02_btn">다음</a>
+						</div>
+					</div><!--sub02_cont e-->
+					<div class="box_shadow">
+						<img src="images/sub/left_shadow.png" class="shadow1" />
+						<img src="images/sub/right_shadow.png" class="shadow2" />
+					</div>
+				</div><!--container_inner e-->
+			</div><!--container e-->
+
+			<footer>
+				<div class="footer_inner">
+					<ul>
+						<li><img src="images/common/footer_logo.png" alt="대건소로고이미지" /></li>
+						<li><img src="images/common/footer_icon1.png" alt="위치아이콘" /></li>
+						<li>
+							<p>서울특별시 용산구 청파로 47길 90 숙명여대 창업보육센터 401호  ㅣ e-mail : yoyo2886@naver.com  ㅣ  phone : 010 2031 9079</p>
+							<p>Copyright &copy; 2016 Daegunso all right reserved. Produted by <span>DOSTORY</span></p>
+						</li>
+						<li>
+							<a href="#aa"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+							<a href="#aa"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+						</li>
+					</ul>
+				</div>
+			</footer>
+		</div>
+		<!-- scroll_top_btn -->
+	    <div class="topbtn">
+			 <a href="#" id="toTop">
+	         <span id="toTopHover"><i class="fa fa-angle-up" aria-hidden="true"></i></span></a>
+		</div>		
+	</body>
+</html>
