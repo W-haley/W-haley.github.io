@@ -1,0 +1,239 @@
+@charset "utf-8";
+/* CSS Document */
+@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+@import url(http://fonts.googleapis.com/earlyaccess/nanummyeongjo.css);
+@import url(http://fonts.googleapis.com/earlyaccess/notosanskr.css);
+@import url(//cdn.jsdelivr.net/nanumsquare/1.0/nanumsquare.css);
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,100,700);
+
+/* base */
+html, body {
+  overflow-x: hidden;
+}
+body {
+  position: relative;
+  overflow-y:hidden;
+}
+body,input,textarea,select,button,table{font-family:'roboto'; font-size:12px; color:#333}
+body,div,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,dt,dd,p,form,fieldset,input,table,tr,th,td{margin:0;padding:0;}
+h1,h2,h3,h4,h5,h6{font-weight:normal;font-size:100%}
+ul,ol{list-style:none}
+fieldset,img{border:0; vertical-align:top;}
+address{font-style:normal}
+li,p,dd{ line-height:1.5em; text-align:justify}
+.hidden{ position:absolute; top:0; left:-1000%; display:block; width:1px;
+			height:1px; overflow:hidden; color:#fff}
+
+input, textarea, select, button, table{
+    font-size:inherit;
+    font-family:inherit;
+    line-height:inherit;
+}
+
+section, nav, article, aside, header, footer{
+    display:block
+}
+
+textarea{
+    background:none;
+    -webkit-apprearance:none;
+}
+
+textarea{
+    resize:none;
+}
+
+label{
+    cursor:pointer;
+}
+
+table{
+    /*border-collapse: collapse;table-layout:fixed; */
+    display:table;
+    border-spacing:0;
+    border-collapse:collapse;
+	font-size:12px;
+}
+
+.blind{
+    display:block;
+    width:1px;
+    height:1px;
+    overflow:hidden;
+    position:absolute;
+    top:0;
+    left:-1000em
+}
+button{border:0;outline:0;cursor: pointer;}
+caption{position:absolute; left:-1000%; top:0; width:1px;height:1px; overflow:hidden}
+
+/* a-style */
+a{color:#333;text-decoration:none}
+a:hover,a:active,a:focus{text-decoration:none}
+
+
+/* skip nav 영역*/
+   #skipNav{position:relative;width:100%;overflow:hidden;}
+   #skipNav a{display:block; height:1px; margin-bottom:-1px; 
+      overflow:hidden; text-align:center; text-decoration:none; color:#333; font-size:12px;}
+   #skipNav a:hover,#skipNav a:focus,#skipNav a:active{
+     display:block;height:auto;padding:5px 0; background:none repeat scroll 0 0 #f2f2f2;}
+	 
+/* font-face 
+@font-face{
+	font-family:'NanumGothic';
+	src:url('../font/NanumGothic.eot'); 
+	src:local(※),
+		url('../font/NanumGothic.eot') format(’embedded-opentype’),
+    	url('../font/NanumGothic.woff') format(‘woff’),
+		url('../font/NanumGothic.ttf') format("truetype");	
+}	 
+@font-face{
+	font-family:'NanumBarunGothic';
+	src:url('../font/NanumBarunGothic.eot');
+	src:local(※),
+		url('../font/NanumBarunGothic.eot') format(’embedded-opentype’),
+		url('../font/NanumBarunGothic.woff') format(‘woff’),
+		url('../font/NanumBarunGothic.ttf') format("truetype");
+}	
+@font-face{
+	font-family: 'Nanum Myeongjo';
+	src:url('../font/NanumMyeongjo.eot');
+	src:local(※),
+		url('../font/NanumMyeongjo.eot') format(’embedded-opentype’),
+		url('../font/NanumMyeongjo.woff') format(‘woff’),
+		url('../font/NanumMyeongjo.ttf') format("truetype");
+}
+@font-face{
+	font-family:'NanumSquare';
+	src:url('../font/NanumSquareB.eot');
+	src:local(※),
+		url('../font/NanumSquareB.eot') format(’embedded-opentype’),
+		url('../font/NanumSquareB.woff') format(‘woff’),
+		url('../font/NanumSquareB.ttf') format("truetype");
+}
+@font-face{
+	font-family:'NanumSquareEB';
+	src:url('../font/NanumSquareEB.eot');
+	src:local(※),
+		url('../font/NanumSquareEB.eot') format(’embedded-opentype’),
+		url('../font/NanumSquareEB.woff') format(‘woff’),
+		url('../font/NanumSquareEB.ttf') format("truetype");
+}		
+@font-face{
+	font-family:'gulim';
+	src:url('../font/gulim.ttc');
+	src:local(※),
+		url('../font/gulim.ttc') format("truetype");
+}	
+@font-face{
+	font-family:'gungseo';
+	src:url('../font/gungseo.ttc');
+	src:local(※),
+		url('../font/gungseo.ttc') format("truetype");
+		url('../font/gungseo.eot') format(’embedded-opentype’),
+		url('../font/gungseo.woff') format(‘woff’),
+}	
+
+@font-face{
+	font-family:'Noto Sans KR';
+	src:url('../font/NotoSansMonoCJKkr-Regular.eot');
+	src:local(※),
+		url('../font/NotoSansMonoCJKkr-Regular.eot') format(’embedded-opentype’),
+		url('../font/NotoSansMonoCJKkr-Regular.woff') format(‘woff’),
+		url('../font/NotoSansMonoCJKkr-Regular.ttf') format("truetype");
+}
+*/
+/*layout setting*/
+
+.ellipsis{text-overflow: ellipsis; white-space: nowrap; overflow: hidden}
+
+.clearfix:before,.clearfix:after {content:" "; display:table}
+.clearfix:after {clear:both}
+.clearfix {*zoom:1}
+
+.blind, legend, hr{display:block; width:1px; height:1px; overflow:hidden; position:absolute; top:0; left:-1000em}
+caption{width:0;height:0;font-size:0;line-height:0;text-indent:-9999px;overflow:hidden}
+.ellipsis{text-overflow: ellipsis; white-space: nowrap; overflow: hidden}
+
+/* multi ellipsis */
+.ellip {
+  display: block;
+  height: 100%;
+}
+.ellip-line {
+  display: inline-block;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  word-wrap: normal;
+  max-width: 100%;
+}
+.ellip,
+.ellip-line {
+  position: relative;
+  overflow: hidden;
+}
+
+.transparent {
+    filter: alpha(opacity=50); /* internet explorer */
+    -khtml-opacity: 0.5;      /* khtml, old safari */
+    -moz-opacity: 0.5;       /* mozilla, netscape */
+    opacity: 0.5;           /* fx, safari, opera */
+}
+
+/* reset */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video, input, textarea {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  outline: none;
+  -webkit-text-size-adjust:none;
+  box-sizing:border-box;
+  -o-box-sizing:border-box;
+  -ms-box-sizing:border-box;
+  -moz-box-sizing:border-box;
+  -webkit-box-sizing:border-box;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display: block; }
+ol, ul { list-style: none; }
+blockquote, q { quotes: none; }
+blockquote:before, blockquote:after, q:before, q:after { content: ''; content: none; }
+strong { font-weight: bold; }
+table { border-collapse: collapse; border-spacing: 0; }
+img { border: 0; max-width: 100%;vertical-align:top }
+img, fieldset {border:0}
+ul, ol, li, dl { list-style:none; }
+h1, h2, h3, h4, h5, h6 {
+ font-size:100%;
+ font-weight:normal; }
+hr { display:none; }
+a { color:inherit; }
+a, a:link {text-decoration:none;}
+a:visited {color:#333;}
+a:active {color:#333;text-decoration:none;}
+em, i, address {font-style:normal;font-weight:normal;}
+legend, caption {display:none;clear:both;}
+input, textarea, select, button, table {
+ font-size:inherit;
+ font-family:inherit;
+ line-height:inherit; }
+section, nav, article, aside, hgroup, header, footer { display:block }
+textarea, input {
+ background:url(none);
+ -webkit-border-radius:1px;
+ -webkit-apprearance:none; }
+textarea { resize:none; }
+label { cursor:pointer; }
+table { /*border-collapse: collapse;table-layout:fixed; */ 
+      display: table;border-spacing:0;border-collapse:collapse}
+caption { display: table-caption; }
+colgroup { display: table-column-group; }
+col { display: table-column; }
+thead { display: table-header-group; }
+tbody { display: table-row-group; }
+tfoot { display: table-footer-group; }
+tr { display: table-row; padding:0; margin: 0 }
+td, th { display: table-cell;  padding:0; margin: 0}
