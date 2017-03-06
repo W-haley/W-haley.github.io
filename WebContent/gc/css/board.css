@@ -1,0 +1,62 @@
+
+.sub_board{overflow:hidden;max-width:924px;margin:0 auto; clear:both; position:relative; color:#666;padding:15px 10px}
+.sub_board table{width:924px;font-family:NanumGothic;font-size:13.3px; line-height:2em;color:#767676;} 
+/*.search_last{ margin-left:500px}
+.sub_board table thead th{background:#fff;font-size:14px;border-top:2px solid #333; }
+.sub_board table thead tr{border-bottom:1px solid #ababab;}
+.sub_board table thead tr:first-child{border-top:none;}
+.sub_board table tr{border-bottom:1px solid #ccc}
+.bbs-bot-search{padding:0 0 15px;margin-right:40px;text-align:right; margin-top:42px;font-family:NanumGothic;font-size:14px;}
+.bbs-bot-search select,.bbs-bot-search .input_wrap{display:inline-block}
+.bbs-bot-search select{width:90px;height:33px;font-size:14px; font-weight:bold; color:#252525;letter-spacing:-0.05em; border:1px solid #dbdbdb !important;padding-left:10px}
+.bbs-bot-search .input_wrap{width:180px;height:32px;border:1px solid #dbdbdb;background:#fff;vertical-align:top; margin-right:-5px;}
+.bbs-bot-search .input_wrap input{display:block;width:180px;height:32px;line-height:32px;padding:0;border:none;}
+.bbs-bot-search .ui-selectmenu-button span.ui-selectmenu-text{height:32px;padding-top:0;padding-bottom:0;line-height:22px}
+.bbs-bot-search .btn-search{height:34px; line-height:32px; font-size:14px;font-weight:bold;vertical-align:top; background-color:#bdbdbd; border:0; border-radius:0}
+.btn-search{display:inline-block;height:34px;line-height:32px;padding:0 8px;border:1px solid #858585;background:#949494;font-size:12px;font-weight:bold;color:#fff !important;letter-spacing:-0.05em;border-radius:2px}
+.btn-search .fa-search{color:#fff;font-size:20px;padding-top:6px}*/
+.sub_board table a{margin-right:20px}
+.sub_board table th, table tr, table td{padding:7px 1px 7px 1px}
+.sub_board table tr{text-align:center;vertical-align:inherit; display:table-row} 
+.sub_board table .row{ width:90px}
+.sub_board table .last{ width:80px}
+.sub_board table .line_3{ width:140px}
+.sub_board table th, table td{display:table-cell; vertical-align:inherit; text-align:center}
+.sub_board table .td_left{text-align:left; padding-left:30px}
+table tbody .color{ font-weight:bold;}
+.no_line{border-bottom:none !important;padding:0}
+.form_tr{text-align:right;margin-right:40px;}
+.button{width:70px;height:34px;background-color:#353535;color:#fff;font-family:NanumGothic;font-size:14px;}
+.faq .tabs{border-top:2px solid #353535;width:1100px;margin:0 auto;vertical-align:middle;padding-bottom:70px;}
+.faq a.tab{display:block;height:24px;font-family:NanumGothic;font-size:13.3px;padding:20px 0px 20px 35px;color:#555;border-bottom:1px solid #9a9a9a;}
+.faq a.tab img{margin-right:40px;}
+.faq a.tab .fa-sort-desc{text-align:right;color:#d6c0a1;font-size:18px;margin-left:765px;}
+.faq .contlist{padding:15px 35px;display:none;font-family:NanumBarunGothic;font-size:14px;border-bottom:1px solid #9a9a9a;line-height:1.8em;color:#585858;background-color:#f9f9f9;}
+.faq .contlist img{margin-right:40px;}
+
+.review{max-width:1200px;margin:0 auto;}
+.review .review_box{overflow:hidden;margin-left:45px;margin-bottom:40px}
+.review .review_box dl{float:left;margin-left:20px;border:1px solid #ccc;font-family:gulim;font-size:12px;padding-bottom:12px;color:#353535;}
+.review .review_box dl:first-child{margin-left:0}
+.review .review_box dl img{width:242px;height:152px;padding:10px 10px 20px 10px}
+.review .review_box dl dt,dd{padding:0 10px 12px 10px; text-overflow:ellipsis;}
+.review .review_box dl dd{float:left}
+
+
+/*cart 영역*/
+.td_left{overflow:hidden;}
+.td_left .ipt_txt{float:left;text-align:center}
+.td_left p.ea{float:right}
+.td_left p.ea a{display:block;}
+.td_name{text-align:left;vertical-align:middle}
+.last p.wslist{padding-left:22%;padding-top:5px}
+.last p.wslist a{text-align:center;}
+.last p.wslist a img{padding-bottom:5px}
+.cart_btn_box{overflow:hidden;margin-top:25px;margin-left:60px}
+.cart_btn_box li{float:left;width:104px;height:40px;border:1px solid #acacac;}
+.cart_btn_box li a{display:block;font-family:gulim;font-size:12px;color:#666;text-align:center;padding-top:12px}
+.cart_btn_box li:last-child{background-color:#353535;}
+.cart_btn_box li:last-child a{color:#fff;}
+.cart_btn_box .cart_btn_box_inner{margin-left:760px}
+.cart_btn_box .cart_btn_box_inner li{margin-left:7px}
+

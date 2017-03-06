@@ -1,0 +1,148 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+  <!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame
+    Remove this if you use the .htaccess -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+    <title>join1</title>
+    <meta name="description" content="">
+    <meta name="author" content="DESIGN02">
+
+    <meta name="viewport" content="initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0, user-scalable=no">
+
+    <!-- Replace favicon.ico & apple-touch-icon.png in the root of your domain and delete these references -->
+    <link rel="shortcut icon" href="/favicon.ico">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/bxslider.css">
+    <link rel="stylesheet" href="css/personal_page.css">
+    
+    <script src="js/jquery-1.8.3.min.js"></script>
+    <script src="js/jquery.motionj.sbanner.js"></script>		
+    <script src="js/jquery.scrollfollow.js"></script>		
+    <script src="js/jquery.bxslider.min.js"></script>
+    <script src="js/slider.js"></script>		
+    <script src="js/link.js"></script>
+    <script src="js/do_common.js"></script>
+    <script src="js/board.js"></script>
+    <script src="js/caption.js"></script>
+    <script src="js/tab.js"></script>
+    <script type="text/javascript">
+	$(document).ready(function(){
+		$("#gotop").scrollFollow({
+			speed : 700,    
+			offset : 150
+		});
+	});
+	
+	(function($){
+		$(document).ready(function(){
+			$('#rolling_banner').motionj_slide_banner({
+				width : 62, // 배너 이미지 너비
+				height : 72, // 배너 이미지 높이
+				speed : 500, // 슬라이딩 속도
+				delay : 2000, // 딜레이 시간
+				image : './images/common/', // 이미지 경로
+				pause : false // true is stop banner, false is auto moving banner
+			});
+		});
+	})(jQuery);	
+		
+	function lnbOpen(){
+		$('.lnb_layer00').css("z-index","9999");
+		console.log('dkd');
+		if($('.lnb_all').hasClass('open')){
+			$('.lnb_all').removeClass('open');
+			$('.lnb_layer00').hide();
+		}else{
+			$('.lnb_all').addClass('open');
+			$('.lnb_layer00').show();
+		}
+			$('.lnb_layer00').mouseleave(function(){
+			$('.lnb_all').removeClass('open');
+			$(this).hide();
+		});
+	}			
+    </script>	
+            
+    <!--[if lte IE 8]>
+    <script src="path/to/poly-checked.min.js"></script>
+    <![endif]-->
+
+
+</head>
+
+<body>
+<div class="wrap">
+    <header>	
+        <div class="header_inner">
+            <div class="header_logo_wrap">
+                <div class="rolling_banner_wrap">
+                    <div id="rolling_banner">
+                        <ul class="roll_banner">
+                            <li><a href="javascript:loc('necklace_detail.html');"><img src="images/common/banner01.jpg" /></a></li>
+                            <li><a href="javascript:loc('necklace_detail.html');"><img src="images/common/banner02.jpg" /></a></li>
+                            <li><a href="javascript:loc('necklace_detail.html');"><img src="images/common/banner03.jpg" /></a></li>
+                        </ul>
+                    </div>
+                    
+                </div><!--rolling_banner_wrap e-->	
+                <div class="logo"><h1><a href="javascript:loc('index.html');"><img src="images/common/logo.jpg" /></a></h1></div>
+                <div class="top_menu">
+                    <ul>
+                        <li><a href="javascript:loc('login.html');">로그인</a></li>
+                        <li><a href="javascript:loc('join1.html');">회원가입</a></li>
+                        <li><a href="javascript:loc('mypage.html');">마이페이지</a></li>
+                        <li><a href="javascript:loc('cart.html');">장바구니</a></li>
+                        <li><a href="javascript:loc('customer.html');">고객만족센터</a></li>
+                    </ul>
+                </div><!--top_menu e-->
+            </div><!--header_logo_wrap e-->
+        </div><!--head_inner e-->				
+    </header>
+            
+    				<nav>
+						<ul>							
+                        	<li class="gnb1"><a href="javascript:loc('sub01_01.html');">선물추천</a></li>
+							<li class="gnb2"><a href="javascript:loc('event.html');">베스트상품</a></li>
+							<li class="gnb3"><a href="javascript:loc('event3.html');">인기기획전모음</a></li>
+							<li class="gnb4"><a href="javascript:loc('sub01_01.html');">신상품</a></li>
+							<li class="gnb5"><a href="javascript:loc('customer.html');">커뮤니티</a></li>
+							<li class="gnb6"><a href="javascript:loc('customer.html');">고객센터</a></li>
+							<li class="gnb7"><a href="javascript:loc('search.html');">제품찾기</a></li>
+						</ul>
+					</nav>			
+		
+  <article id="container">
+	<div id="gotop" style="background-image:none;box-shadow:none;"><!--gotop s: 드레프트 메뉴-->
+	  <img src="images/tmp/rnb.png" alt="퀵링크 이미지" usemap="#Map2" />
+      <map name="Map2">
+        <area shape="rect" coords="39,32,133,65" href="event.html">
+        <area shape="rect" coords="28,183,142,298" href="necklace_detail.html">
+      </map>
+	</div><!--gotop e-->
+		
+      <!-- 내용 시작 -->
+	  <img src="images/tmp/new.jpg" alt="로그인 이미지" usemap="#Map4" style="margin-top: 50px;" />
+      <map name="Map4">
+        <area shape="rect" coords="4,568,966,1946" href="necklace_detail.html">
+      </map>
+      <!-- 내용 끝 --> 
+            
+  </article><!--container e-->
+        
+	<footer>
+		<img src="images/tmp/footer.jpg" alt="하단 이미지" usemap="#Map" />
+        <map name="Map">
+          <area shape="rect" coords="341,52,389,141" href="cart.html">
+          <area shape="rect" coords="439,45,512,144" href="wish.html">
+        </map>
+    </footer>
+</div>
+</body>
+</html>

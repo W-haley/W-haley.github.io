@@ -1,0 +1,992 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+
+		<!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame
+		Remove this if you use the .htaccess -->
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+		<title>join2</title>
+		<meta name="description" content="">
+		<meta name="author" content="DESIGN02">
+
+		<meta name="viewport" content="initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0, user-scalable=no">
+
+		<!-- Replace favicon.ico & apple-touch-icon.png in the root of your domain and delete these references -->
+		<link rel="shortcut icon" href="/favicon.ico">
+		<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+		<link rel="stylesheet" href="css/common.css">
+		<link rel="stylesheet" href="css/layout.css">
+		<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+		<link rel="stylesheet" href="css/bxslider.css">
+		<link rel="stylesheet" href="css/personal_page.css">
+		
+		<script src="js/jquery-1.8.3.min.js"></script>
+		<script src="js/jquery.motionj.sbanner.js"></script>		
+		<script src="js/jquery.scrollfollow.js"></script>		
+		<script src="js/jquery.bxslider.min.js"></script>
+		<script src="js/slider.js"></script>		
+		<script src="js/link.js"></script>
+		<script src="js/common.js"></script>
+		<script src="js/board.js"></script>
+		<script src="js/caption.js"></script>
+		<script src="js/tab.js"></script>
+	    <script>
+	        $(document).ready(function(){
+	            $("#gotop").scrollFollow({
+	                speed : 700,    
+	                offset : 150
+	            });
+	        });
+	    </script>	
+				
+		<!--[if lte IE 8]>
+		<script src="path/to/poly-checked.min.js"></script>
+		<![endif]-->
+
+	</head>
+ 
+<script type="text/javascript">
+(function($){
+ $(document).ready(function(){
+  $('#rolling_banner').motionj_slide_banner({
+   width : 62, // 배너 이미지 너비
+   height : 72, // 배너 이미지 높이
+   speed : 500, // 슬라이딩 속도
+   delay : 2000, // 딜레이 시간
+   image : './images/common/', // 이미지 경로
+   pause : false // true is stop banner, false is auto moving banner
+  });
+ });
+})(jQuery);
+</script>
+	<body>
+		<div class="wrap">
+			<header>
+						
+				<div class="header_inner">
+					<div class="header_logo_wrap">
+						<div class="rolling_banner_wrap">
+							<div id="rolling_banner">
+								<ul class="roll_banner">
+									<li><a href="javascript:loc('necklace_detail.html');"><img src="images/common/banner01.jpg" /></a></li>
+									<li><a href="javascript:loc('necklace_detail.html');"><img src="images/common/banner02.jpg" /></a></li>
+									<li><a href="javascript:loc('necklace_detail.html');"><img src="images/common/banner03.jpg" /></a></li>
+								</ul>
+							</div>
+							
+						</div><!--rolling_banner_wrap e-->	
+						<div class="logo"><h1><a href="javascript:loc('index.html');"><img src="images/common/logo.jpg" /></a></h1></div>
+						<div class="top_menu">
+							<ul>
+								<li><a href="javascript:loc('login.html');">로그인</a></li>
+								<li><a href="javascript:loc('join1.html');">회원가입</a></li>
+								<li><a href="javascript:loc('mypage.html');">마이페이지</a></li>
+								<li><a href="javascript:loc('cart.html');">장바구니</a></li>
+								<li><a href="javascript:loc('customer.html');">고객만족센터</a></li>
+							</ul>
+						</div><!--top_menu e-->
+					</div><!--header_logo_wrap e-->
+				</div><!--head_inner e-->				
+			</header>
+					<nav>
+						<ul>							<li class="gnb1"><a href="javascript:loc('sub01_01.html');">선물추천</a></li>
+							<li class="gnb2"><a href="javascript:loc('event.html');">베스트상품</a></li>
+							<li class="gnb3"><a href="javascript:loc('event3.html');">인기기획전모음</a></li>
+							<li class="gnb4"><a href="javascript:loc('sub01_01.html');">신상품</a></li>
+							<li class="gnb5"><a href="javascript:loc('customer.html');">커뮤니티</a></li>
+							<li class="gnb6"><a href="javascript:loc('customer.html');">고객센터</a></li>
+							<li class="gnb7"><a href="javascript:loc('search.html');">제품찾기</a></li>
+						</ul>
+					</nav>		
+<script>
+	function lnbOpen(){
+		$('.lnb_layer00').css("z-index","9999");
+		console.log('dkd');
+		if($('.lnb_all').hasClass('open')){
+			$('.lnb_all').removeClass('open');
+			$('.lnb_layer00').hide();
+		}else{
+			$('.lnb_all').addClass('open');
+			$('.lnb_layer00').show();
+		}
+			$('.lnb_layer00').mouseleave(function(){
+			$('.lnb_all').removeClass('open');
+			$(this).hide();
+		});
+	}
+</script>					
+			
+			<article id="container">
+				<div id="gotop">
+							<div class="gotop_inner">
+								<ul class="quick_btn">
+									<li><a href="javascript:loc('login.html');">쿠폰&#47;이벤트</a></li>
+									<li><a href="javascript:loc('login.html');">회원할인혜택</a></li>
+								</ul>
+								<dl>
+									<dt>
+										오늘 본 상품
+									</dt>
+									<dd>
+										<p class="top_more">
+											<i class="fa fa-chevron-up" aria-hidden="true"></i>
+										</p>
+										<ul class="quick_img">
+											<li><a href="javascript:loc('necklace_detail.html');"><img src="images/common/more_img1.jpg" /></a></li>
+										</ul>
+										<p class="bottom_more">
+											<i class="fa fa-chevron-down" aria-hidden="true"></i>
+										</p>
+									</dd>
+								</dl>
+							</div>
+					 </div><!--gotop e-->
+				<div class="topArea sub_topArea">
+					<div class="search_box">
+						<p class="i_wrap"><input type="text" name="query"  id="word" value="QUICK SEARCH" onfocus="this.value=''" onblur="if(this.value =='') this.value='QUICK SEARCH';" /></p>
+						<a href="#" ><img src="images/common/btn_header_search.png" alt=""></a>
+						<p class="search_detail"><a href="#" onclick="layer_open('layer2');return false;"> 찾으시는 제품을 검색해 보세요.<i class="fa fa-search" aria-hidden="true"></i></a></p>
+					</div>
+					<div class="lnb_wrap">
+						<div class="lnb_box">
+							<ul>
+								<li class="lnb lnb_all"><p><a href="javascript:lnbOpen();"><i class="fa fa-bars" aria-hidden="true"></i> ALL CATEGORY</a></p>
+									<div class="lnb_layer lnb_layer00">
+										<dl>
+											<dt class="on_top">목걸이</dt>
+											<dd class="on_bottom on_bottom1">
+												<img src="images/common/lnb_all1.png" />
+											</dd>
+											<dd>
+												<ul>
+													<li><input type="checkbox" id="necklace_category1"><label for="necklace_category1">큐빅목걸이</label></li>
+													<li><input type="checkbox" id="necklace_category2"><label for="necklace_category2">민성목걸이</label></li>
+													<li><input type="checkbox" id="necklace_category3"><label for="necklace_category3">합성유색목걸이</label></li>
+													<li><input type="checkbox" id="necklace_category4"><label for="necklace_category4">롱스타일목걸이</label></li>
+													<li><input type="checkbox" id="necklace_category5"><label for="necklace_category5">이니셜목걸이</label></li>
+													<li><input type="checkbox" id="necklace_category6"><label for="necklace_category6">체인</label></li>
+													<li><input type="checkbox" id="necklace_category7"><label for="necklace_category7">펜던트</label></li>
+													<li><input type="checkbox" id="necklace_category8"><label for="necklace_category8">다이아몬드</label></li>
+													<li><input type="checkbox" id="necklace_category9"><label for="necklace_category9">진주</label></li>
+												</ul>
+											</dd>
+										</dl>
+										<dl>
+											<dt class="on_top">귀걸이</dt>
+											<dd class="on_bottom on_bottom2">
+												<img src="images/common/lnb_all2.png" />
+											</dd>
+											<dd>
+												<ul>
+													<li><input type="checkbox" id="earring_category1"><label for="earring_category1">큐빅귀걸이</label></li>
+													<li><input type="checkbox" id="earring_category2"><label for="earring_category2">민성귀걸이</label></li>
+													<li><input type="checkbox" id="earring_category3"><label for="earring_category3">합성유색귀걸이</label></li>
+													<li><input type="checkbox" id="earring_category4"><label for="earring_category4">일자침귀걸이</label></li>
+													<li><input type="checkbox" id="earring_category5"><label for="earring_category5">원터치귀걸이</label></li>
+													<li><input type="checkbox" id="earring_category6"><label for="earring_category6">링귀걸이</label></li>
+													<li><input type="checkbox" id="earring_category7"><label for="earring_category7">피어싱귀걸이</label></li>
+													<li><input type="checkbox" id="earring_category8"><label for="earring_category8">진주</label></li>
+													<li><input type="checkbox" id="earring_category9"><label for="earring_category9">천연보석</label></li>
+												</ul>
+											</dd>
+										</dl>
+										<dl>
+											<dt class="on_top">반지</dt>
+											<dd class="on_bottom on_bottom3">
+												<img src="images/common/lnb_all3.png" />
+											</dd>
+											<dd>
+												<ul>
+													<li><input type="checkbox" id="ring_category1"><label for="ring_category1">큐빅반지</label></li>
+													<li><input type="checkbox" id="ring_category2"><label for="ring_category2">민성반지</label></li>
+													<li><input type="checkbox" id="ring_category3"><label for="ring_category3">합성유색반지</label></li>
+													<li><input type="checkbox" id="ring_category4"><label for="ring_category4">레이어드반지</label></li>
+													<li><input type="checkbox" id="ring_category5"><label for="ring_category5">프리사이즈반지</label></li>
+													<li><input type="checkbox" id="ring_category6"><label for="ring_category6">달랑이반지</label></li>
+													<li><input type="checkbox" id="ring_category7"><label for="ring_category7">애끼&#47;너클반지</label></li>
+													<li><input type="checkbox" id="ring_category8"><label for="ring_category8">진주</label></li>
+													<li><input type="checkbox" id="ring_category9"><label for="ring_category9">천연보석</label></li>
+												</ul>
+											</dd>
+										</dl>
+										<dl>
+											<dt class="on_top">팔찌</dt>
+											<dd class="on_bottom on_bottom4">
+												<img src="images/common/lnb_all4.png" />
+											</dd>
+											<dd>
+												<ul>
+													<li><input type="checkbox" id="bracelet_category1"><label for="bracelet_category1">큐빅팔찌</label></li>
+													<li><input type="checkbox" id="bracelet_category2"><label for="bracelet_category2">민성팔찌</label></li>
+													<li><input type="checkbox" id="bracelet_category3"><label for="bracelet_category3">합성유색팔찌</label></li>
+													<li><input type="checkbox" id="bracelet_category4"><label for="bracelet_category4">체인팔찌</label></li>
+													<li><input type="checkbox" id="bracelet_category5"><label for="bracelet_category5">이니셜&#47;참팔찌</label></li>
+													<li><input type="checkbox" id="bracelet_category6"><label for="bracelet_category6">실크&#47;가죽팔찌</label></li>
+													<li><input type="checkbox" id="bracelet_category7"><label for="bracelet_category7">참깨다이아몬드</label></li>
+													<li><input type="checkbox" id="bracelet_category8"><label for="bracelet_category8">진주</label></li>
+													<li><input type="checkbox" id="bracelet_category9"><label for="bracelet_category9">천연보석</label></li>
+												</ul>
+											</dd>
+										</dl>
+										<dl>
+											<dt class="on_top">발찌</dt>
+											<dd class="on_bottom on_bottom5">
+												<img src="images/common/lnb_all5.png" />
+											</dd>
+											<dd>
+												<ul>
+													<li><input type="checkbox" id="anklet_category1"><label for="anklet_category1">큐빅발찌</label></li>
+													<li><input type="checkbox" id="anklet_category2"><label for="anklet_category2">민성발찌</label></li>
+													<li><input type="checkbox" id="anklet_category3"><label for="anklet_category3">합성유색발찌</label></li>
+													<li><input type="checkbox" id="anklet_category4"><label for="anklet_category4">체인발찌</label></li>
+													<li><input type="checkbox" id="anklet_category5"><label for="anklet_category5">이니셜&#47;참발찌</label></li>
+													<li><input type="checkbox" id="anklet_category6"><label for="anklet_category6">실크&#47;가죽발찌</label></li>
+													<li><input type="checkbox" id="anklet_category7"><label for="anklet_category7">참깨다이아몬드</label></li>
+													<li><input type="checkbox" id="anklet_category8"><label for="anklet_category8">진주</label></li>
+													<li><input type="checkbox" id="anklet_category9"><label for="anklet_category9">천연보석</label></li>
+												</ul>
+											</dd>
+										</dl>
+										<dl>
+											<dt class="on_top">커플&amp;웨딩</dt>
+											<dd class="on_bottom on_bottom6">
+												<img src="images/common/lnb_all6.png" />
+											</dd>
+											<dd>
+												<ul>
+													<li><input type="checkbox" id="wedding_category1"><label for="wedding_category1">14K&#47;18K커플링</label></li>
+													<li><input type="checkbox" id="wedding_category2"><label for="wedding_category2">실버커플링</label></li>
+													<li><input type="checkbox" id="wedding_category3"><label for="wedding_category3">다이아몬드커플링</label></li>
+													<li><input type="checkbox" id="wedding_category4"><label for="wedding_category4">텅스텐커플링</label></li>
+													<li><input type="checkbox" id="wedding_category5"><label for="wedding_category5">티타늄커플링</label></li>
+													<li><input type="checkbox" id="wedding_category6"><label for="wedding_category6">커플목걸이</label></li>
+													<li><input type="checkbox" id="wedding_category7"><label for="wedding_category7">커플팔찌</label></li>
+													<li><input type="checkbox" id="wedding_category8"><label for="wedding_category8">진주</label></li>
+													<li><input type="checkbox" id="wedding_category9"><label for="wedding_category9">천연보석</label></li>
+												</ul>
+											</dd>
+										</dl>
+									</div>
+								</li>
+								<li class="lnb lnb1 lnb_cate"><p>목걸이<br />NECKLACE</p><img src="images/common/lnb1.png" />
+									<div class="lnb_layer lnb_layer01">
+										<dl class="on_first">
+											<dt>14K&#47;18K</dt>
+											<dd>
+												<ul>
+													<li><a href="#product">큐빅목걸이</a></li>
+													<li><a href="#product">민성목걸이</a></li>
+													<li><a href="#product">합성유색목걸이</a></li>
+													<li><a href="#product">롱스타일목걸이</a></li>
+													<li><a href="#product">이니셜목걸이</a></li>
+													<li><a href="#product">체인</a></li>
+													<li><a href="#product">펜던트</a></li>
+												</ul>
+											</dd>
+										</dl>
+										<dl class="off">
+											<dt>다이아몬드</dt>
+											<dd>
+												<ul>
+													<li><a href="#product">참깨다이아몬드</a></li>
+													<li><a href="#product">1,2부다이아몬드</a></li>
+													<li><a href="#product">3,5부다이아몬드</a></li>
+													<li><a href="#product">컬러다이아몬드</a></li>
+													<li><a href="#product">펜던트</a></li>
+												</ul>
+											</dd>
+										</dl>
+										<dl class="off">
+											<dt>진주&#47;천연보석</dt>
+											<dd>
+												<ul>
+													<li><a href="#product">진주</a></li>
+													<li><a href="#product">천연보석</a></li>
+													<li><a href="#product">탄생석</a></li>
+													<li><a href="#product">펜던트</a></li>
+												</ul>
+											</dd>
+										</dl>
+										<dl class="off">
+											<dt>젬코S</dt>
+											<dd>
+												<ul>
+													<li><a href="#product">젬코s 골드</a></li>
+													<li><a href="#product">젬코s 실버</a></li>
+												</ul>
+											</dd>
+										</dl>
+										<dl class="off">
+											<dt>14K&#47;18K</dt>
+											<dd>
+												<ul>
+													<li><a href="#product">큐빅목걸이</a></li>
+													<li><a href="#product">민성목걸이</a></li>
+													<li><a href="#product">합성유색목걸이</a></li>
+													<li><a href="#product">롱스타일목걸이</a></li>
+													<li><a href="#product">이니셜목걸이</a></li>
+													<li><a href="#product">체인</a></li>
+													<li><a href="#product">펜던트</a></li>
+												</ul>
+											</dd>
+										</dl>
+									</div>
+								</li>
+								<li class="lnb lnb2 lnb_cate"><p>귀걸이<br />EARRING</p><img src="images/common/lnb2.png" />
+									<div class="lnb_layer lnb_layer02">
+										<dl class="on_first">
+											<dt>14K&#47;18K</dt>
+											<dd>
+												<ul>
+													<li><a href="#product">큐빅목걸이</a></li>
+													<li><a href="#product">민성목걸이</a></li>
+													<li><a href="#product">합성유색목걸이</a></li>
+													<li><a href="#product">롱스타일목걸이</a></li>
+													<li><a href="#product">이니셜목걸이</a></li>
+													<li><a href="#product">체인</a></li>
+													<li><a href="#product">펜던트</a></li>
+												</ul>
+											</dd>
+										</dl>
+										<dl class="off">
+											<dt>다이아몬드</dt>
+											<dd>
+												<ul>
+													<li><a href="#product">참깨다이아몬드</a></li>
+													<li><a href="#product">1,2부다이아몬드</a></li>
+													<li><a href="#product">3,5부다이아몬드</a></li>
+													<li><a href="#product">컬러다이아몬드</a></li>
+													<li><a href="#product">펜던트</a></li>
+												</ul>
+											</dd>
+										</dl>
+										<dl class="off">
+											<dt>진주&#47;천연보석</dt>
+											<dd>
+												<ul>
+													<li><a href="#product">진주</a></li>
+													<li><a href="#product">천연보석</a></li>
+													<li><a href="#product">탄생석</a></li>
+													<li><a href="#product">펜던트</a></li>
+												</ul>
+											</dd>
+										</dl>
+										<dl class="off">
+											<dt>젬코S</dt>
+											<dd>
+												<ul>
+													<li><a href="#product">젬코s 골드</a></li>
+													<li><a href="#product">젬코s 실버</a></li>
+												</ul>
+											</dd>
+										</dl>
+										<dl class="off">
+											<dt>14K&#47;18K</dt>
+											<dd>
+												<ul>
+													<li><a href="#product">큐빅목걸이</a></li>
+													<li><a href="#product">민성목걸이</a></li>
+													<li><a href="#product">합성유색목걸이</a></li>
+													<li><a href="#product">롱스타일목걸이</a></li>
+													<li><a href="#product">이니셜목걸이</a></li>
+													<li><a href="#product">체인</a></li>
+													<li><a href="#product">펜던트</a></li>
+												</ul>
+											</dd>
+										</dl>
+									</div>
+								</li>
+								<li class="lnb lnb3 lnb_cate"><p>반지<br />RING</p><img src="images/common/lnb3.png" />
+									<div class="lnb_layer lnb_layer03">
+										<dl class="on_first">
+											<dt>14K&#47;18K</dt>
+											<dd>
+												<ul>
+													<li><a href="#product">큐빅목걸이</a></li>
+													<li><a href="#product">민성목걸이</a></li>
+													<li><a href="#product">합성유색목걸이</a></li>
+													<li><a href="#product">롱스타일목걸이</a></li>
+													<li><a href="#product">이니셜목걸이</a></li>
+													<li><a href="#product">체인</a></li>
+													<li><a href="#product">펜던트</a></li>
+												</ul>
+											</dd>
+										</dl>
+										<dl class="off">
+											<dt>다이아몬드</dt>
+											<dd>
+												<ul>
+													<li><a href="#product">참깨다이아몬드</a></li>
+													<li><a href="#product">1,2부다이아몬드</a></li>
+													<li><a href="#product">3,5부다이아몬드</a></li>
+													<li><a href="#product">컬러다이아몬드</a></li>
+													<li><a href="#product">펜던트</a></li>
+												</ul>
+											</dd>
+										</dl>
+										<dl class="off">
+											<dt>진주&#47;천연보석</dt>
+											<dd>
+												<ul>
+													<li><a href="#product">진주</a></li>
+													<li><a href="#product">천연보석</a></li>
+													<li><a href="#product">탄생석</a></li>
+													<li><a href="#product">펜던트</a></li>
+												</ul>
+											</dd>
+										</dl>
+										<dl class="off">
+											<dt>젬코S</dt>
+											<dd>
+												<ul>
+													<li><a href="#product">젬코s 골드</a></li>
+													<li><a href="#product">젬코s 실버</a></li>
+												</ul>
+											</dd>
+										</dl>
+										<dl class="off">
+											<dt>14K&#47;18K</dt>
+											<dd>
+												<ul>
+													<li><a href="#product">큐빅목걸이</a></li>
+													<li><a href="#product">민성목걸이</a></li>
+													<li><a href="#product">합성유색목걸이</a></li>
+													<li><a href="#product">롱스타일목걸이</a></li>
+													<li><a href="#product">이니셜목걸이</a></li>
+													<li><a href="#product">체인</a></li>
+													<li><a href="#product">펜던트</a></li>
+												</ul>
+											</dd>
+										</dl>
+									</div>
+								</li>
+								<li class="lnb lnb4 lnb_cate"><p>발찌<br />BRACELET</p><img src="images/common/lnb4.png" />
+									<div class="lnb_layer lnb_layer04">
+										<dl class="on_first">
+											<dt>14K&#47;18K</dt>
+											<dd>
+												<ul>
+													<li><a href="#product">큐빅목걸이</a></li>
+													<li><a href="#product">민성목걸이</a></li>
+													<li><a href="#product">합성유색목걸이</a></li>
+													<li><a href="#product">롱스타일목걸이</a></li>
+													<li><a href="#product">이니셜목걸이</a></li>
+													<li><a href="#product">체인</a></li>
+													<li><a href="#product">펜던트</a></li>
+												</ul>
+											</dd>
+										</dl>
+										<dl class="off">
+											<dt>다이아몬드</dt>
+											<dd>
+												<ul>
+													<li><a href="#product">참깨다이아몬드</a></li>
+													<li><a href="#product">1,2부다이아몬드</a></li>
+													<li><a href="#product">3,5부다이아몬드</a></li>
+													<li><a href="#product">컬러다이아몬드</a></li>
+													<li><a href="#product">펜던트</a></li>
+												</ul>
+											</dd>
+										</dl>
+										<dl class="off">
+											<dt>진주&#47;천연보석</dt>
+											<dd>
+												<ul>
+													<li><a href="#product">진주</a></li>
+													<li><a href="#product">천연보석</a></li>
+													<li><a href="#product">탄생석</a></li>
+													<li><a href="#product">펜던트</a></li>
+												</ul>
+											</dd>
+										</dl>
+										<dl class="off">
+											<dt>젬코S</dt>
+											<dd>
+												<ul>
+													<li><a href="#product">젬코s 골드</a></li>
+													<li><a href="#product">젬코s 실버</a></li>
+												</ul>
+											</dd>
+										</dl>
+										<dl class="off">
+											<dt>14K&#47;18K</dt>
+											<dd>
+												<ul>
+													<li><a href="#product">큐빅목걸이</a></li>
+													<li><a href="#product">민성목걸이</a></li>
+													<li><a href="#product">합성유색목걸이</a></li>
+													<li><a href="#product">롱스타일목걸이</a></li>
+													<li><a href="#product">이니셜목걸이</a></li>
+													<li><a href="#product">체인</a></li>
+													<li><a href="#product">펜던트</a></li>
+												</ul>
+											</dd>
+										</dl>
+									</div>
+								</li>
+								<li class="lnb lnb5 lnb_cate"><p>팔찌<br />ANKLET</p><img src="images/common/lnb5.png" />
+									<div class="lnb_layer lnb_layer05">
+										<dl class="on_first">
+											<dt>14K&#47;18K</dt>
+											<dd>
+												<ul>
+													<li><a href="#product">큐빅목걸이</a></li>
+													<li><a href="#product">민성목걸이</a></li>
+													<li><a href="#product">합성유색목걸이</a></li>
+													<li><a href="#product">롱스타일목걸이</a></li>
+													<li><a href="#product">이니셜목걸이</a></li>
+													<li><a href="#product">체인</a></li>
+													<li><a href="#product">펜던트</a></li>
+												</ul>
+											</dd>
+										</dl>
+										<dl class="off">
+											<dt>다이아몬드</dt>
+											<dd>
+												<ul>
+													<li><a href="#product">참깨다이아몬드</a></li>
+													<li><a href="#product">1,2부다이아몬드</a></li>
+													<li><a href="#product">3,5부다이아몬드</a></li>
+													<li><a href="#product">컬러다이아몬드</a></li>
+													<li><a href="#product">펜던트</a></li>
+												</ul>
+											</dd>
+										</dl>
+										<dl class="off">
+											<dt>진주&#47;천연보석</dt>
+											<dd>
+												<ul>
+													<li><a href="#product">진주</a></li>
+													<li><a href="#product">천연보석</a></li>
+													<li><a href="#product">탄생석</a></li>
+													<li><a href="#product">펜던트</a></li>
+												</ul>
+											</dd>
+										</dl>
+										<dl class="off">
+											<dt>젬코S</dt>
+											<dd>
+												<ul>
+													<li><a href="#product">젬코s 골드</a></li>
+													<li><a href="#product">젬코s 실버</a></li>
+												</ul>
+											</dd>
+										</dl>
+										<dl class="off">
+											<dt>14K&#47;18K</dt>
+											<dd>
+												<ul>
+													<li><a href="#product">큐빅목걸이</a></li>
+													<li><a href="#product">민성목걸이</a></li>
+													<li><a href="#product">합성유색목걸이</a></li>
+													<li><a href="#product">롱스타일목걸이</a></li>
+													<li><a href="#product">이니셜목걸이</a></li>
+													<li><a href="#product">체인</a></li>
+													<li><a href="#product">펜던트</a></li>
+												</ul>
+											</dd>
+										</dl>
+									</div>
+								</li>
+								<li class="lnb lnb6 lnb_cate"><p>커플&amp;웨딩<br />COUPLE&amp;WEDDING</p><img src="images/common/lnb6.png" />
+									<div class="lnb_layer lnb_layer06">
+										<dl class="on_first">
+											<dt>14K&#47;18K</dt>
+											<dd>
+												<ul>
+													<li><a href="#product">큐빅목걸이</a></li>
+													<li><a href="#product">민성목걸이</a></li>
+													<li><a href="#product">합성유색목걸이</a></li>
+													<li><a href="#product">롱스타일목걸이</a></li>
+													<li><a href="#product">이니셜목걸이</a></li>
+													<li><a href="#product">체인</a></li>
+													<li><a href="#product">펜던트</a></li>
+												</ul>
+											</dd>
+										</dl>
+										<dl class="off">
+											<dt>다이아몬드</dt>
+											<dd>
+												<ul>
+													<li><a href="#product">참깨다이아몬드</a></li>
+													<li><a href="#product">1,2부다이아몬드</a></li>
+													<li><a href="#product">3,5부다이아몬드</a></li>
+													<li><a href="#product">컬러다이아몬드</a></li>
+													<li><a href="#product">펜던트</a></li>
+												</ul>
+											</dd>
+										</dl>
+										<dl class="off">
+											<dt>진주&#47;천연보석</dt>
+											<dd>
+												<ul>
+													<li><a href="#product">진주</a></li>
+													<li><a href="#product">천연보석</a></li>
+													<li><a href="#product">탄생석</a></li>
+													<li><a href="#product">펜던트</a></li>
+												</ul>
+											</dd>
+										</dl>
+										<dl class="off">
+											<dt>젬코S</dt>
+											<dd>
+												<ul>
+													<li><a href="#product">젬코s 골드</a></li>
+													<li><a href="#product">젬코s 실버</a></li>
+												</ul>
+											</dd>
+										</dl>
+										<dl class="off">
+											<dt>14K&#47;18K</dt>
+											<dd>
+												<ul>
+													<li><a href="#product">큐빅목걸이</a></li>
+													<li><a href="#product">민성목걸이</a></li>
+													<li><a href="#product">합성유색목걸이</a></li>
+													<li><a href="#product">롱스타일목걸이</a></li>
+													<li><a href="#product">이니셜목걸이</a></li>
+													<li><a href="#product">체인</a></li>
+													<li><a href="#product">펜던트</a></li>
+												</ul>
+											</dd>
+										</dl>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="top_main top_join2">
+						<div class="personal_linemap">
+							Home &#62; <span>개인정보수정</span>
+						</div>
+						<div class="edit_title">
+							<p>개인정보수정</p>
+						</div>
+						 <div class="contab1">
+						 	<p class="contab_title">기본정보</p>
+		         	     	<div id="join_info" class="info personal">
+								<form name="joinFrm" method="post" action="" >
+									<table cellspacing="0" cellpadding="0" class="table_style">
+										<caption>회원정보</caption>
+										<tr>
+											<th>아이디</th>
+											<td>
+												<input type="text" name="name" value="" class="input" style="width:226px; height:29px;">
+												<a href="#aa">아이디 중복확인 &#62; </a>
+												 &nbsp;(영소문자&#47;숫자, 4~16자)
+											</td>
+										</tr>
+										<tr>
+											<th>별명</th>
+											<td>
+												<input type="text" name="name" value="" class="input" style="width:226px; height:29px;">
+												(한글2~10자&#47;영문 대소문자4~20자&#47;숫자 혼용가능)
+											</td>
+										</tr>
+										<tr>
+											<th>비밀번호</th>
+											<td>
+												<input type="password" name="pwd[]" id="pwd1" class="input" maxlength="16"style="width:226px; height:29px;">
+												(영문 대소문자&#47;숫자 4자~16자)
+											</td>
+										</tr>
+										<tr>
+											<th>비밀번호확인</th>
+											<td><input type="password" name="pwd[]" id="pwd2" class="input" maxlength="16" style="width:226px; height:29px;">
+											</td>
+										</tr>
+										<tr>
+											<th>이름</th>
+											<td>
+											<span>홍길동</span>
+											</td>
+										</tr>
+										<tr>
+											<th>생년월일</th>
+											<td><input type="text" name="birth1" id="birth1" value="" class="input" style="width:78px; height:29px" maxlength="4"> 년 
+											      <input type="text" name="birth2" id="birth2" value="" class="input" style="width:78px; height:29px" maxlength="2"> 월 
+											      <input type="text" name="birth3" id="birth3" value="" class="input" style="width:78px; height:29px" maxlength="2"> 일&nbsp;
+											      <input type="radio" name="chk_info" class="chk_info" value="양력" checked="checked"  style="vertical-align:-3px">양력
+											      <input type="radio" name="chk_info" class="chk_info" value="음력" style="vertical-align:-3px">음력
+											</td>
+										</tr>
+										<tr>
+											<th>주소</th>
+											<td class="addr">
+							                    <input id="postcode1" name="postcode1" class="inputTypeText" readonly="readonly" maxlength="14" value="" type="text" style="width:78px; height:29px"  />
+							                     &nbsp; - &nbsp; <a href="#aa">우편번호 &#62;&nbsp;</a><br/>
+							                    <input id="addr1" name="addr1" class="inputTypeText" readonly="readonly" value="" type="text" style="width:568px; height:29px" /> <br/>
+							                    <input id="addr2" name="addr2" class="inputTypeText" value="" type="text" style="width:568px; height:29px" /> <br/>
+							                </td>
+										</tr>	
+										<tr>
+											<th>유선전화</th>
+											<td>
+												<select name="tel" style="width:78px; height:29px">
+													<option value="02">02</option>
+													<option value="051">051</option>
+													<option value="053">053</option>
+													<option value="032">032</option>
+													<option value="062">062</option>
+													<option value="042">042</option>
+													<option value="052">052</option>
+													<option value="044">044</option>
+													<option value="031">031</option>
+													<option value="033">033</option>
+													<option value="043">043</option>
+													<option value="041">041</option>
+													<option value="063">063</option>
+													<option value="061">061</option>
+													<option value="054">054</option>
+													<option value="055">055</option>
+													<option value="064">064</option>
+												</select>&nbsp; -&nbsp;
+												<input type="text" name="tel" id="phone1" value="" class="input" style="width:98px; height:29px" maxlength="4" >&nbsp; -&nbsp;
+												<input type="text" name="tel" id="phone2" value="" class="input" style="width:98px; height:29px" maxlength="4" >
+											</td>
+										</tr>									
+										<tr>
+											<th>핸드폰</th>
+											<td>
+												<select name="phone[]" style="width:78px; height:29px">
+													<option value="010">010</option>
+													<option value="011">011</option>
+													<option value="016">016</option>
+													<option value="017">017</option>
+													<option value="018">018</option>
+													<option value="019">019</option>
+												</select>&nbsp; -&nbsp;
+												<input type="text" name="phone[]" id="phone3" value="" class="input" style="width:98px; height:29px" maxlength="4" >&nbsp; -&nbsp;
+												<input type="text" name="phone[]" id="phone4" value="" class="input" style="width:98px; height:29px" maxlength="4" >
+											</td>
+										</tr>
+										<tr>
+											<th>이메일 수신여부</th>
+											<td>
+											<input type="text" name="email1" value="" class="input" style="width:198px; height:29px">&nbsp; &nbsp;@ &nbsp;
+											<input type="text" name="email2" value="" class="input" style="width:198px; height:29px">&nbsp;
+											<select name="email3" style="width:158px; height:29px">
+												<option value='-이메일 선택-'>-이메일 선택-</option>
+												<option value='naver.com'>naver.com (네이버)</option>
+												<option value='paran.com'>paran.com (파란)</option>
+												<option value='empal.com'>empal.com (엠파스)</option>
+												<option value='nate.com'>nate.com (네이트)</option>
+												<option value='yahoo.co.kr'>yahoo.co.kr (야후코리아)</option>
+												<option value='dreamwiz.com'>dreamwiz.com (드림위즈)</option>
+												<option value='freechal.com'>freechal.com (프리챌)</option>
+												<option value='hotmail.com'>hotmail.com (핫메일)</option>
+												<option value='hanafos.com'>hanafos.com (하나포스닷컴)</option>
+												<option value='korea.com'>korea.com (코리아닷컴)</option>
+												<option value='chollian.net'>chollian.net (천리안)</option>
+											</select>
+											<br />
+								 	        <input type="radio" name="chk_info" class="chk_info" value="수신함" checked="checked"  style="vertical-align:-3px">수신함 
+									      &nbsp;	<input type="radio" name="chk_info" class="chk_info" value="수신안함" style="vertical-align:-3px">수신안함											
+											</td>
+										</tr>
+
+										</table>
+									  </form>
+									</div><!--join_info e-->
+		                 </div>
+		                 <!--contab1 e-->	
+		 					<div class="complete_btn">
+		 						<p>
+		 							<a href="#aa">회원탈퇴하기</a>
+		 						</p>
+		 						<p>
+		 							<a href="javascript:loc('sub01_01.html');">회원정보수정</a>
+		 						</p>
+		 					</div>		
+					</div><!--top_main e-->
+				</div><!--topArea e-->
+			</article><!--container e-->
+			<footer>
+				<div class="footer_inner">
+				<div class="footer_top">
+					<div class="top1">
+						<dl class="top1_top">
+							<dt><span>CUSTOMER</span> CENTER</dt>
+							<dd>070-4495-8403</dd>
+						</dl>
+						<div class="top1_bottom">
+							<ul>
+								<li>MON - FRI<p>AM 09:00 ~ PM 18:00</p></li>
+								<li>LUNCH  TIME<p>PM 12:00 ~ PM 13:00</p></li>
+								<li>SAT.SUN.HOLIDAY <span>OFF</span></li>
+							</ul>
+						</div>
+					</div>
+					<div class="top2">
+							<dl>
+								<dt><a href="#"><img src="images/common/footer_cart-ico.png" /></a></dt>
+								<dd>CART</dd>
+								<dd>장바구니</dd>
+							</dl>
+							<dl>
+								<dt><a href="#"><img src="images/common/footer_wish-ico.png" /></a></dt>
+								<dd>WISH LIST</dd>
+								<dd>관심상품</dd>
+							</dl>
+							<dl>
+								<dt><a href="#"><img src="images/common/footer_fav-ico.png" /></a></dt>
+								<dd>FAVORITE</dd>
+								<dd>즐겨찾기</dd>
+							</dl>
+						
+					</div>
+					<div class="top3">
+						<dl>
+							<dt><span>BANKING</span> INFO</dt>
+							<dd><span>우리</span> 123 - 081256 - 123</dd>
+							<dd><span>국민</span> 123 - 081256 - 123</dd>
+							<dd><span>예금주 : 젬코몰</span></dd>
+						</dl>
+					</div>
+
+				</div>
+				<div class="footer_middle">
+					<ul class="footer_cate">
+						<li><a href="javascript:loc('index.html');">HOME</a></li>
+						<li><a href="#">ABOUT US</a></li>
+						<li><a href="#">AGREEMENT</a></li>
+						<li><a href="#">PRIVACY POLICY</a></li>
+						<li><a href="#">GUIDE</a></li>
+					</ul>
+					<ul class="sns_box">
+						<li><a href="#"><img src="images/common/sns_fb-ico.png" alt="sns 페이스북 아이콘 이미지" /></a></li>
+						<li><a href="#"><img src="images/common/sns_insta-ico.png" alt="sns 인스타그램 아이콘 이미지" /></a></li>
+						<li><a href="#"><img src="images/common/sns_tw-ico.png" alt="sns 트위터 아이콘 이미지" /></a></li>
+						<li><a href="#"><img src="images/common/sns_kas-ico.png" alt="sns 카카오스토리 아이콘 이미지" /></a></li>
+					</ul>
+				</div>
+				<div class="footer_bottom">
+					<ul class="footer_logo">
+						<li><img src="images/common/footer_logo.png" /></li>
+					</ul>
+					<ul>
+						<li>상호명 : (주) 젬코쥬얼리  대표이사 : 박옥섭  사업자번호 : 209-81-23308</li>
+						<li>본사주소 : 서울 강북구 한천로109길 10 강북유니온빌딩 6층  대표번호 : 02-981-7400, Email : info@gemco.com</li>
+						<li>금정점 주소 : 서울시 종로구 돈화문로6가길 6 금정빌딩 2층 201호 대표번호 : 02-766-1205, 팩스: 02-766-8103</li>
+						<li>세화점 주소 : 서울시 종로구 돈화문로6가길 16 세화빌딩 27호, 30호 대표번호 : 02-766-5454, 팩스: 02-766-4040</li>
+						<li>Copyright (c) 2016 <span>GEMCO</span> All right reserved.</li>
+					</ul>
+				</div>
+			</div><!--footer_inner e-->	
+			</footer>
+<!--	
+<div class="layer">
+	<div class="bg"></div>
+	<div id="layer2" class="pop_layer">
+		<div class="pop_container">
+			<div class="pop_conts">
+				<div class="pop_top">
+					<div class="top_category_box">
+						<dl>
+							<a href="#" style="display:block">
+							<dt><img src="images/common/search_icon1.png" /></dt>
+							<dd>목걸이</dd>
+							</a>
+						</dl>
+						<dl>
+							<a href="#" style="display:block">
+							<dt><img src="images/common/search_icon2.png" /></dt>
+							<dd>귀걸이</dd>
+							</a>
+						</dl>
+						<dl>
+							<a href="#" style="display:block">
+							<dt><img src="images/common/search_icon3.png" /></dt>
+							<dd>반지</dd>
+							</a>
+						</dl>
+						<dl>
+							<a href="#" style="display:block">
+							<dt><img src="images/common/search_icon4.png" /></dt>
+							<dd>팔찌</dd>
+							</a>
+						</dl>
+						<dl>
+							<a href="#" style="display:block">
+							<dt><img src="images/common/search_icon5.png" /></dt>
+							<dd>발찌</dd>
+							</a>
+						</dl>
+						<dl>
+							<a href="#" style="display:block">
+							<dt><img src="images/common/search_icon6.png" /></dt>
+							<dd>웨딩</dd>
+							</a>
+						</dl>
+					</div>
+					<div class="result_top">
+						<ul class="result_off">
+							<li><i class="fa fa-caret-right" aria-hidden="true"></i>악세사리를 선택해주세요.</li>
+						</ul>
+					</div>
+				</div>
+				<div class="pop_bottom">
+					<ul>
+						<li><input type="checkbox" id="check_big_category1"><label for="check_big_category1">14K&#47;18K</label></li>
+						<li><input type="checkbox" id="check_big_category2"><label for="check_big_category2">다이아몬드</label></li>
+						<li><input type="checkbox" id="check_big_category3"><label for="check_big_category3">진주&#47;천연보석</label></li>
+						<li><input type="checkbox" id="check_big_category4"><label for="check_big_category4">MADE BY GEMCO</label></li>
+					</ul>
+					<div class="result_bottom">
+						<ul class="result_off">
+							<li>검색하신 제품이 없습니다.</li>
+						</ul>
+						<ul class="result_on necklace_on">
+							<li><input type="checkbox" id="necklace_category1"><label for="necklace_category1">큐빅목걸이</label></li>
+							<li><input type="checkbox" id="necklace_category2"><label for="necklace_category2">민성목걸이</label></li>
+							<li><input type="checkbox" id="necklace_category3"><label for="necklace_category3">합성유색목걸이</label></li>
+							<li><input type="checkbox" id="necklace_category4"><label for="necklace_category4">롱스타일목걸이</label></li>
+						</ul>
+						<ul class="result_on earring_on">
+							<li><input type="checkbox" id="earring_category1"><label for="earring_category1">14K&#47;18K</label></li>
+							<li><input type="checkbox" id="earring_category2"><label for="earring_category2">다이아몬드</label></li>
+							<li><input type="checkbox" id="earring_category3"><label for="earring_category3">진주&#47;천연보석</label></li>
+							<li><input type="checkbox" id="earring_category4"><label for="earring_category4">MADE BY GEMCO</label></li>
+						</ul>
+						<ul class="result_on ring_on">
+							<li><input type="checkbox" id="ring_category1"><label for="ring_category1">14K&#47;18K</label></li>
+							<li><input type="checkbox" id="ring_category2"><label for="ring_category2">다이아몬드</label></li>
+							<li><input type="checkbox" id="ring_category3"><label for="ring_category3">진주&#47;천연보석</label></li>
+							<li><input type="checkbox" id="ring_category4"><label for="ring_category4">MADE BY GEMCO</label></li>
+						</ul>
+						<ul class="result_on anklet_on">
+							<li><input type="checkbox" id="anklet_category1"><label for="anklet_category1">14K&#47;18K</label></li>
+							<li><input type="checkbox" id="anklet_category2"><label for="anklet_category2">다이아몬드</label></li>
+							<li><input type="checkbox" id="anklet_category3"><label for="anklet_category3">진주&#47;천연보석</label></li>
+							<li><input type="checkbox" id="anklet_category4"><label for="anklet_category4">MADE BY GEMCO</label></li>
+						</ul>
+						<ul class="result_on bracelet_on">
+							<li><input type="checkbox" id="bracelet_category1"><label for="bracelet_category1">14K&#47;18K</label></li>
+							<li><input type="checkbox" id="bracelet_category2"><label for="bracelet_category2">다이아몬드</label></li>
+							<li><input type="checkbox" id="bracelet_category3"><label for="bracelet_category3">진주&#47;천연보석</label></li>
+							<li><input type="checkbox" id="bracelet_category4"><label for="bracelet_category4">MADE BY GEMCO</label></li>
+						</ul>
+						<ul class="result_on wedding_on">
+							<li><input type="checkbox" id="wedding_category1"><label for="wedding_category1">14K&#47;18K</label></li>
+							<li><input type="checkbox" id="wedding_category2"><label for="wedding_category2">다이아몬드</label></li>
+							<li><input type="checkbox" id="wedding_category3"><label for="wedding_category3">진주&#47;천연보석</label></li>
+							<li><input type="checkbox" id="wedding_category4"><label for="wedding_category4">MADE BY GEMCO</label></li>
+						</ul>
+					</div>
+				</div>
+				<div class="search_btn_box">
+					<ul>
+						<li class="search_btn1"><a href="#">제품보러가기</a></li>
+						<li class="search_btn2"><a href="#">선택초기화</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>	
+-->	
+		</div>
+	</body>
+</html>
