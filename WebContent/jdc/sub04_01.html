@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+
+		<!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame
+		Remove this if you use the .htaccess -->
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+		<title>정가담</title>
+		<meta name="description" content="">
+		<meta name="author" content="DESIGN02">
+
+		<meta name="viewport" content="initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0, user-scalable=no">
+
+		<!-- Replace favicon.ico & apple-touch-icon.png in the root of your domain and delete these references -->
+		<link rel="shortcut icon" href="/favicon.ico">
+		<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+		<link rel="stylesheet" href="css/common.css">
+		<link rel="stylesheet" href="css/layout.css">
+		<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+		
+		<script src="js/jquery-1.8.3.min.js"></script>
+		<script src="js/header.js"></script>
+		<script src="js/link.js"></script>
+		<!--[if lt IE 9]>
+	<script type="text/javascript" src="/common/js/respond.min.js"></script>
+	<script src="/common/js/html5.js"></script>
+<![endif]-->
+
+	</head>
+
+	<body>
+<div id="skipNav">
+ <a href="#content">본문 바로가기</a>
+ <a href="#gnb">글로벌 네비게이션 바로가기</a>
+</div><!--skipNav e-->		
+<section id="wrap">	
+	<!-- TOP -->
+		<!-- header -->
+	<header id="header">
+		<!-- header_inner -->
+		<section class="header_inner">
+			<!-- gnb -->
+			<nav class="gnb">
+				<h1><a href="javascript:loc('index.html');" class="btn_desk_logo"><img src="images/common/main_logo.gif" alt="정가담로고"/></a></h1>
+				<ul>
+					<li>
+						<a href="javascript:loc('sub01_01.html');" title="정가담이야기">정가담이야기</a>
+						<div class="snb snb1">
+							<ul>
+								<li><a href="javascript:loc('sub01_01.html');" title="정가담소개">정가담소개</a></li>
+								<li><a href="javascript:loc('sub01_02.html');" title="만목리소개">만목리소개</a></li>
+								<li><a href="javascript:loc('sub01_03.html');" title="찾아오시는길">찾아오시는길</a></li>
+							</ul>
+						</div>						
+					</li>
+					<li>
+						<a href="javascript:loc('shop.html');" title="상품전체보기">상품전체보기</a>
+						<div class="snb snb2">
+							<ul>
+								<li><a href="javascript:loc('shop.html');" title="상품전체보기">상품전체보기</a></li>
+							
+							</ul>
+						</div>						
+					</li>
+					<li>
+						<a href="javascript:loc('sub03_01.html');" title="만드는과정">만드는과정</a>
+						<div class="snb snb3">
+							<ul>
+								<li><a href="javascript:loc('sub03_01.html');" title="개복숭아">개복숭아</a></li>
+								<li><a href="javascript:loc('sub03_02.html');" title="야관문">야관문</a></li>
+								
+							</ul>
+						</div>						
+					</li>
+					<li>
+						<a href="javascript:loc('sub04_01.html');" title="원액드시는방법">드시는방법</a>
+						<div class="snb snb4">
+							<ul>
+								<li><a href="javascript:loc('sub04_01.html');" title="원액드시는방법">원액드시는방법</a></li>
+								
+							</ul>
+						</div>						
+					</li>
+					<li>
+						<a href="javascript:loc('sub05_01.html');" title="원액효능">원액효능</a>
+						<div class="snb snb5">
+							<ul>
+								<li><a href="javascript:loc('sub05_01.html');" title="원액효능">원액효능</a></li>
+								<li><a href="javascript:loc('sub05_02.html');" title="인증현황">인증현황</a></li>
+							</ul>
+						</div>						
+					</li>
+					<li>
+						<a href="javascript:loc('sub06_01.html');" title="고객센터">고객센터</a>
+						<div class="snb snb6">
+							<ul>
+								<li><a href="javascript:loc('sub06_01.html');" title="공지사항&이벤트">공지사항&amp;이벤트</a></li>
+								<li><a href="javascript:loc('sub06_02.html');" title="자주하시는질문">자주하시는질문</a></li>
+								<li><a href="javascript:loc('sub06_03.html');" title="질문과답변">질문과답변</a></li>
+								<li><a href="javascript:loc('sub06_04.html');" title="고객후기">고객후기</a></li>
+							</ul>
+						</div>						
+					</li>
+			
+				</ul>
+					<form name="frm" method="get">
+						<div class="top_search">
+							<a href="javascript:openTopSearch();" class="btn_search_open"><img src="images/common/btn_header_search.png" alt=""/></a>
+							<div class="top_search_wrap">
+								<p class="i_wrap"><input type="text" name="query" id="query"  id="word" placeholder="Search" /></p>
+								<a href="#search" ><img src="images/common/btn_header_search.png" alt=""></a>
+							</div>
+						</div>
+				</form>
+			</nav>		
+			<!-- //gnb -->		
+
+			<ul class="btn_other">
+				<li><a href="javascript:loc('login.html');">로그인</a></li>
+				<li><a href="javascript:loc('order_list2.html');">주문내역</a></li>
+				<li><a href="javascript:loc('cart.html');">장바구니(0)</a></li>
+				<li><a href="javascript:loc('mypage.html');">마이페이지</a></li>
+							
+			</ul>
+
+		</section>
+		<!-- //header_wrap -->
+	</header>
+	<!-- //header -->
+	
+<script>
+function openTopSearch(){
+	if($('.top_search').hasClass('open')){
+		$('.top_search').removeClass('open');
+		$('.top_search_wrap').hide();
+	}else{
+		$('.top_search').addClass('open');
+		$('.top_search_wrap').show();
+	}
+		$('.top_search_wrap').mouseleave(function(){
+		$('.top_search').removeClass('open');
+		$(this).hide();
+	});
+}
+</script>
+
+				<div class="sub_top_content">
+					<img src="images/sub4/sub4_top_bg.jpg" />
+				</div><!--sub_top_content e-->
+           	<div id="container"  class="sub">
+				<div class="sub_bottom_content">
+					<div class="line_map">
+						 <span><i class="fa fa-home" aria-hidden="true"></i>HOME</span> &gt; <span>복용방법</span> &gt; <strong>복용방법</strong>
+					</div>	
+					
+				</div><!--sub_bottom_content e-->	
+ 					<div class="sub_method_container">
+ 							<div class="text_box">
+ 								<p class="text_head">복용방법</p>
+ 								<p class="text_bottom">발효원액 드시는 방법을 알려드립니다.</p>
+ 							</div><!--text_box e-->
+ 							
+ 							<div class="sub4_method_content1">
+ 								<div class="sub4_method_content1_box">
+ 									<dl class="method_left_cont">
+ 											<img src="images/sub4/sub4_con1.png" alt="아침기상사진" />
+ 									
+ 										<dt>아침기상 후 공복시</dt>
+ 										<dd>지친몸을 회복하기 위해 아침에 일어나자마자 공복에 보충해주세요.</dd>
+ 										<dd>위장장애가 있는 경우 아침식사 후 1시간정도 지난다음 음용해야합니다.</dd>
+ 									</dl>
+ 									<dl class="method_right_cont">
+ 											<img src="images/sub4/sub4_con2.png" alt="lunch" />
+ 									
+ 										<dt>점심식사 30분후</dt>
+ 										<dd>활동량이 많은 점심 시간대는 신진대사 및 소화효소가 많이 소모되므로 점심</dd>
+ 										<dd>식사 하신 후 드시는게 발효액을 보충해주는 것이 좋습니다. 식사를 하지않는</dd>
+ 										<dd>경우는 식사시간을 기준으로 드셔도 좋습니다. 가급적 다량의 물을 희석하여</dd>
+ 										<dd>공복감이 해소되도록 드시는게 좋습니다.</dd>
+ 									</dl> 									
+ 								</div><!--sub4_method_content1_box e-->
+ 							</div><!--sub4_method_cont1 e-->
+ 							
+ 							<div class="sub4_method_content2">
+ 								<div class="sub4_method_content2_box">
+ 									<dl class="method_left_cont">
+ 											<img src="images/sub4/sub4_con3.png" alt="dinner" />
+ 									
+ 										<dt>저녁식사 1시간전</dt>
+ 										<dd>오후에 지친몸을 추스르기 위해 저녁식사전에 한 잔을 보충해줍니다.</dd>
+ 										<dd>몸에 활력을 주기 위해서는 취침전과 아침에 마시는 것 만으로도 충분합니다.</dd>
+ 										<dd>그러나 만성적인 피로에 시달리거나 건강상태를 개선해야 할 때에는 취침전,</dd>
+ 										<dd>아침, 점심,저녁 1일 4회정도 섭취하는 것이 좋습니다.</dd>
+ 									</dl>
+ 									<dl class="method_right_cont">
+ 											<img src="images/sub4/sub4_con4.png" alt="clock" />
+ 									
+ 										<dt>취침 1시간전</dt>
+ 										<dd>밤에 잠을 자는 동안 낮 동안 활동하면서 사용하던 효소를 생산하지 않아도</dd>
+ 										<dd>되지만 잠자는 시간동안 인체를 정비하고 재충전하는데 많은 효소가 필요합니다.</dd>
+ 										<dd>취침 전에 효소음료를 마시면 효소수가 수행하는 정비 역할을 하게 되므로 많은</dd>
+ 										<dd>도움이 됩니다.</dd>
+ 									</dl> 									 									
+ 								</div><!--sub4_method_content2_box e-->
+ 							</div><!--sub4_method_content2 e-->
+ 							
+ 							<div class="sub4_method_content3">
+ 								<div class="sub4_method_content3_box">
+ 									<p class="content_top_text">
+ 										'발효 원액' 제대로 알고 마셔요.
+ 									</p><!--content_top_text e-->
+ 									<ul>
+ 										<li> <span>발효 원액과 생수를 희석해서 하루에3~4회 정도로 되도록 공복에 마시도록 하고 장기적으로 마시는 것이 좋습니다.</span></li>
+ 										<li> <span>5% 정도는 가슴이 울렁거리거나 속이 답답하다거나 약간의 발진과 설사를 할 수 도 있습니다.</span></li>
+ 										<li> <span>병세가 일시적으로 좀 나빠진다는 등의 반응이 나타나는 사람도 있으나 명현현상의 하나로 이런 분들은 공복을 피하거나</span></li> 
+ 										<li> <span>3~4일간 다소 음용량을 조절하면 없어집니다.</span></li>
+ 									</ul>
+ 								</div><!--sub4_method_content3_box e-->
+ 							</div><!--sub4_method_cont3 e-->
+ 							
+ 							<div class="sub4_method_content4">
+ 									<p class="content_top_text">
+ 										취향에 따라 즐기세요.
+ 									</p><!--content_top_text e-->
+ 									<p class="content_bottom_text">
+ 										본 제품은 30ml(1회 제공량) 기준으로 25회에 걸쳐 드실 수 있습니다.
+ 									</p><!--content_bottom_text e-->
+ 								<div class="sub4_method_content4_box">	
+ 									<div class="sub4_method_content4_left">
+ 										<img src="images/sub4/sub4_con5.jpg" alt="물과원액2대1" />
+ 										<p>진하게 마시기</p>	
+ 									</div><!--sub4_method_content4_left e-->
+ 									<div class="sub4_method_content4_center">
+ 										<img src="images/sub4/sub4_con6.jpg" alt="물과원액3대1"/>
+ 										<p>맛있게 마시기</p>
+ 									</div><!--sub4_method_content4_center e-->
+ 									<div class="sub4_method_content4_right">
+ 										<img src="images/sub4/sub4_con7.jpg" alt="물과원액5대1"/>
+ 										<p>가볍게 마시기</p>
+ 									</div><!--sub4_method_content4_right e-->
+ 								</div><!--sub4_method_content4_box e-->
+ 							</div><!--sub4_method_cont4 e-->
+ 							
+	 				</div><!--sub_method_container e-->
+
+
+			</div><!--container e-->
+
+			<footer>
+			  <div class="footer_box">	
+			<!--	<div class="footer_logo"><img src="images/common/main_logo.png" alt="정가담로고" /></div>-->
+				<div class="footer_menu_box">
+					<ul>
+						<li class="footer_menu1">
+						  <dl>	
+							<dt><a href="javascript:loc('sub01_01.html');">정가담소개</a></dt>
+							<dd><a href="javascript:loc('sub01_01.html');">정가담소개</a></dd>
+							<dd><a href="javascript:loc('sub01_02.html');">만목리소개</a></dd>
+							<dd><a href="javascript:loc('sub01_03.html');">찾아오시는길</a></dd>
+						  </dl>
+						</li>
+						<li class="footer_menu2">
+						  <dl>	
+							<dt><a href="javascript:loc('shop.html');">상품전체보기</a></dt>
+							<dd><a href="javascript:loc('shop.html');">상품전체보기</a></dd>
+						  </dl>
+						</li>
+						<li class="footer_menu3">
+						  <dl>	
+							<dt><a href="javascript:loc('sub03_01.html');">만드는과정</a></dt>
+							<dd><a href="javascript:loc('sub03_01.html');">개복숭아</a></dd>
+							<dd><a href="javascript:loc('sub03_02.html');">야관문</a></dd>
+						  </dl>
+						</li>
+						<li class="footer_menu4">
+						  <dl>	
+							<dt><a href="javascript:loc('sub04_01.html');">드시는방법</a></dt>
+							<dd><a href="javascript:loc('sub04_01.html');">원액드시는방법</a></dd>
+						  </dl>
+						</li>
+						<li class="footer_menu5">
+						  <dl>	
+							<dt><a href="javascript:loc('sub05_01.html');">원액효능</a></dt>
+							<dd><a href="javascript:loc('sub05_01.html');">원액효능</a></dd>
+							<dd><a href="javascript:loc('sub05_02.html');">인증현황</a></dd>
+						  </dl>	
+						</li>
+						<li class="footer_menu6">
+						  <dl>	
+							<dt><a href="javascript:loc('sub06_01.html');">고객센터</a></dt>
+							<dd><a href="javascript:loc('sub06_01.html');">공지사항&amp;이벤트</a></dd>
+							<dd><a href="javascript:loc('sub06_02.html');">자주하시는질문</a></dd>
+							<dd><a href="javascript:loc('sub06_03.html');">질문과답변</a></dd>
+							<dd><a href="javascript:loc('sub06_04.html');">고객후기</a></dd>
+						  </dl>	
+						</li>
+					</ul>
+				</div>
+			  <div class="footer_bottom_text">
+			  	<p> 상호명:(주)반월정가담농원 | 대표:윤경애 | 사업자번호:308-02-85305 | 주소:충남 논산시 별곡면 만목리 231번지 | 
+					대표번호:041-733-9455, 팩스:041-733-2387
+				</p>
+				<p>Copyright&copy;2016 BANMOONFARM. All right reserved. PRODUCTED BY <span>DOSTORY</span></p>
+			  </div><!--footer_bottom_text e-->	
+			  </div><!--footer_box e-->
+			</footer>
+		</section><!--wrap e-->
+	</body>
+</html>

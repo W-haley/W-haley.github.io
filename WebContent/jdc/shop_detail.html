@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+
+		<!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame
+		Remove this if you use the .htaccess -->
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+		<title>정가담</title>
+		<meta name="description" content="">
+		<meta name="author" content="DESIGN02">
+
+		<meta name="viewport" content="initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0, user-scalable=no">
+
+		<!-- Replace favicon.ico & apple-touch-icon.png in the root of your domain and delete these references -->
+		<link rel="shortcut icon" href="/favicon.ico">
+		<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+		<link rel="stylesheet" href="css/common.css">
+		<link rel="stylesheet" href="css/board.css">
+		<link rel="stylesheet" href="css/layout.css">
+		<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+		
+		<script src="js/jquery-1.8.3.min.js"></script>
+		<script src="js/header.js"></script>		
+		<script src="js/link.js"></script>
+		<script src="js/move.js"></script>
+		<script src="js/jquery.scrollfollow.js"></script>
+		<!--[if lt IE 9]>
+	<script type="text/javascript" src="/common/js/respond.min.js"></script>
+	<script src="/common/js/html5.js"></script>
+<![endif]-->
+	    <script>
+	        $(document).ready(function(){
+	            $("#gotop").scrollFollow({
+	                speed : 700,    
+	                offset :33
+	            });
+	        });
+	    </script>	
+	</head>
+
+	<body>
+<div id="skipNav">
+ <a href="#content">본문 바로가기</a>
+ <a href="#gnb">글로벌 네비게이션 바로가기</a>
+</div><!--skipNav e-->		
+<section id="wrap">	
+	<!-- TOP -->
+		<!-- header -->
+	<header id="header">
+		<!-- header_inner -->
+		<section class="header_inner">
+			<!-- gnb -->
+			<nav class="gnb">
+				<h1><a href="javascript:loc('index.html');" class="btn_desk_logo"><img src="images/common/main_logo.gif" alt="정가담로고"/></a></h1>
+				<ul>
+					<li>
+						<a href="javascript:loc('sub01_01.html');" title="정가담이야기">정가담이야기</a>
+						<div class="snb snb1">
+							<ul>
+								<li><a href="javascript:loc('sub01_01.html');" title="정가담소개">정가담소개</a></li>
+								<li><a href="javascript:loc('sub01_02.html');" title="만목리소개">만목리소개</a></li>
+								<li><a href="javascript:loc('sub01_03.html');" title="찾아오시는길">찾아오시는길</a></li>
+							</ul>
+						</div>						
+					</li>
+					<li>
+						<a href="javascript:loc('shop.html');" title="상품전체보기">상품전체보기</a>
+						<div class="snb snb2">
+							<ul>
+								<li><a href="javascript:loc('shop.html');" title="상품전체보기">상품전체보기</a></li>
+							
+							</ul>
+						</div>						
+					</li>
+					<li>
+						<a href="javascript:loc('sub03_01.html');" title="만드는과정">만드는과정</a>
+						<div class="snb snb3">
+							<ul>
+								<li><a href="javascript:loc('sub03_01.html');" title="개복숭아">개복숭아</a></li>
+								<li><a href="javascript:loc('sub03_02.html');" title="야관문">야관문</a></li>
+								
+							</ul>
+						</div>						
+					</li>
+					<li>
+						<a href="javascript:loc('sub04_01.html');" title="원액드시는방법">드시는방법</a>
+						<div class="snb snb4">
+							<ul>
+								<li><a href="javascript:loc('sub04_01.html');" title="원액드시는방법">원액드시는방법</a></li>
+								
+							</ul>
+						</div>						
+					</li>
+					<li>
+						<a href="javascript:loc('sub05_01.html');" title="원액효능">원액효능</a>
+						<div class="snb snb5">
+							<ul>
+								<li><a href="javascript:loc('sub05_01.html');" title="원액효능">원액효능</a></li>
+								<li><a href="javascript:loc('sub05_02.html');" title="인증현황">인증현황</a></li>
+							</ul>
+						</div>						
+					</li>
+					<li>
+						<a href="javascript:loc('sub06_01.html');" title="고객센터">고객센터</a>
+						<div class="snb snb6">
+							<ul>
+								<li><a href="javascript:loc('sub06_01.html');" title="공지사항&이벤트">공지사항&amp;이벤트</a></li>
+								<li><a href="javascript:loc('sub06_02.html');" title="자주하시는질문">자주하시는질문</a></li>
+								<li><a href="javascript:loc('sub06_03.html');" title="질문과답변">질문과답변</a></li>
+								<li><a href="javascript:loc('sub06_04.html');" title="고객후기">고객후기</a></li>
+							</ul>
+						</div>						
+					</li>
+			
+				</ul>
+					<form name="frm" method="get">
+						<div class="top_search">
+							<a href="javascript:openTopSearch();" class="btn_search_open"><img src="images/common/btn_header_search.png" alt=""/></a>
+							<div class="top_search_wrap">
+								<p class="i_wrap"><input type="text" name="query" id="query"  id="word" placeholder="Search" /></p>
+								<a href="#search" ><img src="images/common/btn_header_search.png" alt=""></a>
+							</div>
+						</div>
+				</form>
+			</nav>		
+			<!-- //gnb -->		
+
+			<ul class="btn_other">
+				<li><a href="javascript:loc('login.html');">로그인</a></li>
+				<li><a href="javascript:loc('order_list2.html');">주문내역</a></li>
+				<li><a href="javascript:loc('cart.html');">장바구니(0)</a></li>
+				<li><a href="javascript:loc('mypage.html');">마이페이지</a></li>
+							
+			</ul>
+
+		</section>
+		<!-- //header_wrap -->
+	</header>
+	<!-- //header -->
+	
+<script>
+function openTopSearch(){
+	if($('.top_search').hasClass('open')){
+		$('.top_search').removeClass('open');
+		$('.top_search_wrap').hide();
+	}else{
+		$('.top_search').addClass('open');
+		$('.top_search_wrap').show();
+	}
+		$('.top_search_wrap').mouseleave(function(){
+		$('.top_search').removeClass('open');
+		$(this).hide();
+	});
+}
+</script>
+
+				<div class="sub_top_content">
+					<img src="images/shop/shop_top_bg.jpg" />
+				</div><!--sub1_top_content e-->
+           	<div id="sub_container"  class="sub">
+ 					<div class="sub_container_inner">
+						<div id="gotop">
+								<dl>
+									<dt>Today</dt>
+									<dd><i class="fa fa-sort-desc" aria-hidden="true"></i></dd>
+								</dl>
+						 </div><!--gotop e-->	 						
+						<div class="sub_bottom_content">
+							<div class="line_map" style="margin:25px 0 0 0;">
+								 <span><i class="fa fa-home" aria-hidden="true"></i>HOME</span> &gt; <span>상품전체보기</span> &gt; <strong>상품전체보기</strong>
+							</div>	
+						<div class="shop_detail">
+				            <div class="thumb-info">
+					              <div class="thumb-wrap">
+					                <div class="thumb"><img src="images/shop/thumb1.jpg" alt=""></div>
+					                <div class="thumb-ctrl displaynone"><a href="#">큰 이미지 보기</a></div>
+					              </div>
+					              <!-- .thumb-wrap --> 
+										<div class="info">
+              							  <div class="tit-prd"> 
+		                                    <h2><p>정가담 야관문</p></h2>
+               							 </div>
+						                <div class="table-opt">
+						                  <ul>
+						                      <li class="price"> 
+							                      <!-- 가격표기 -->
+							                      <dl>
+							                        <dt>판매가격</dt>
+							                         
+							                         
+							                        <!-- [D] 소비자가격 OFF --> 
+							                          <dd class="price ty3">:<span class="sell"><strong><span id="pricevalue" class="price">39,000</span></strong>원</span></dd>
+							                      </dl>
+							                      <!-- //가격표기:END --> 
+						                   	 </li>
+						                    <li>
+						                      <dl>
+						                        <dt>이벤트 사은품</dt>
+						                         
+						                        <dd>:
+						                        	<select name="gifts" onChange=""style="width:254px; height: 32px">
+														<option value="사은품">사은품</option>
+														<option value="사은품">사은품</option>
+														<option value="사은품">사은품</option>
+													</select>
+						                        </dd>
+						                                                
+						                      </dl>
+						                    </li>                   
+						                    <!-- <li>
+													<dl>
+														<dt>제조년월일</dt>
+														<dd>제품별 상단 및 박스에 표시</dd>
+													</dl>
+												</li> --> 
+						                 <!-- <li class="displaynone">
+						                      <dl>
+						                        <dt>제조국</dt>
+						                        <dd>한국</dd>
+						                      </dl>
+						                    </li> --> 
+						                    <!-- <li class="sns">
+													<dl>
+														<dt>SNS</dt>
+														<dd>/btn_scrap_fb/&nbsp;/btn_scrap_tw/</dd>
+													</dl>
+												</li> --> 
+						     					 <li>
+							                      <dl>
+							                        <dt>수량</dt>
+							                        <dd>
+							                        	<div class="opt-btns">
+							                        		<input type="text" style="width:60px; height:27px" id="p_quantity" title="수량" value="1" class="ipt_txt" maxlength="5" >
+		                          							 <p class="btn_group ea">
+																<a href="#" class="p_add qt_plus"><img src="images/mypage/add_plus.png" alt="수량추가" /></a>
+																<a href="#" class="p_del qt_minus"><img src="images/mypage/del_minus.png" alt="수량감소" /></a>
+															 </p>
+														</div>			 
+							                        </dd>
+							                      </dl>
+							                    </li>
+						                     </ul>
+						                </div>
+						                <!--table-opt -->
+						                <div class="installment_box">
+						                	<img src="images/shop/installment.jpg" alt="" />
+						                </div>
+						                <div class="prd-btns btn_set"> 
+						                 <ul>
+						                    <li><a class="abtn basic" href="javascript:loc('order.html');">구매하기</a></li>
+						                    <li><a class="abtn basic" href="javascript:loc('cart.html');">장바구니</a></li>
+						                    <li><a class="abtn fill buy" href="javascript:loc('wish_list.html');">관심상품</a></li>
+						                 </ul>
+						                   
+						                </div>
+						              </div>
+						              <!--info --> 
+						              </form> 
+						            </div>
+						            <!--thumb-info -->
+						            
+						            
+						</div><!--shop_detail e-->
+
+						</div><!--sub_bottom_content e-->	
+	
+			            <div class="detail_wrap"> 
+			              
+			              <!-- 상세정보 -->
+			              <div class="prd_detail">
+			                <ul id="prdDetail" class="link">
+			                  <li class="selected"><a href="#prdDetail">상세설명</a></li>
+			                  <li><a href="#prdNotice">필독사항</a></li>
+			                  <li><a href="#prdReview">고객후기</a></li>
+			                  <li><a href="#prdQna">질문과답변</a></li>
+			                </ul>
+							 <img src="images/shop/shop_detail_01.jpg" alt="" />
+							 <img src="images/shop/shop_detail_02.jpg" alt="" />
+							 <p class="detail_title">상품정보</p>
+							 <img src="images/shop/shop_detail_03.jpg" alt="" />
+							 <img src="images/shop/shop_detail_04.jpg" alt="" />
+					       </div><!--prd_detail e-->
+			              <div class="prd-related"> 
+			                
+			                <!-- 필독사항 -->
+			                <div class="prd_detail">
+			                <ul id="prdNotice" class="link">
+			                  <li><a href="#prdDetail">상세설명</a></li>
+			                  <li class="selected"><a href="#prdNotice">필독사항</a></li>
+			                  <li><a href="#prdReview">고객후기</a></li>
+			                  <li><a href="#prdQna">질문과답변</a></li>
+			                </ul>
+			                <div class="prdNotice_box">
+			                	<div class="prdNotice_top">
+			                		<p>구매전 읽어주세요!</p>
+			                	</div>
+			                	<div class="prdNotice_bottom">
+			                		<ul>
+			                			<li>
+			                				<dl>
+			                					<dt>*콜센터*</dt>
+			                					<dd class="number_box">
+			                						041 - 733 - 9455 <br />
+			                						041 - 733 - 9455 ~ 6 <br />
+			                						010 - 8823 - 5502 
+			                					</dd>
+			                					<dt class="normal_dt">*정가담 콜센터 업무시간*</dt>
+			                					<dd>
+			                						평일 09:00~18:00 점심시간 12:00 ~ 13:00
+			                						<p>(상담시간 외에는 질문과 답변 문의게시판을 이용해주세요.)</p>
+			                					</dd>
+			                				</dl>
+			                			</li>
+			                			<li>
+			                				<dl>
+			                					<dt>*배송안내*</dt>
+			                					<dd class="center_info">ㆍ배송지역 <span> 전지역</span></dd>
+			                					<dd class="center_info">ㆍ배송비용 <span> 2500원</span>
+			                						<p>(구매금액이 30.000원부터 무료배송 가능합니다.)</p>
+			                					</dd>
+			                					<dd class="center_info">ㆍ배송소요일
+			                					<p>-평일 오후 5시 이전 주문완료 건에 한하여 다음날 받을 수 있습니다.</p>
+			                					<p>-일부 상품은 신선도를 위해 미리 가공해 놓지 않고 주문 받은 후 제조 <br />하므로 3~4일 정도 소요될 수 있습니다.</p>
+			                					<p>-택배비는 3만원이상시 무료로 배송되며 제주도 및 기타 도서 지역도<br />도선료 혹은 항공료가 추가되지 않습니다.</p></dd>
+			                					<dd class="center_info">ㆍ택배사<span>현대택배</span></dd>
+			                				</dl>
+			                			</li>
+			                			<li>
+			                				<dl>
+			                					<dt>*배송안내*</dt>
+			                					<dd>상품에 이상이 있을경우 <br />100% 교환 및 환불 해드립니다.</dd>
+			                					<dd>고객님의 실수로 인한 <br />교환 및 환불의 경우는 전화문의 주시기 바랍니다.</dd>
+			                					<dd>제품을 개봉하였거나 포장이 훼손되어<br />상품가치가 상실된 경우 교환 및 환불은 불가능합니다.</dd>
+			                					<dd>특별한 사유없이 교환시에는<br />구매자가 왕복 택배비를 부담하셔야합니다.
+			                						<p>(※ 교환 및 환불은 실 제품 수령일로부터 7일 이내입니다.)</p>
+			                					</dd>
+			                				</dl>
+			                			</li>
+			                		</ul>
+			                	</div>
+			                </div>
+			                <!-- .review-list --> 
+			                </div><!--prd_detail e-->
+			                <!-- 필독사항 e --> 
+			                
+			                <!--고객후기-->
+			                <div class="prd_detail">
+			                <ul id="prdReview" class="link">
+			                  <li><a href="#prdDetail">상세설명</a></li>
+			                  <li><a href="#prdNotice">필독사항</a></li>
+			                  <li class="selected"><a href="#prdReview">고객후기</a></li>
+			                  <li><a href="#prdQna">질문과답변</a></li>
+			                </ul>
+			        <div class="sub_board">
+		            <table summary="고객후기">
+		                <caption class="hidden">정가담 고객후기</caption>
+		                	<thead>	                		
+		                      <tr>
+		                          <th scope="col">번호</th>
+		                          <th scope="col">제목</th>
+		                          <th scope="col">작성자</th>
+		                          <th scope="col" class="line_3">작성일</th>
+		                          <th scope="col" class="last_t">조회수</th>
+		                      </tr>
+		                    </thead>
+		                    <tfoot>
+		                    <tr class="no_line">
+		                          <td class="form_tr" colspan="5"><a href="#"><input type="button" value="글쓰기" class="button" /> </a></td>
+		                      </tr>
+
+		                      </tfoot>
+		                    <tbody>
+		                      <tr>
+		                          <th scope="row" class="row">1</th>
+		                          <td class="td_left"><a href="sub06_04.html">야관문 구매했습니다!!</a></td>
+		                          <td>윤경애</td>
+		                          <td class="line_3"><a href="#">2014/06/29</a></td>
+		                          <td class="last">965</td>
+		                      </tr>
+		                      <tr>
+		                          <th scope="row" class="row">2</th>
+		                          <td class="td_left"><a href="sub06_04.html">야관문 구매했습니다!!</a></td>
+		                          <td>윤경애</td>
+		                          <td class="line_3"><a href="#">2014/06/29</a></td>
+		                          <td class="last">965</td>
+		                      </tr>
+		                      <tr>
+		                          <th scope="row" class="row">3</th>
+		                          <td class="td_left"><a href="sub06_04.html">야관문 구매했습니다!!</a></td>
+		                          <td>윤경애</td>
+		                          <td class="line_3"><a href="#">2014/06/29</a></td>
+		                          <td class="last">965</td>
+		                      </tr>
+		                      <tr>
+		                          <th scope="row" class="row">4</th>
+		                          <td class="td_left"><a href="sub06_04.html">야관문 구매했습니다!!</a></td>
+		                          <td>윤경애</td>
+		                          <td class="line_3"><a href="#">2014/06/29</a></td>
+		                          <td class="last">965</td>
+		                      </tr>
+		
+		                      </tbody>
+		               </table>
+		               </div>
+		             </div><!--prd_detail e-->   
+			                <!-- 고객후기 e-->
+			                <div class="prd_detail">
+			                <ul id="prdQna" class="link">
+			                  <li><a href="#prdDetail">상세설명</a></li>
+			                  <li><a href="#prdNotice">필독사항</a></li>
+			                  <li><a href="#prdReview">고객후기</a></li>
+			                  <li class="selected"><a href="#prdQna">질문과답변</a></li>
+			                </ul>
+			        <div class="sub_board">
+		            <table summary="질문과답변">
+		                <caption class="hidden">정가담 고객센터 질문답변</caption>
+		                	<thead>	                		
+		                      <tr>
+		                          <th scope="col">번호</th>
+		                          <th scope="col">제목</th>
+		                          <th scope="col">작성자</th>
+		                          <th scope="col" class="line_3">작성일</th>
+		                          <th scope="col" class="last_t">조회수</th>
+		                      </tr>
+		                    </thead>
+		                    <tfoot>
+		                    <tr class="no_line">
+		                          <td class="form_tr" colspan="5"><a href="#"><input type="button" value="글쓰기" class="button" /> </a></td>
+		                      </tr>
+
+		                      </tfoot>
+		                    <tbody>
+		                      <tr>
+		                          <th scope="row" class="row">1</th>
+		                          <td class="td_left"><a href="sub_view2.html">언제쯤 배송이 가능할까요?</a></td>
+		                          <td>윤경애</td>
+		                          <td class="line_3"><a href="#">2014/06/29</a></td>
+		                          <td class="last">965</td>
+		                      </tr>
+		                      <tr>
+		                          <th scope="row" class="row">2</th>
+		                          <td class="td_left"><a href="sub_view2.html">언제쯤 배송이 가능할까요?</a></td>
+		                          <td>윤경애</td>
+		                          <td class="line_3"><a href="#">2014/06/29</a></td>
+		                          <td class="last">965</td>
+		                      </tr>
+		                      <tr>
+		                          <th scope="row" class="row">3</th>
+		                          <td class="td_left"><a href="sub_view2.html">언제쯤 배송이 가능할까요?</a></td>
+		                          <td>윤경애</td>
+		                          <td class="line_3"><a href="#">2014/06/29</a></td>
+		                          <td class="last">965</td>
+		                      </tr>
+		                      <tr>
+		                          <th scope="row" class="row">4</th>
+		                          <td class="td_left"><a href="sub_view2.html">언제쯤 배송이 가능할까요?</a></td>
+		                          <td>윤경애</td>
+		                          <td class="line_3"><a href="#">2014/06/29</a></td>
+		                          <td class="last">965</td>
+		                      </tr>
+		
+		                      </tbody>
+		                </table>
+			                <!-- .qna-list --> 
+			                
+			                 
+			              </div>
+			             </div><!--prd_detail e-->    
+			            </div>
+			            <!-- prd-related --> 		
+			            
+			            </div><!--detail_wrap e--> 					
+
+	 				</div><!--sub_container_inner e-->
+
+
+			</div><!--sub_container e-->
+
+			<footer>
+			  <div class="footer_box">	
+			<!--	<div class="footer_logo"><img src="images/common/main_logo.png" alt="정가담로고" /></div>-->
+				<div class="footer_menu_box">
+					<ul>
+						<li class="footer_menu1">
+						  <dl>	
+							<dt><a href="javascript:loc('sub01_01.html');">정가담소개</a></dt>
+							<dd><a href="javascript:loc('sub01_01.html');">정가담소개</a></dd>
+							<dd><a href="javascript:loc('sub01_02.html');">만목리소개</a></dd>
+							<dd><a href="javascript:loc('sub01_03.html');">찾아오시는길</a></dd>
+						  </dl>
+						</li>
+						<li class="footer_menu2">
+						  <dl>	
+							<dt><a href="javascript:loc('shop.html');">상품전체보기</a></dt>
+							<dd><a href="javascript:loc('shop.html');">상품전체보기</a></dd>
+						  </dl>
+						</li>
+						<li class="footer_menu3">
+						  <dl>	
+							<dt><a href="javascript:loc('sub03_01.html');">만드는과정</a></dt>
+							<dd><a href="javascript:loc('sub03_01.html');">개복숭아</a></dd>
+							<dd><a href="javascript:loc('sub03_02.html');">야관문</a></dd>
+						  </dl>
+						</li>
+						<li class="footer_menu4">
+						  <dl>	
+							<dt><a href="javascript:loc('sub04_01.html');">드시는방법</a></dt>
+							<dd><a href="javascript:loc('sub04_01.html');">원액드시는방법</a></dd>
+						  </dl>
+						</li>
+						<li class="footer_menu5">
+						  <dl>	
+							<dt><a href="javascript:loc('sub05_01.html');">원액효능</a></dt>
+							<dd><a href="javascript:loc('sub05_01.html');">원액효능</a></dd>
+							<dd><a href="javascript:loc('sub05_02.html');">인증현황</a></dd>
+						  </dl>	
+						</li>
+						<li class="footer_menu6">
+						  <dl>	
+							<dt><a href="javascript:loc('sub06_01.html');">고객센터</a></dt>
+							<dd><a href="javascript:loc('sub06_01.html');">공지사항&amp;이벤트</a></dd>
+							<dd><a href="javascript:loc('sub06_02.html');">자주하시는질문</a></dd>
+							<dd><a href="javascript:loc('sub06_03.html');">질문과답변</a></dd>
+							<dd><a href="javascript:loc('sub06_04.html');">고객후기</a></dd>
+						  </dl>	
+						</li>
+					</ul>
+				</div>
+			  <div class="footer_bottom_text">
+			  	<p> 상호명:(주)반월정가담농원 | 대표:윤경애 | 사업자번호:308-02-85305 | 주소:충남 논산시 별곡면 만목리 231번지 | 
+					대표번호:041-733-9455, 팩스:041-733-2387
+				</p>
+				<p>Copyright&copy;2016 BANMOONFARM. All right reserved. PRODUCTED BY <span>DOSTORY</span></p>
+			  </div><!--footer_bottom_text e-->	
+			  </div><!--footer_box e-->
+			</footer>
+		</section><!--wrap e-->
+	</body>
+</html>
