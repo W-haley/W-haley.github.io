@@ -1,6 +1,5 @@
 @charset "utf-8";
 @import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css);
-@import url(http://fonts.googleapis.com/earlyaccess/jejugothic.css);
 /* Reset CSS  */
 * { margin:0; padding:0; border:0; outline:0; vertical-align:top;
 -webkit-text-size-adjust:none;  }
