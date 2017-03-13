@@ -34,12 +34,12 @@ header { position: relative; }
 section h3 {box-sizing: border-box; margin-bottom: 80px; padding-top: 20px;font-family: FontKopubL;  font-size: 40px; 
 				font-weight: lighter; text-align: center; letter-spacing: -1px; }
 #about { background: #fff; background-size: 20%;border-bottom:20px solid #e09ce0;border-top:20px solid #30d9c4 }
-.content2 {font-family: 'Jeju Gothic', serif;width: 90%; padding: 40px 15% 60px 15px; }
+.content2 {font-family: FontKopubL;width: 90%; padding: 40px 15% 60px 15px; }
 .content2 .textbox{width:70%;margin-left:20%}
 .content2 h4 {font-size: 20px; font-weight: lighter; color: #FA6767;  }
 .content2 p {font-size: 16px; line-height: 1.8em; text-align: justify; }
 #port { background: #333;border-bottom:20px solid #74c4d6 }
-.content3 {font-family: 'Jeju Gothic', serif;overflow: hidden; width: 90%; padding: 40px 5%;  }
+.content3 {font-family: FontKopubL;overflow: hidden; width: 90%; padding: 40px 5%;  }
 .content3 h3 { color: #fff; }
 .content3 ul{overflow:hidden;}
 .content3 ul:last-child{margin-top:40px;}
