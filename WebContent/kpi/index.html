@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="description" content="">
+		<meta name="author" content="hyeyoung">
+		<meta name="viewport" content="width=device-width; initial-scale=1.0">
+		<title>3.제어문 익히기</title>
+
+		<style>
+			.wrap{width:1200px;margin:0 auto;}
+			p{line-height:1.5em;}
+			.ex_style{width:1140px;padding:30px;background:#e6f7fd;margin-bottom:30px;}
+			.ex_style > p{margin:0;line-height:1.8em;}
+			.ex_style span{color:#00a4ed;}
+			.ex_btn{display:inline-block;width:118px;height:38px;margin-bottom:30px;border:1px solid #006098;color:#006098;text-decoration:none;text-align:center;line-height:38px;border-radius:10px;}
+		</style>
+	</head>
+
+	<body>
+		<div class="wrap">
+			<header>
+				<h1>제어문?</h1>
+				<p>제어문이란?</p>
+				<p>제어문은 프로그램의 흐름을 제어할 수 있도록 도와주는 실행문을 말합니다.</p>
+				<p>
+					제어문에는 조건 만족 여부에 따라 실행문을 제어할 수 있는 조건문과,
+					변수에 일치하는 경우의 값에 따라 실행문을 제어할 수 있는 선택문, 
+					그리고 특정 실행문을 여러번 반복 실행할 수 있도록 하는 반복문이 있습니다.
+				</p>
+				<p>그중 조건문에는 if문, else(if else)문, else if문이 있습니다.</p>
+				<p>선택문은 switch문을 사용합니다.</p>
+				<p>반복문에는 while문과 for문이 있습니다.</p>
+			</header>
+			<section>
+				<h2>조건문 - if, else(if else), else if</h2>
+				<p>조건문은 조건식의 값이 참(true)인지 아니면 거짓(false)인지에 따라 실행문의 제어가 결정됩니다.</p>
+				<p>예를들어, 질의응답 창을 이용해서 방문자가 좋아하는 숫자를 입력받았을때,
+					입력된 값을 2로 나누어서 나머지 값이 0이면 "당신이 좋아하는 숫자는 짝수입니다."라고 결과가 나타나도록 하고,
+					아닐 경우에는 "당신이 좋아하는 숫자는 홀수입니다."라고 출력되게 한다.
+					이렇게 수를 나눈 나머지 값이 조건식의 만족 여부에 따라 출력되는 실행문을 달리 나타나게 하려면 조건문을 사용해야합니다.
+					조건문의 종류에는 if, else(if else)문, else if문이 있습니다.
+				</p>
+				<h3>- if</h3>
+				<p>
+					if문은 조건식을 만족할 경우 (true) 에만 실행문을 실행합니다.
+				</p>
+				<div class="ex_style">
+					<p>
+						var gender = confirm("당신은 남자입니까?"); <br />
+						if(gender){<br />
+						&nbsp;&nbsp;&nbsp;document.write("&#60;h1&#62;남탕으로 가세요&#60;/h1&#62;");<br />
+						}
+					</p>
+				</div>
+				<a href="ex_3-1_if.html" class="ex_btn">예제보기</a>
+				<h3>- else (if else)</h3>
+				<p>
+					if else 조건문은 조건식을 만족(true)할 경우와 만족하지 않았을(false) 경우에 따라 실행되는 실행문이 달라집니다.
+				</p>
+				<p>
+					즉, 두가지 결과가 나올 수 있습니다.
+				</p>
+				<div class="ex_style">
+					<p>
+						var gender = confirm("당신은 남자입니까?"); <br />
+						if(gender){<br />
+						&nbsp;&nbsp;&nbsp;document.write("&#60;h1&#62;남탕으로 가세요&#60;/h1&#62;");<br />
+						} else {<br />
+						&nbsp;&nbsp;&nbsp;document.write("&#60;h1&#62;여탕으로 가세요&#60;/h1&#62;");<br />
+						}
+					</p>
+				</div>
+				<a href="ex_3-2_if_else.html" class="ex_btn">예제보기</a>
+				<div class="ex_style">
+					<p>
+						<span>방문자에게 좋아하는 숫자를 입력받습니다. 기본값은 0입니다.</span><br />
+						var num=prompt("당신이 좋아하는 숫자는?","0");<br />
+						if(num%2==0){ <span>//짝수일 경우에 실행</span><br />
+						&nbsp;&nbsp;&nbsp; document.write("당신이 좋아하는 숫자는 짝수입니다.");<br />
+						} else { <span>//홀수일 경우에 실행</span><br />
+						&nbsp;&nbsp;&nbsp; document.write("당신이 좋아하는 숫자는 홀수입니다.");<br />
+						}
+					</p>
+				</div>
+				<a href="ex_3-2_if_else2.html" class="ex_btn">예제보기</a>
+				<h3>- else if</h3>
+				<p>else if문은 두 가지 이상의 조건식과 정해놓은 조건을 만족하지 않았을 때 실행되는 실행문으로 이루어져 있습니다.</p>
+				<p>
+					다음은 else if 문의 기본형입니다. 가장 위에 있는 조건식 1부터 5까지 차례로 조건 검사를 한 후, 
+					만족(true)하는 값이 나오면 그에 해당하는 실행문을 실행하고 조건문을 종료합니다. 하지만 조건식 중 만족(true)하는 값이 하나도 없을때는,
+					else 문의 중괄호{...}에 있는 실행문을 실행합니다.
+				</p>
+				<div class="ex_style">
+					<p>
+						<span>기본형</span><br />
+						if(조건식1){<br />
+						&nbsp;&nbsp;&nbsp;실행문1;<br />
+						} else if(조건식1){<br />
+						&nbsp;&nbsp;&nbsp;실행문2;<br />
+						} else if(조건식3){<br />
+						&nbsp;&nbsp;&nbsp;실행문3;<br />
+						} else if(조건식4){<br />
+						&nbsp;&nbsp;&nbsp;실행문4;<br />
+						} else if(조건식5){<br />
+						&nbsp;&nbsp;&nbsp;실행문5;<br />
+						} else{<br />
+						&nbsp;&nbsp;&nbsp;실행문6;<br />
+						}
+					</p>
+				</div>
+				<div class="ex_style">
+					<p>
+						<span>버튼클릭시 if_script 호출</span><br />
+						function if_script(){<br />
+						 <br />
+						&nbsp;&nbsp;&nbsp;<span>//txt_value값을 가져온다.</span><br />
+						&nbsp;&nbsp;&nbsp;var value = document.getElementById("txt_value").value;<br />
+						&nbsp;&nbsp;&nbsp;if(value == "1"){<br />
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;alert("입력값은 1입니다.");<br />
+						&nbsp;&nbsp;&nbsp;}else if(value == "2"){<br />
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;alert("입력값은 2입니다.");<br />
+						&nbsp;&nbsp;&nbsp;}else if(value == "3"){<br />
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; alert("입력값은 3입니다.");<br />
+						&nbsp;&nbsp;&nbsp;}else if(value == "4"){<br />
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;alert("입력값은 4입니다.");<br />
+						&nbsp;&nbsp;&nbsp;}<br />
+						&nbsp;&nbsp;&nbsp;else {<br />
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;alert("뭐?");<br />
+						&nbsp;&nbsp;&nbsp;}<br />
+						}
+					</p>
+				</div>
+				<a href="ex_3-2_if_else-if_else.html" class="ex_btn">예제보기</a>
+				<h3>- 중첩 if else</h3>
+				<p>
+					조건문 안에 조건문이 오는 것을 중첩 if 문이라고 합니다. 중첩 if 문의 기본형은 다음과 같습니다.
+				</p>
+				<div class="ex_style">
+					<p>
+						<span>기본형</span><br />
+						if(조건식1){<br />
+						&nbsp;&nbsp;&nbsp;if(조건식2){<br />
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;실행문;<br />
+						}
+					</p>
+				</div>
+				<p>
+					중첩 if 문은 일반적으로 바깥쪽에 있는 조건문인 조건식 1을 만족해야만 안쪽에 있는 조건문인
+					조건식 2를 검사합니다. 만일 안쪽 if문의 조건식 2를 만족하지 않는다면, 
+					바깥쪽 조건문인 조건식 1의 중괄호 내에 있는 실행문만 실행하고 종료됩니다.
+				</p>
+				<p>
+					다음 예제와 같이 방문자에게 아이디와 비밀번호를 입력받을 때, 방문자의 아이디가 일치하지 않으면 비밀번호의 일치 여부를 굳이 검사할 필요가 없게 되는 것입니다.
+				</p>
+				<p>
+					다음 예제는 중첩 if 문을 사용해 아이디와 비밀번호가 일치했을 때 환영 문구가 출력되도록 한 예제입니다. 
+					비밀번호가 일치하지 않을 경우에는 브라우저가 새로 고침이 실행되도록 했습니다. 
+				</p>
+				<div class="ex_style">
+					<p>
+						var id="abc";<br />
+					    var pw="abc1234";<br />
+					    <br />
+					    <span>//방문자로부터 아이디를 입력 받음.</span><br />
+					    var user_id=prompt("아이디는?","");<br />
+					    <br />
+					    <span>//방문자로부터 비밀번호를 입력 받음</span><br />
+					    var user_pw=prompt("비밀번호는?","");<br />
+					    <br />
+					    if(id==user_id) { <span>//아이디가 일치했을 경우</span><br />
+					    <br /> 
+					    &nbsp;&nbsp;&nbsp;if(pw==user_pw) { <span>//비밀번호가 일치했을 경우</span><br />
+					    <br />        
+					    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;document.write(user_id+"님 반갑습니다!");<br />
+					    <br />        
+					    &nbsp;&nbsp;&nbsp;} else { <span>//비밀번호가 일치하지 않았을 경우</span><br />
+					    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;alert("비밀번호가 일치하지 않습니다.");<br />
+					    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;location.href=url(); <span>//브라우저 새로 고침이 실행됨.</span><br />
+					    <br />        
+					    &nbsp;&nbsp;&nbsp;} //안쪽 if문의 else문 종료<br />
+					 	<br />
+					    } else { <span>//아이디가 일치하지 않을 경우</span><br />
+					    <br />    
+					    &nbsp;&nbsp;&nbsp;alert("아이디가 일치하지 않습니다.");<br />
+					    &nbsp;&nbsp;&nbsp;location.href=url(); <span>//브라우저 새로 고침이 실행됨.</span><br />
+					    <br />  
+					    } //바깥 if문의 else문 종료
+					</p>
+				</div>
+				<a href="ex_3-3_if_if-else_else.html" class="ex_btn">예제보기</a>
+				
+				<p>p.69</p>
+				<a href="ex_3-3_if_if-else_else2.html" class="ex_btn">예제보기</a>
+			</section>
+			<section>
+				<h2>선택문 - switch</h2>
+				<h3>switch</h3>
+				<p>
+					선택문인 switch 문은 변수에 저장된 값과 switch 문에 있는 경우(case)의 값을 검사하여, 
+					변수와 경우의 값에서 일치하는 값이 있을 때 그에 해당하는 실행문을 실행합니다. 
+					if 문과 용도는 비슷하지만 if문은 만족하는 데이터가 여러 개일 경우 주로 사용하고, 
+					switch 문은 여러 경우의 값 중 일치하는 데이터를 찾아 그에 해당하는 실행문을 실행시킬때 사용합니다.
+				</p>
+				<div class="ex_style">
+					<p>
+						<span>기본형</span><br />
+						var 변수=초기값;<br />
+						switch(변수){<br />
+						&nbsp;&nbsp;&nbsp;case 값1: 실행문1;<br />
+						&nbsp;&nbsp;&nbsp;break;<br />
+						&nbsp;&nbsp;&nbsp;case 값2: 실행문2;<br />
+						&nbsp;&nbsp;&nbsp;break;<br />
+						&nbsp;&nbsp;&nbsp;case 값3: 실행문3;<br />
+						&nbsp;&nbsp;&nbsp;break;<br />
+						&nbsp;&nbsp;&nbsp;case 값4: 실행문4;<br />
+						&nbsp;&nbsp;&nbsp;break;<br />
+							<br />
+						&nbsp;&nbsp;&nbsp;default: 실행문5;<br />
+						}
+					</p>
+				</div>
+				<p>
+					변수에 저장된 값이 switch 문의 경우(case)의 값 중 일치하는 데이터가 있으면, 
+					그에 해당하는 실행문을 실행하고 break 문을 만나 switch 문을 종료합니다.
+					만일 경우(case)의 값 중에 일치하는 데이터가 없으면, 마지막 default에 있는 실행문을 실행하고
+					switch 문을 종료합니다. 
+				</p>
+				<p>
+					다음 예제는 질의응답 창으로 포털 검색 사이트 이름을 입력받고 switch 문을 이용하여 
+					입력한 이름에 해당하는 사이트로 이동하도록 한 예제입니다.
+				</p>
+				<div class="ex_style">
+					<p>
+						var site=prompt("네이버, 다음, 네이트, 구글 중 즐겨 사용하는 포털 검색 사이트는?","");<br />
+						var url;<br />
+						<br />
+						switch (site){<br />
+						&nbsp;&nbsp;case "네이버":url="www.naver.com"; <span>//"네이버"를 입력했을 경우</span><br />
+						&nbsp;&nbsp;break;<br />
+						  <br />
+						&nbsp;&nbsp;case "다음":url="www.daum.net"; <span>//"다음"를 입력했을 경우</span><br />
+						&nbsp;&nbsp;break;<br />
+						  <br />
+						&nbsp;&nbsp;case "네이트":url="www.nate.com"; <span>//"네이트"를 입력했을 경우</span><br />
+						&nbsp;&nbsp;break;<br />
+						  <br />
+						&nbsp;&nbsp;case "구글":url="www.google.com"; <span>//"구글"을 입력했을 경우</span><br />
+						&nbsp;&nbsp;break;<br />
+						  <br />
+						&nbsp;&nbsp;<span>//일치하는 값이 없을 경우</span><br />
+						&nbsp;&nbsp;default: alert("보기 중에 없는 사이트입니다.");<br />
+						}<br />
+						if(url) location.href="http://"+url; <span>//url에 데이터가 있을 경우에만 실행됨.</span>
+					</p>
+				</div>
+				<a href="ex_3-4_switch.html" class="ex_btn">예제보기</a>
+				<p>p.71</p>
+				<a href="ex_3-4_switch2.html" class="ex_btn">예제보기</a>
+				<p>p.72</p>
+				<a href="ex_3-4_switch3.html" class="ex_btn">예제보기</a>
+			</section>
+			<section>
+				<h2>반복문</h2>
+				<p>
+					반복문을 이용하면 실행문을 원하는 횟수만큼 반복하여 실행시킬 수 있습니다. <br />
+					예를들어, "안녕하세요!" 라는 문구를 100번을 출력하려면 출력문을 100번 작성해야합니다.<br />
+					하지만 반복문을 사용하면 한 줄의 출력문으로 100번 출력할 수 있습니다.<br />
+					<br />
+					반복문의 종류로는 for문, while문, do-while문이 있습니다.<br />
+					for문, while문은 서로 변환이 가능하기 때문에 반복문을 작성할 때 어느 쪽을 선택해도 좋지만, <br />
+					for문은 반복 횟수가 정해진 경우, 배열과 함께 주로 사용하고,<br />
+					while문은 무한 루프나 특정 조건에 만족할 때까지 반복해야하는 경우 주로 사용합니다.<br />
+					while문과 do-while문의 차이점은 조건을 먼저 검사하느냐 나중에 검사하느냐일 뿐 동작 방식은 동일합니다.<br />
+					
+				</p>
+				<h3>- while 문</h3>
+				<p>
+					while 문은 조건식을 만족할 때까지 실행문을 여러번 반복하여 실행시킬 수 있습니다.
+					다음은 while 문의 기본형입니다. while 문은 조건식을 만족할 때까지 중괄호{...} 내에 있는 실행문을 반복하여 실행합니다.
+					while 문의 실행 순서는, 1. 조건식을 검사하고, 만족하면 2. 중괄호 내에 있는 실행문 및 증감식을 실행합니다.
+					그리고 3. 다시 조건식을 검사합니다.
+				</p>
+				<div class="ex_style">
+					<p>
+						<span>기본형</span><br />
+						var 변수=초기값;<br />
+						while(1,3조건식){<br />
+						<br />
+						실행문;
+						증감식;<br />
+						}
+					</p>
+				</div>
+				<p>
+					다음 예제는 while 문을 사용해서 '안녕하세요1 ~ 안녕하세요10'까지 1씩 증가되면서 10번 출력되도록
+					한 예제입니다.
+				</p>
+				<div class="ex_style">
+					<p>
+						var i=1; <br />
+						while(i&#60;=10){ <br />
+						&nbsp;&nbsp;&nbsp; document.write("안녕하세요"+i,"<br />");<br />
+						&nbsp;&nbsp;&nbsp;i++;<br />
+						}
+					</p>
+				</div>
+				<p>
+					while 문의 조건식 i&#60;=10을 검사한 후 만족(true)하면 중괄호{...}에 있는 실행문을 실행하고,
+					증가 연산자로 변수 i의 값이 1 증가됩니다. 
+					다시 조건식 만족 여부를 검사한 후, 만족(true)하면 다시 중괄호에 실행문을 실행하고,
+					거짓(false)이면 while 문을 종료합니다.
+				</p>
+				<p>
+					<img src="while1.jpg" alt="while문 순서도" />
+				</p>
+				<p>
+					다음 예제는 while 문을 사용하여 1부터 30까지의 숫자 중 2의 배수이고 6의 배수인 숫자만 출력한 예제입니다.
+				</p>
+				<div class="ex_style">
+					<p>
+						var i=1; <br />
+						while(i&#60;=30){ <span>//i가 30보다 작거나 같을 때까지 반복 실행합니다.</span><br />
+						<br />
+						&nbsp;&nbsp;<span>//2의 배수이고 6의 배수일 경우에만 출력문을 실행합니다.</span><br />
+						&nbsp;&nbsp;&nbsp;if(i%2==0 && i%6==0)document.write(i,"<br />");<br />
+						<br />
+						&nbsp;&nbsp;&nbsp;i++;<br />
+						}
+					</p>
+				</div>
+				<p>
+					while 문의 조건식을 검사하여 만족(true)할 때 까지 중괄호{...}에 있는 실행문을 반복 실행합니다.
+				</p>
+				<img src="while2.jpg" alt="결과화면" />
+				<p>
+					다음 예제는 while문을 사용하여 20부터 10까지 숫자 중 짝수일 경우에는 파란색으로 출력하고,
+					홀수일 경우에는 빨간색으로 출력되도록 한 예제입니다.
+				</p>
+				<div class="ex_style">
+					<p>
+						var i=20; <br />
+						while(i>=10){ <span>//i의 값이 10보다 클 때까지 반복문을 실행합니다.</span><br />
+						<br />
+						&nbsp;&nbsp;&nbsp;if(i%2==0){ <span>//i의 값을 2로 나눠서 나머지가 0일 경우</span><br />
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;document.write("&#60;font color='blue'&#62;"+i+"&#60;/font&#62;","<br />");<br />
+						&nbsp;&nbsp;&nbsp;}else{ <span>//i의 값을 2로 나눠서 나머지가 0이 아닐경우</span><br />
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;document.write("&#60;font color='red'&#62;"+i+"&#60;/font&#62;","<br />");<br />
+						&nbsp;&nbsp;&nbsp;}<br />
+						<br />
+						&nbsp;&nbsp;&nbsp;i--;<br />
+						}
+					</p>
+				</div>
+				<a href="ex_3-5_while.html" class="ex_btn">예제보기</a>
+				<h3>- do while 문</h3>
+				<p>
+					while 문의 경우에는 조건식의 만족 여부를 먼저 검사한 후,
+					중괄호에 있는 실행문의 실행 여부를 결정했습니다. 
+					하지만 do while 문은 반드시 한 번은 실행문을 실행하고 조건식을 검사하게 됩니다.  
+				</p>
+				<div class="ex_style">
+					<p>
+						<span>기본형</span><br />
+						var 변수=초기값;<br />
+						<br />
+						do{<br />
+						실행문;<br />
+						증감식;<br />
+						}while(조건식);
+					</p>
+				</div>
+				<p>
+					다음의 예제를 보면 a=1입니다. 
+					조건식을 보면 1==10입니다. 즉 a가 10과 같을 동안 반복문을 실행하는 것입니다. 
+					그런데 조건식에서는 1== 10이 동일하지 않으므로 반복문을 실행하지 않습니다. 
+					하지만 do문에 있는 실행문을 한번은 실행을 한 후에 조건식을 검사를 하기 때문에 한번은 실행을 하게 됩니다. 
+					즉, a값인 1이 한번은 출력이 된 후 조건식을 검사후에 조건에 만족하지 않으면 do문 안에 명령문을 실행하지 않습니다.
+				</p>
+				<div class="ex_style">
+					<p>
+						a = 1;<br />
+						do{<br />
+						document.write(a);<br />
+						}<br />
+						while(a==10);
+					</p>
+				</div>
+				<a href="ex_3-6_do_while.html" class="ex_btn">예제보기</a>
+				<p>
+					다음 예제는 중괄호 {...}에 있는 document.write(hello!!); 실행문을 먼저 실행한 후,
+					조건식 i&#60;3의 만족 여부를 검사합니다. 변수 i에는 10이 저장되어 있으므로
+					두 수의 비교 연산 결과는 false를 반환하여 더 이상 조건을 만족하지 않으므로 do while 문을 종료시킵니다. 
+				</p>
+				<div class="ex_style">
+					<p>
+						var a = 10; <span>//변수 i에 초기값을 저장합니다.</span><br />
+						do{ <span>//먼저 출력문을 실행한 후 조건식을 검사합니다.</span><br />
+						<br />	
+						&nbsp;&nbsp;&nbsp;document.write("hello!!");<br />
+						}<br />
+						while(i&#60;3); <span>//변수 i에 값이 3보다 작으면 while 문을 종료합니다.</span>
+					</p>
+				</div>
+				<a href="ex_3-6_do_while2.html" class="ex_btn">예제보기</a>
+				
+				<h3>- for 문</h3>
+				<p>
+					for 문은 반복문입니다. 조건식을 만족할 때까지 특정 실행문을 반복하여 실행합니다. 사용 용도는 while 문과 같지만,
+					while 문보다 사용이 편해 사용 빈도가 높은 편입니다.
+				</p>
+				<div class="ex_style">
+					<p>
+						<span>기본형</span><br />
+						for(초기값; 조건식; 증감식){<br />
+						&nbsp;&nbsp;&nbsp;실행문;<br />
+						}
+					</p>
+				</div>
+				<p>다음은 for 문의 실행 순서를 그림으로 표현한 것입니다.</p>
+				<img src="for1.jpg" alt="for문 순서도" />
+				<p>
+					먼저 반복문 제어에 필요한 시작 값을 초기화합니다. 조건이 참일 때 실행 문을 실행합니다. 
+					실행문이 모두 끝나면 증감 식을 실행합니다. 증감된 값을 이용해서 다시 조건 검사를 하고,
+					조건이 참이면 조건이 거짓일 때까지 반복하게 됩니다.
+				</p>
+				<p>다음 예제는 for 문으로 '반복1 ~ 반복10'까지 1씩 증가되도록 하여 출력한 예제입니다.</p>
+				<div class="ex_style">
+					<p>
+						for(var i=1; i&#60;=10; i++){ <span>//중괄호 내에 실행문을 10번 반복합니다.</span><br />
+						<br />	
+							&nbsp;&nbsp;&nbsp;<span>//변수 i가 1씩 증가되어 10번 출력됩니다.</span><br />
+						<br />	
+						&nbsp;&nbsp;&nbsp;document.write("반복"+i,"<br />");<br />
+						<br />
+						}<br />
+					</p>
+				</div>
+				<img src="for2.jpg" alt="for문 예제 순서도" />
+				<p>
+					1. 변수 i에 초기값 1을 저장합니다. <br />
+					2. 조건식을 만족할 경우 중괄호에 실행문을 실행합니다.<br />
+					3. 증가 연산자로 변수 i의 값이 1만큼 증가됩니다.<br />
+					4. 다시 조건식 만족 여부를 검사한 후, 중괄호에 실행문을 실행할지 아니면 종료할지 결정합니다.
+				</p>
+				<a href="ex_3-7_for.html" class="ex_btn">예제보기</a>
+				<p>
+					다음 예제는 for 문을 이용하여 1부터 100까지 5의 배수일 경우에는 빨간색 글자,
+					7의 배수일 경우에는 초록색 글자, 그리고 5의 배수이며 7의 배수일 경우에는 파란색 글자로 출력되게 한 예제 입니다.
+				</p>
+				<div class="ex_style">
+					<p>
+						for(var i=1; i&#60;=100; i++){ <span>//변수 i가 100이 될 때까지 반복 실행합니다.</span><br />
+						&nbsp;&nbsp;&nbsp;if(i%5==0 && i%7!=0){ <span>//5의 배수이고 7의 배수가 아닌 경우</span><br />
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;document.write("&#60;font color='red'&#62;"+i+"&#60;/font&#62;","&#60;br /&#62;");<br />
+						&nbsp;&nbsp;&nbsp;}else if(i%7==0 && i%5!=0){ <span>//7의 배수이고 5의 배수가 아닌 경우</span><br />
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;document.write("&#60;font color='green'&#62;"+i+"&#60;/font&#62;","&#60;br /&#62;");<br />
+						&nbsp;&nbsp;&nbsp;}else if(i%7==0 && i%5==0){ <span>//7의 배수이고 5의 배수인 경우</span><br />
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;document.write("&#60;font color='blue'&#62;"+i+"&#60;/font&#62;","&#60;br /&#62;");<br />
+						&nbsp;&nbsp;&nbsp;}<br />
+						}
+					</p>
+				</div>
+				<a href="ex_3-7_for2.html" class="ex_btn">예제보기</a>
+				<p>
+					for 문을 사용하여 변수 i의 초기값 1부터 조건식 100보다 작거나 같을 때까지 i의 값을 1씩
+					증가시키며 중괄호{...}에 있는 실행문을 실행합니다.
+					즉, 1부터 시작해 100이 될 때까지 중괄호{...}에 있는 실행문이 실행되므로 100번 반복 실행된다는 것을 알 수 있습니다.
+					조건문에 의해 5의 배수이고 7의 배수가 아닐 경우에는 빨간색 글자로 출력되고,
+					7의 배수이며 5의 배수가 아닐 경우에는 초록색 글자로 출력됩니다.
+					그리고 7의 배수이고 5의 배수이면 파란색으로 글자가 출력됩니다.
+				</p>
+				<h3>- 중첩 for 문</h3>
+				<p>
+					for 문 안에 for 문을 사용한 것을 중첩 for 문이라고 합니다. 중첩 for 문은,
+					예를 들어 자바스크립트를 이용해 3행 5열의 표를 만든다고 할 때,
+					1행씩 행이 만들어질 때마다 5개의 열을 만들어야 할 경우 사용됩니다.
+				</p>
+				<div class="ex_style">
+					<p>
+						<span>기본형</span><br />
+						for(초기값; 조건식; 증감식){<br />
+						&nbsp;&nbsp;&nbsp;for(초기값; 조건식; 증감식){<br />
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;실행문;<br />
+						&nbsp;&nbsp;&nbsp;}<br />
+						}
+					</p>
+				</div>
+				<p>
+					다음은 중첩 for문을 사용하여 '1행 1열'부터 '3행 2열'까지 출력한 예제입니다.<br />
+					바깥쪽 for문은 행만큼 증가되고, 안쪽 for문은 열만큼 증가시키면 됩니다.
+				</p>
+				<div class="ex_style">
+					<p>
+						for(var i=1; i&#60;=3; i++){ <span>//3행(3번 반복)</span><br />
+						&nbsp;&nbsp;&nbsp;for(var k=1; k&#60;=2; k++){<span>//2열(2번 반복)</span><br />
+						&nbsp;&nbsp;&nbsp;<span>//3행이 생성되며 한 행씩 2열이 생성됩니다.</span><br />
+						&nbsp;&nbsp;&nbsp;document.write(i+"행"+k+"열","&#60;/br&#62;");<br />
+						&nbsp;&nbsp;&nbsp;}<br />
+							<br />
+						}
+					</p>
+				</div>
+				<a href="ex_3-7_for3.html" class="ex_btn">예제보기</a>
+				<p>다음은 중첩for문을 사용해 구구단이 출력되도록 만든 예제입니다.<br />
+					 바깥for문은 단만큼 2부터 9까지 증가되도록 하였고, 실행문으로 단수가 출력됩니다.<br />
+					 안쪽for문은 곱하는 수 1부터 9까지 증가되도록 하였고, <br />
+					 바깥쪽for문이 한 번 실행될 때마다 안쪽for문의 실행문은 9번씩 실행되므로 총 72번(8x9)의 실행문이 된다는 것을 알 수 있습니다.
+				</p>
+				<div class="ex_style">
+					<p>
+						for(var i=2; i&#60;=9; i++){ <span>//2에서 9단만큼 반복됩니다.</span><br />
+						&nbsp;&nbsp;&nbsp;document.write("&#60;h1&#62;"+i+"단&#60;/h1&#62;"); <span>//2단부터 9단까지 단수 출력</span><br />
+						&nbsp;&nbsp;&nbsp;for(var k=1; k&#60;=9; k++){ <span>//매 단마다 1부터 9까지 곱합니다.</span><br />
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;document.write(i+"x"+k+"="+i*k,"&#60;/br&#62;"); <span>//구구단 출력</span><br />
+						&nbsp;&nbsp;&nbsp;}<br />
+							<br />
+						}
+					</p>
+				</div>
+				<a href="ex_3-7_for4.html" class="ex_btn">예제보기</a>
+				<p>다음은 중첩for문을 사용하여 4행 3열 표를 출력한 예제입니다.<br />
+					 바깥쪽for문은 행의 수만큼 1부터 4까지 반복 실행합니다. 실행문에서는 "&#60;tr&#62;" 문자가 변수 t에 결합됩니다.<br />
+					 행에서는 열이 3개씩 생성되어야 합니다.<br />
+					 안쪽for문은 열의 수만큼 1부터 3까지 반복 실행합니다.
+					 바깥쪽for문이 한 번 실행될 때마다 안쪽for문은 3번씩 반복 실행되므로<br />
+					 총 12번(4x3)의 실행문이 실행됩니다.<br />
+					 그 결과, 전체 열은 12개가 생성된다는 것을 알 수 있습니다.<br />
+					 그리고 증가 연산자를 사용해서 num이 1씩 증가 된다는 것을 알 수 있습니다.<br />
+					 최종 변수 t에 문자 결합된 테이블 태그들을 문서에 출력합니다.
+				</p>
+				<div class="ex_style">
+					<p>
+						var num=1;<br />
+						var t="&#60;table border='1'&#62;"; <span>//테이블 시작 태그</span><br />
+						for(var i=1; i&#60;=4; i++){ <span>//4행</span><br />
+						&nbsp;&nbsp;&nbsp;t+="&#60;tr&#62;"; <span>//행 시작 태그</span><br />
+						&nbsp;&nbsp;&nbsp;for(var k=1; k&#60;=3; k++){ <span>//3열</span><br />
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;t+="&#60;td&#62;"+num+"&#60;/td&#62;";<br />
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;num++;<br />
+						&nbsp;&nbsp;&nbsp;}<br />
+						&nbsp;&nbsp;&nbsp;t+="&#60;/tr&#62;"; <span>//행 종료 태그</span><br />
+						}<br />
+						t+="&#60;/table&#62;"; <span>//테이블 종료 태그</span><br />
+						console.log(t);<br />
+						document.write(t); <span>//테이블 태그를 문서에 출력합니다.</span>
+					</p>
+				</div>
+				<a href="ex_3-7_for5.html" class="ex_btn">예제보기</a>
+				<h3>- for in 문</h3>
+				<p>
+					객체의 프로퍼티명을 열거하는 반복문<br />
+					for문으로 배열이나 컬렉션에 들어있는 내용을 뽑아서 확인하는 경우가 많다 보니 그 일만 전담하는
+					반복문이 새롭게 생겨났다.<br /> 
+					for in 문은 이처럼 컬렉션이나 배열 등의 리스트 형태의 자료구조의 값을 뽑아서 사용하기 편리한
+					특수한 기능을 가진 반복문이다.
+				</p>
+				<div class="ex_style">
+					<p>
+						<span>기본형</span><br />
+						for(변수 in 객체식){<br />
+						&nbsp;&nbsp;&nbsp;<span>// 문장</span>
+						}
+					</p>
+				</div>
+				<p>in의 왼쪽에는 대입할 곳으로 사용할 수 있는 식을 사용.<br />
+					 for문과 같이 for in 문 안에서 변수 선언 가능.
+				</p>
+				<div class="ex_style">
+					<p>
+						window.onload = function( ) {<br />
+						&nbsp;&nbsp;&nbsp;var arr = ['Korea', 'Japan', 'China'];<br />
+						&nbsp;&nbsp;&nbsp;var str = "";<br />
+						&nbsp;&nbsp;&nbsp;for (var i in arr) {<br />
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;str += "&#60;h2&#62;arr["+i+"]:"+ arr[i] +"&#60;/h2&#62;";<br />
+						&nbsp;&nbsp;&nbsp;}<br />
+						&nbsp;&nbsp;&nbsp;document.body.innerHTML = str;<br />
+						}
+					</p>
+				</div>
+				<a href="ex_3-7-2_for_in.html" class="ex_btn">예제보기</a>
+			</section>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+		</div>
+	</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+		<title>ex_3-4_switch</title>
+		<meta name="description" content="">
+		<meta name="author" content="hyeyoung">
+
+		<meta name="viewport" content="width=device-width; initial-scale=1.0">
+		<script>
+		var input = null;
+		function Fn01() {
+			this.play = function() { 
+				if(input == undefined || input == null) {
+					input = document.createElement("input");
+					document.body.appendChild(input);
+				}
+			};
+		}
+		function Fn02() {
+			this.play = function(choice) { 
+				if(input == undefined || input == null || input == "") {
+					alert("먼저 텍스트필드를 생성 하시오.");
+				} else {
+					alert((input.value != "") ? input.value : "먼저 입력을 하시오."); input.focus();
+				} choice.value = 0; //설렉트 박스를 "0"으로 초기화 한다.
+			};
+		}
+		factory = function (type) {
+			switch( type ) {
+			case "1" : return new Fn01();
+			case "2" : return new Fn02();
+			}
+		};
+		window.onload = function() {
+			var cho = document.getElementsByName("choice");
+			cho[0].onchange = function() { if(this.value != 0) {
+					var obj = factory(this.value );
+					obj.play(this);
+			}}; // 선택한 value 값이 "0"이 아니라면 반응한다.
+		};
+		</script>
+		</head>
+<body>
+
+<select name="choice">
+	<option value="0">선택하세요.</option>
+	<option value="1">텍스트 필드 생성</option>
+	<option value="2">텍스트 필드의 값 확인</option>
+</select>
+
+</body>
+</html>
