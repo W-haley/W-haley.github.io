@@ -1,7 +1,7 @@
 @charset "utf-8";
 
 /* wrap */
-#wrap{background:url(../images/bg_01.jpg) no-repeat center center fixed; -webkit-background-size: cover;-moz-background-size: cover;-o-background-size: cover;background-size: cover;}
+#wrap{background:url(../images/bg_01.jpg) no-repeat center center ; -webkit-background-size: cover;-moz-background-size: cover;-o-background-size: cover;background-size: cover;}
 .wrap_inner{width:940px;height:100%;margin:0 auto;}
 
 /* header */
