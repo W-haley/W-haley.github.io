@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="Author" content="http://www.seoulmetro.co.kr">
+		<meta name="keywords" content="서울 메트로, Seoul Metro">
+		<meta name="description" content="서울 메트로, Seoul Metro">
+		<meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width" /> 
+		<script src="http://cdn.dontorz.com/js/jquery/jquery-1.11.1.min.js"></script>
+		<script src="https://npmcdn.com/masonry-layout@4.0/dist/masonry.pkgd.min.js"></script>
+		<script src="js/metro-common.js"></script>
+		<link rel="stylesheet" href="css/base.css">
+		<link rel="stylesheet" href="css/layout.css">
+		<title>서울 메트로 | Seoul Metro</title>
+	</head>
+
+	<body>
+		<div id="wrap">
+			<div class="wrap_inner">
+				<!-- header -->
+				<header id="header">
+					<div class="util_menu">
+						<div class="util_smg_logo">
+							<span class="hide">서울 시청 로고입니다.</span>
+						</div>
+						<div class="util_leng">
+							<a href="#"><span class="hide">중국어 간체자</span></a>
+							<a href="#"><span class="hide">중국어 번체자</span></a>
+							<a href="#"><span class="hide">일본어</span></a>
+						</div>
+					</div><!-- // util_menu -->
+					<nav id="gnb">
+						<a href="index.html" class="logo" title="메인 화면으로 이동"><span class="hide">seoul metro</span></a>
+						<a href="#" class="menu m1"><img src="images/menu1.png" alt="metro map" /></a>
+						<a href="#" class="menu m2"><img src="images/menu2.png" alt="support" /></a>
+						<a href="#" class="menu m3"><img src="images/menu3.png" alt="notification center" /></a>
+						<a href="#" class="menu m4"><img src="images/menu4.png" alt="culture in metro" /></a>
+						<a href="#" class="menu m5"><img src="images/menu5.png" alt="corporate info" /></a>
+						<div class="search_wrap">
+							<a href="#"><span class="hide">검색 버튼</span></a>
+						</div>
+					</nav>
+				</header>
+				<!-- // header -->
+	
+				<!-- container -->
+				<section id="container">
+					<h1 class="visual">
+						<img src="images/visual_img.png" alt="safe and convenient transportation seoul, welcome to seoul metro" />
+					</h1>
+					<div class="cont_nav">
+						<div class="cont_nav_inner">
+							<h2><img src="images/nav_logo.png" alt="seoul metro map logo" /></h2>
+							<div class="nav_menu">
+								<a href="#" class="nav_m1"><img src="images/nav_m1.png" alt="역 이름 검색" /></a>
+								<a href="#" class="nav_m2"><img src="images/nav_m2.png" alt="경로 탐색" /></a>
+								<a href="#" class="nav_m3"><img src="images/nav_m3.png" alt="시간표 보기" /></a>
+							</div>
+							<div class="nav_search">
+								<a href="#"><img src="images/nav_search.png" alt="역이름을 검색해보세요." /></a>
+							</div>
+						</div>
+					</div><!-- // cont_nav -->
+					<div id="cont_inner" class="content_inner">
+						<div id="cont_images">
+							<div class="cont_div">
+								<div class="img_div">
+									<img class="cont_img" src="images/left1.png" alt="i seoul you" />
+								</div>
+							</div>
+							<div class="cont_div">
+								<div class="img_div">
+									<img src="images/center1.png" alt="외국인 관광객 지원서비스" />
+								</div>
+							</div>
+							<div class="cont_div cont_right">
+								<div class="img_div weather">
+									<img src="images/right1.png" alt="오늘 서울날씨" />
+									<a href="#" class="weather_more"><span class="hide">날씨 더 보기</span></a>
+								</div>
+							</div>
+							<div class="cont_div">
+								<div class="img_div notice">
+									<img src="images/left2.png" alt="공지사항" />
+									<a href="#" class="notice_more"><span class="hide">공지사항 더 보기</span></a>
+								</div>
+							</div>
+							<div class="cont_div">
+								<div class="img_div">
+									<img src="images/center2.png" alt="지하철 이용방법" />
+								</div>
+							</div>
+							<div class="cont_div cont_right fare_box">
+								<div class="img_div fare">
+									<img src="images/right2.png" alt="요금과 티켓" />
+									<a href="#" class="fare_info"><img src="images/fare_info.png" alt="요금정보" /></a>
+									<a href="#" class="fare_how"><img src="images/fare_how.png" alt="티켓사는방법" /></a>
+									<a href="#" class="fare_t-money"><img src="images/fare_t-money.png" alt="티머니" /></a>
+								</div>
+							</div>
+							<div class="cont_div customer_box">
+								<div class="img_div customer">
+									<img src="images/customer_center.png" alt="고객센터" />
+									<a href="#" class="lost_found"><img src="images/lost_found.png" alt="분실물센터" /></a>
+									<a href="#" class="tour_complain"><img src="images/tour_comp.png" alt="관광불편신고센터" /></a>
+								</div>
+							</div>
+							<div class="cont_div guide_box">
+								<div class="img_div guide">
+									<img src="images/guide.png" alt="지하철 투어 가이드" />
+									<a href="#" class="g_palace"><img src="images/g_palace.png" alt="고궁 가이드" /></a>
+									<a href="#" class="g_attract"><img src="images/g_attract.png" alt="테마파크 가이드" /></a>
+									<a href="#" class="g_shop"><img src="images/g_shop.png" alt="쇼핑 가이드" /></a>
+									<a href="#" class="g_gourmet"><img src="images/g_gourmet.png" alt="맛집 가이드" /></a>
+									<a href="#" class="g_accom"><img src="images/g_accom.png" alt="숙소 가이드" /></a>
+									<a href="#" class="g_museum"><img src="images/g_museum.png" alt="박물관 가이드" /></a>
+								</div>
+							</div>
+							<div class="cont_div cont_right app_box">
+								<div class="img_div">
+									<img src="images/right3.png" alt="서울지하철 모바일 앱을 다운받아보세요" />
+								</div>
+							</div>
+							<div class="cont_div">
+								<div class="img_div">
+									<img src="images/center4.png" alt="평창동계올림픽 홍보" />
+								</div>
+							</div>
+						</div><!-- // cont_images -->
+					</div><!-- // content_inner -->
+				</section>
+				<!-- // container -->
+	
+				<footer id="footer">
+					<div class="footer_top">
+						<ul class="footer_menu">
+							<li>
+								<a href="#" title="이용약관 페이지로 이동합니다">Terms of Agreement</a>
+							</li>
+							<li>
+								<a href="#" title="개인정보 취급방침 페이지로 이동합니다">Privacy Policy</a>
+							</li>
+							<li>
+								<a href="#" title="사이트맵 페이지로 이동합니다">Sitemap</a>
+							</li>
+						</ul><!-- // footer_menu -->
+						<div class="footer_site">
+							<div class="select_box select_tour">
+								<label for="tour">Tourist Websites</label>
+								<select id="tour">
+									<option selected="selected">Tourist Websites</option>
+									<option value="1">Tourist Websites</option>
+									<option value="2">Tourist Websites</option>
+									<option value="3">Tourist Websites</option>
+								</select>
+							</div><!--s-->
+							<div class="select_box select_governm">
+								<label for="government">Government Websites</label>
+								<select id="government">
+									<option selected="selected">Government Websites</option>
+									<option value="1">Government Websites</option>
+									<option value="2">Government Websites</option>
+									<option value="3">Government Websites</option>
+								</select>
+							</div><!--s-->
+						</div><!-- // footer_site -->
+					</div><!-- // footer_top -->
+					<div class="footer_bottom">
+						<h3 class="f_logo">Seoul Metro</h3>
+						<span>All rights reserved</span>
+						<span class="f_cust">Customer Center 1577-1234 (24hours)</span>
+					</div><!-- // footer_bottom -->
+				</footer>
+			</div><!-- // wrap_inner -->		
+		</div><!-- // wrap -->
+	</body>
+</html>

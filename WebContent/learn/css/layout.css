@@ -1,0 +1,177 @@
+@charset "utf-8";
+
+/* wrap */
+#wrap{background:url(../images/bg_01.jpg) no-repeat center center fixed; -webkit-background-size: cover;-moz-background-size: cover;-o-background-size: cover;background-size: cover;}
+.wrap_inner{width:940px;height:100%;margin:0 auto;}
+
+/* header */
+#header{width:100%;}
+.util_menu{width:940px;height:30px;margin:0 auto;border-bottom:1px solid rgba(157,157,157,0.5)}
+.util_menu:after{display:block;clear:both;content:""}
+.util_menu .util_smg_logo{float:left;width:741px;height:30px;background:url(../images/util_logo.png) 0 0 no-repeat;background-size:cover;}
+.util_menu .util_leng{float:left;width:199px;height:30px;font:0/0 Arial;}
+.util_leng a{display:inline-block;width:83px;height:30px;background:url(../images/u_ch_tradition.png) 0 0 no-repeat;background-size:cover;}
+.util_leng a:first-child{width:69px;background:url(../images/u_ch_simple.png) 0 0 no-repeat;background-size:cover;}
+.util_leng a:last-child{width:47px;background:url(../images/u_japan.png) 0 0 no-repeat;background-size:cover;}
+.util_leng a{}
+.util_leng a img{width:100%;}
+
+/* nav */
+#gnb{width:940px;height:82px;margin:0 auto;}
+#gnb:after{display:block;clear:both;content:""}
+#gnb a{float:left;}
+#gnb .logo{display:block;width:194px;height:82px;background:url(../images/h_logo.png) 0 0 no-repeat;background-size:cover;}
+#gnb .search_wrap{float:right;width:78px;height:82px;}
+#gnb .search_wrap a{display:inline-block;width:78px;height:82px;background:url(../images/search_btn.png) 0 0 no-repeat;background-size:cover;}
+
+/* contents */
+.visual{width:940px;height:257px;}
+
+#container{width:940px;margin:0 auto 50px auto;}
+.cont_nav{width:940px;height:70px;margin-bottom:20px;background:url(../images/bg_nav.png) 0 0 no-repeat;}
+.cont_nav_inner{width:940px;height:66px;padding-top:4px;}
+.cont_nav_inner:after{display:block;clear:both;content:""}
+.cont_nav_inner h2{float:left;width:320px;height:66px;}
+.cont_nav_inner .nav_menu{float:left;width:300px;height:66px;}
+.cont_nav_inner img{width:100%;}
+.nav_menu a{display:inline-block;float:left;}
+.nav_menu a.nav_m1{width:96px;height:100%;}
+.nav_menu a.nav_m2{width:98px;height:100%;}
+.nav_menu a.nav_m3{width:106px;height:100%;}
+.cont_nav_inner .nav_search{float:right;width:320px;height:66px;}
+.nav_search a{display:block;}
+
+#cont_inner{width:960px;margin:0 auto;}
+#cont_images .cont_div{float:left;width:300px;height:200px;margin:0 20px 20px 0;}
+#cont_images .cont_div img{width:100%;}
+#cont_images .cont_right{margin-right:0;}
+#cont_images .fare_box{height:360px;}
+#cont_images .customer_box{height:416px;}
+#cont_images .guide_box{height:332px;}
+#cont_images .app_box{height:300px;}
+.guide_box .guide{font:0/0 Arial;}
+.guide a{display:inline-block;}
+.cont_div .weather{position:relative;}
+.weather .weather_more{display:inline-block;position:absolute;top:27px;right:20px;width:18px;height:18px;background:url(../images/weather_more_ico.png) 0 0 no-repeat;}
+.cont_div .notice{position:relative;}
+.notice .notice_more{display:inline-block;position:absolute;top:27px;right:20px;width:18px;height:18px;background:url(../images/notice_more_ico.png) 0 0 no-repeat;}
+.cont_div .customer{margin-bottom:0;background:#fff;}
+.customer a{display:inline-block;width:100%;}
+.fare a{display:inline-block;width:100%;}
+
+/* footer */
+#footer{width:940px;height:128px;margin:0 auto;background:rgba(0,0,0,0.2);}
+.footer_top{width:940px;height:55px;}
+.footer_top:after{display:block;clear:both;content:""}
+.footer_top .footer_menu{float:left;width:322px;height:55px;}
+.footer_top .footer_site{float:right;width:392px;height:45px;padding-top:10px;}
+.footer_menu li{position:relative;float:left;height:55px;}
+.footer_menu li:after{display:inline-block;position:absolute;top:21px;right:1px;width:1px;height:14px;background:rgba(255,255,255,0.3);content:"";}
+.footer_menu li:last-child:after{display:none;}
+.footer_menu li a{display:inline-block;padding:0 11px;font-size:12px;color:#fff;line-height:55px;letter-spacing:0.50px;text-align:center;}
+.footer_site .select_box{position:relative;float:left;width:168px;height:33px;margin-right:10px;border:1px solid #d7dce4;}
+.footer_site .select_governm{width:200px;}
+.select_box label{position:absolute;top:0;left:0;width:154px;height:33px;padding-left:14px;font-size:12px;color:#fff;letter-spacing:0.50px;line-height:33px;background:url(../images/arr-ico.png) 0 0 no-repeat;background-position:right 14px top 11px;}
+.select_governm label{width:186px;}
+.select_box #tour{width:168px;height:33px;padding-left:14px;line-height:33px;opacity: 0;filter: alpha(opacity=0);}
+.select_box #government{width:200px;height:33px;padding-left:14px;line-height:33px;opacity: 0;filter: alpha(opacity=0);}
+.footer_bottom{width:940px;height:21px;line-height:21px;}
+.footer_bottom:after{display:block;clear:both;content:""}
+.footer_bottom span{float:left;display:inline-block;height:21px;color:#fff;font-size:12px;vertical-align:middle;}
+.footer_bottom h3{float:left;width:128px;height:21px;line-height:21px;background:url(../images/f_logo.png) 10px 0 no-repeat;text-indent:-9999px;}
+.footer_bottom .f_cust{float:right;padding:0 13px;}
+
+@media screen and (max-width:939px) { /*시안 사이즈 : 940px*/
+	/* wrap */
+	.wrap_inner{width:100%;margin:0 auto;}
+	
+	/* header */
+	#header .util_menu{width:100%;height:100%;}
+	.util_menu .util_smg_logo{width:78.9%;}
+	.util_menu .util_leng{width:21.1%;}
+	.util_leng a{width:41.7%;}
+	.util_leng a:first-child{width:34.7%;}
+	.util_leng a:last-child{width:23.6%;}
+	
+	/* nav */
+	#gnb{width:100%;}
+	#gnb .logo{width:20.7%;height:100%;background-size:cover;}
+	#gnb .m1{width:11%;}
+	#gnb .m2{width:11.5%}
+	#gnb .m3{width:17.6%;}
+	#gnb .m4{width:16.6%;}
+	#gnb .m5{width:14.5%;}
+	#gnb a img{width:100%;}
+	#gnb .search_wrap{width:8.1%;height:100%;background-size:cover;}
+	#gnb .search_wrap a{width:100%;}
+	
+	/* contents */
+	.visual{width:100%;height:100%;}
+	.visual img{width:100%;}
+	#container{width:100%;}
+	.cont_nav{width:100%;height:100%;}
+	.cont_nav_inner{width:100%;height:100%;}
+	.cont_nav_inner h2{width:34%;height:100%;}
+	.cont_nav_inner .nav_menu{width:31.9%;height:100%;}
+	.nav_menu a.nav_m1{width:32%;}
+	.nav_menu a.nav_m2{width:32.7%;}
+	.nav_menu a.nav_m3{width:35.3%;}
+	.cont_nav_inner .nav_search{width:34.1%;height:100%;}
+		
+	#cont_inner{width:100%;}
+	
+	.notice .notice_more{top:13.5%;right:6.7%;width:6%;height:9%;background-size:cover;}
+	.weather .weather_more{top:13.5%;right:6.7%;width:6%;height:9%;background-size:cover;}
+
+	/* footer */
+	#footer{width:100%;}
+	.footer_top{width:100%;}
+	.footer_top .footer_menu{width:58%;height:100%;}
+	.footer_top .footer_site{width:41.7%;}
+	.footer_menu li{height:100%;padding-top:10px;}
+	.footer_menu li:after{top:38.2%;}
+	.footer_menu li a{line-height:100%;}
+	.footer_site .select_box{width:42%;height:60%;margin-right:2.6%;}
+	.footer_site .select_governm{width:51.0%;}
+	.select_box label{left:0;width:100%;height:100%;padding-left:0;background:none;}
+	.select_box #tour{width:100%;height:100%;padding-left:0;}
+	.select_box #government{width:100%;height:100%;padding-left:0;}
+	.footer_bottom{width:100%;}
+}
+
+@media screen and (min-width:320px) and (max-width:640px) {
+	/* wrap */
+	#wrap{background:url(../images/bg_01_mobile.jpg) no-repeat center center fixed; -webkit-background-size: cover;-moz-background-size: cover;-o-background-size: cover;background-size: cover;}
+	.wrap_inner{width:100%;}
+	
+	/* header */
+	#header .util_menu{width:100%;height:100%;}
+	.util_menu .util_smg_logo{width:100%;}
+	.util_menu .util_leng{display:none;}
+	
+	/* nav */
+	#gnb{width:100%;height:60px;min-width:320px;min-height:60px;}
+	#gnb .logo{display:none;}
+	#gnb .menu{display:none;}
+	#gnb .search_wrap{display:none;}
+	
+	/* contents */
+	#container{width:89%;margin-top: 190px;padding:0 5.5%;}
+	.visual{display:none;}
+	#content{width:100%;}
+	.cont_nav{width:100%;height:100px;margin-bottom:9px;background:url(../images/m_bg_nav.png) 0 0 no-repeat;background-size:cover;}
+	.cont_nav_inner{display:none;}
+		
+	#cont_inner{width:100%;}
+	
+	/* footer */
+	#footer{min-height:119px;}
+	.footer_menu li{height:35px;}
+	.footer_menu li a{line-height:35px;}
+	.footer_top .footer_menu{width:100%;height:100%;}
+	.footer_menu li:after{top:21px;}
+	.footer_top .footer_site{display:none;}
+	.footer_bottom{height:37px;line-height:37px;}
+	.footer_bottom h3{height:37px;line-height:37px;background-position:left 10px top 50%;}
+	.footer_bottom .f_cust{display:none;}
+}

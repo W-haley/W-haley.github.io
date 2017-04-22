@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="Author" content="http://www.seoulmetro.co.kr">
+		<meta name="keywords" content="서울 메트로">
+		<meta name="description" content="서울 메트로">
+		<meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width" /> 
+		<title>Seoul Metro</title>
+		<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+		<link rel="stylesheet" href="css/base.css">
+		<link rel="stylesheet" href="css/layout.css">
+	</head>
+
+	<body>
+		<div id="wrap">
+			<div class="wrap_inner">
+				<!-- header -->
+				<header id="header">
+					<div class="util_menu">
+						<div class="util_left">
+							<img src="images/util_left.png" alt="seoul metropolitan government" />
+						</div>
+						<div class="util_right">
+							<a href="#"><img src="images/util1.png" alt="중문1" /></a>
+							<a href="#"><img src="images/util2.png" alt="중문2" /></a>
+							<a href="#"><img src="images/util3.png" alt="일문" /></a>
+						</div>
+					</div><!-- // util_menu -->
+					<nav id="gnb">
+						<h1 class="logo"><a href="index.html" title="메인 화면으로 이동"><span class="hide">seoul metro</span></a></h1>
+						<ul class="menu">
+							<li class="m1"><a href="#"><img src="images/menu1.png" alt="metro map" /></a></li>
+							<li class="m2"><a href="#"><img src="images/menu2.png" alt="support" /></a></li>
+							<li class="m3"><a href="#"><img src="images/menu3.png" alt="notification center" /></a></li>
+							<li class="m4"><a href="#"><img src="images/menu4.png" alt="culture in metro" /></a></li>
+							<li class="m5"><a href="#"><img src="images/menu5.png" alt="corporate info" /></a></li>
+						</ul>
+						<div class="search_wrap">
+							<a href="#"><span class="hide">검색 버튼</span></a>
+						</div>
+					</nav>
+				</header>
+				<!-- // header -->
+	
+				<!-- container -->
+				<section id="container">
+					<div class="visual">
+						<img src="images/visual_img.png" alt="safe and convenient transportation seoul, welcome to seoul metro" />
+					</div>
+					<div id="content">
+						<div class="cont_nav">
+							<div class="cont_nav_inner">
+								<h2><img src="images/nav_logo.png" alt="seoul metro map logo" /></h2>
+								<div class="nav_menu">
+									<a href="#" class="nav_m1">staion</a>
+									<a href="#" class="nav_m2">route</a>
+									<a href="#" class="nav_m3">time table</a>
+								</div>
+								<div class="nav_search">
+									<a href="#"><img src="images/nav_search.png" alt="역이름을 검색해보세요." /></a>
+								</div>
+							</div>
+						</div><!-- // cont_nav -->
+						<div class="content_inner">
+							<div class="right_cont_box">
+								<div class="center_cont">
+									<div class="cont center1"><img src="images/center1.png" alt="" /></div>
+									<div class="cont center2"><img src="images/center2.png" alt="" /></div>
+									<div class="cont center3"><img src="images/center3.png" alt="" /></div>
+									<div class="cont center4"><img src="images/center4.png" alt="" /></div>
+								</div><!-- // center_cont -->
+								<div class="right_cont">
+									<div class="cont right1"><img src="images/right1.png" alt="" /></div>
+									<div class="cont right2"><img src="images/right2.png" alt="" /></div>
+									<div class="cont right3"><img src="images/right3.png" alt="" /></div>
+								</div><!-- // right_cont -->
+							</div><!-- // right_cont_box -->
+							<div class="left_cont">
+								<div class="cont left1"><img src="images/left1.png" alt="" /></div>
+								<div class="cont left2"><img src="images/left2.png" alt="" /></div>
+								<div class="cont left left3"><img src="images/left3.png" alt="" /></div>
+							</div><!-- // left_cont -->
+						</div><!-- // content_inner -->
+					</div><!-- // content -->
+				</section>
+				<!-- // container -->
+	
+				<footer id="footer">
+					<div class="footer_top">
+						<ul class="footer_menu">
+							<li>
+								<a>Terms of Agreement</a>
+							</li>
+							<li>
+								<a>Privacy Policy</a>
+							</li>
+							<li>
+								<a>Sitemap</a>
+							</li>
+						</ul><!-- // footer_menu -->
+						<div class="footer_site">
+							<div class="select_box select1">
+								<label for="tour">Tourist Websites</label>
+								<select id="tour">
+									<option selected="selected">Tourist Websites</option>
+									<option value="1">Tourist Websites</option>
+									<option value="2">Tourist Websites</option>
+									<option value="3">Tourist Websites</option>
+								</select>
+							</div><!--s-->
+							<div class="select_box select2">
+								<label for="government">Government Websites</label>
+								<select id="government">
+									<option selected="selected">Government Websites</option>
+									<option value="1">Government Websites</option>
+									<option value="2">Government Websites</option>
+									<option value="3">Government Websites</option>
+								</select>
+							</div><!--s-->
+						</div><!-- // footer_site -->
+					</div><!-- // footer_top -->
+					<div class="footer_bottom">
+						<h3 class="f_logo">Seoul Metro</h3>
+						<span>All rights reserved</span>
+						<span class="f_cust">Customer Center 1577-1234 (24hours)</span>
+					</div><!-- // footer_bottom -->
+				</footer>
+			</div><!-- // wrap_inner -->		
+		</div><!-- // wrap -->
+	</body>
+</html>
+
+
+
+
+
+
+ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ
+/* wrap */
+#wrap{width:100%;height:100%;margin:0 auto;background:url(../images/bg_01.jpg) 50% 50% no-repeat;background-size:2000px 1630px;}
+.wrap_inner{width:940px;margin:0 auto;}
+
+/* header */
+#header{width:100%;}
+#header .util_menu{overflow:hidden;width:940px;height:30px;margin:0 auto;border-bottom:1px solid rgba(157,157,157,0.5)}
+.util_menu .util_left{float:left;width:741px;height:30px;}
+.util_menu .util_right{float:left;width:199px;height:30px;font:0/0 Arial;}
+.util_right a{display:inline-block;}
+
+/* nav */
+#gnb{overflow:hidden;width:940px;height:82px;margin:0 auto;}
+#gnb h1{float:left;width:194px;height:82px;}
+#gnb h1 a{display:inline-block;width:194px;height:82px;background:url(../images/h_logo.png) 0 0 no-repeat;}
+#gnb .menu{float:left;width:668px;height:82px;}
+#gnb .menu li{float:left;}
+#gnb .search_wrap{float:right;width:78px;height:82px;}
+#gnb .search_wrap a{display:inline-block;width:78px;height:82px;background:url(../images/search_btn.png) 0 0 no-repeat;}
+
+/* contents */
+.visual{width:940px;height:257px;}
+
+#content{width:940px;margin:0 auto 50px auto;}
+.cont_nav{width:940px;height:70px;margin-bottom:20px;background:url(../images/bg_nav.png) 0 0 no-repeat;}
+.cont_nav_inner{overflow:hidden;width:940px;height:66px;padding-top:4px;}
+.cont_nav_inner h2{float:left;width:320px;height:66px;}
+.cont_nav_inner .nav_menu{float:left;width:300px;height:66px;}
+.nav_menu a{display:inline-block;float:left;text-indent:-9999px;}
+.nav_menu a.nav_m1{width:96px;height:66px;background:url(../images/nav_m1.png) 0 0 no-repeat;}
+.nav_menu a.nav_m2{width:98px;height:66px;background:url(../images/nav_m2.png) 0 0 no-repeat;}
+.nav_menu a.nav_m3{width:106px;height:66px;background:url(../images/nav_m3.png) 0 0 no-repeat;}
+.cont_nav_inner .nav_search{float:right;width:320px;height:66px;}
+
+.content_inner{overflow:hidden;width:940px;margin:0 auto;}
+.content_inner .left_cont{float:left;width:300px;height:100%;margin-right:20px;}
+.content_inner .right_cont_box{float:right;width:620px;height:100%;}
+.cont{width:300px;height:200px;margin-bottom:20px;}
+
+.left_cont .left3{height:416px;margin-bottom:0;}
+
+.right_cont_box .center_cont{float:left;width:300px;margin-right:20px;}
+.right_cont_box .right_cont{float:right;width:300px;}
+
+.center_cont .center3{height:332px;}
+.center_cont .center4{margin-bottom:0;}
+
+.right_cont .right2{height:360px;}
+.right_cont .right3{height:300px;margin-bottom:0;}
+
+/* footer */
+#footer{width:940px;height:128px;margin:0 auto;background:rgba(0,0,0,0.2);}
+.footer_top{overflow:hidden;width:940px;height:55px;}
+.footer_top .footer_menu{float:left;width:322px;height:55px;}
+.footer_top .footer_site{float:right;width:392px;height:45px;padding-top:10px;}
+.footer_menu li{position:relative;float:left;height:55px;}
+.footer_menu li:after{display:inline-block;position:absolute;top:21px;right:1px;width:1px;height:14px;background:rgba(255,255,255,0.3);content:"";}
+.footer_menu li:last-child:after{display:none;}
+.footer_menu li a{display:inline-block;padding:0 11px;font-size:12px;color:#fff;line-height:55px;letter-spacing:0.50px;text-align:center;}
+.footer_site .select_box{position:relative;float:left;width:168px;height:33px;margin-right:10px;border:1px solid #d7dce4;}
+.footer_site .select2{width:200px;}
+.select_box label{position:absolute;top:0;left:0;width:154px;height:33px;padding-left:14px;font-size:12px;color:#fff;letter-spacing:0.50px;line-height:33px;background:url(../images/arr-ico.png) 0 0 no-repeat;background-position:right 14px top 11px;}
+.select2 label{width:186px;}
+.select_box #tour{width:168px;height:33px;padding-left:14px;line-height:33px;opacity: 0;filter: alpha(opacity=0);}
+.select_box #government{width:200px;height:33px;padding-left:14px;line-height:33px;opacity: 0;filter: alpha(opacity=0);}
+.footer_bottom{overflow:hidden;width:940px;height:21px;line-height:21px;}
+.footer_bottom span{float:left;display:inline-block;height:21px;color:#fff;font-size:12px;vertical-align:middle;}
+.footer_bottom h3{float:left;width:128px;height:21px;line-height:21px;background:url(../images/f_logo.png) 10px 0 no-repeat;text-indent:-9999px;}
+.footer_bottom .f_cust{float:right;padding:0 13px;}
+
+@media screen and (max-width:939px) {
+	#wrap{width:100%;height:100%;background-size:contain;}
+	.wrap_inner{width:100%;margin:0 auto;}
+	#header .util_menu{width:100%;height:100%;}
+	.util_menu .util_left{width:78.91%;}
+	.util_menu .util_right{width:21.09%;}
+	.util_right a{width:41.71%;}
+	.util_right a:first-child{width:34.67%;}
+	.util_right a:last-child{width:23.62%;}
+	#gnb{width:100%;}
+	#gnb h1{width:20.66%;height:100%;background-size:cover;}
+	#gnb .menu{width:71.16%;}
+	.menu li{height:100%;}
+	.menu .m1{width:15.78%;}
+	.menu .m2{width:16.08%}
+	.menu .m3{width:24.61%;}
+	.menu .m4{width:23.26%;}
+	.menu .m5{width:20.27%;}
+	.menu li img{width:100%;}
+	#gnb .search_wrap{width:8.18%;height:100%;background-size:cover;}
+	
+	.visual{width:100%;height:100%;}
+	.visual img{width:100%;}
+	#content{width:100%;}
+	.cont_nav{width:100%;height:100%;}
+	.cont_nav_inner{width:100%;height:100%;}
+	.cont_nav_inner h2{width:34.04%;height:100%;}
+	.cont_nav_inner .nav_menu{width:31.91%;height:100%;}
+	.nav_menu a.nav_m1{width:32%;}
+	.nav_menu a.nav_m2{width:32.67%;}
+	.nav_menu a.nav_m3{width:35.33%;}
+	.cont_nav_inner .nav_search{width:34.05%;height:100%;}
+		
+	.content_inner{width:100%;}
+	.content_inner .left_cont{width:31.95%;margin-right:2.12%;}
+	.content_inner .right_cont_box{width:65.93%;}
+	.cont{width:100%;height:100%;}
+	.cont img{width:100%;}
+	
+	.right_cont_box .center_cont{float:left;width:48.38%;margin-right:2.12%;}
+	.right_cont_box .right_cont{float:right;width:48.38%;}
+	
+	.left_cont .left3{height:100%;}
+	.center_cont .center3{height:100%;}
+	.right_cont .right2{height:100%;}
+	.right_cont .right3{height:100%;}
+}
+
+@media screen and (min-width:320px) and (max-width:640px) {
+	#wrap{width:89%;padding:0 5.5%;}
+	.wrap_inner{width:100%;}
+	
+}
