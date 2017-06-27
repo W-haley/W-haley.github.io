@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+<script type="text/javascript">
+    toback = function(){
+        window.history.back();
+    }
+    toforward = function(){
+        window.history.forward();
+    }
+    gogo = function(){
+        window.history.go(-2);
+        
+    }
+</script>
+<style>
+
+</style>
+</head>
+<body>
+    <h2><a href="5-2.html">첫째</a></h2>
+    <h2><a href="5-2-2.html">둘째</a></h2>
+    <h1>셋째</h1>
+    <button onclick="toback()">뒤로</button>
+    <button onclick="toforward()">앞으로</button>
+    <button onclick="gogo()">두칸뒤로</button>
+</body>
+</html>

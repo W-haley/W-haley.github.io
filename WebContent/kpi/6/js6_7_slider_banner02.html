@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>kpi 실습</title>
+
+	<style type="text/css">
+		#banner{position:relative; width:300px; height:125px; background:yellow; border:1px solid red; overflow:hidden;}
+		#img_grp{position:relative; background:green; width:1400px; height:60px; padding:0; margin:0;}
+		.img{position:relative; float:left; list-style:none;}
+		#popup{position:absolute; top:20px; left:50px; width:200px; height:300px; background:red; border:1px solid #000; display:none;}
+		#popup img{width:100%; height:100%;}
+		img{width:100px;}
+	</style>
+
+	<script type="text/javascript">
+		imgLis = new Array(13);
+		banner = null;
+		popup = null;
+		createLi = function(i){
+			var li = document.createElement("li");
+			li.className = "img";
+			var fileName = "img_num" + (i<10 ? "0"+i : i) + ".gif";
+			console.log(fileName);
+			li.innerHTML = '<img src="../img/'+fileName+'">';
+			imgLis[i] = li;
+			return li;
+		}
+		init = function(){
+			banner = document.getElementById("banner");
+			popup = document.getElementById("popup");
+			this.ul = document.createElement("ul");
+			this.ul.id = "img_grp";
+			for(var i=0; i<13; i++){
+				var li = createLi(i);
+				ul.appendChild(li);
+			}
+			banner.appendChild(this.ul);
+		}
+		setEvent = function(){
+			for(var i=0; i < imgLis.length; i++){
+				imgLis[i].onclick = function(){
+					popup.style.display = "block";
+
+					var str = this.innerHTML;
+					str = str.substr(0,str.length-1);
+					str += 'width="100%" height="100%">';
+					popup.innerHTML = str;
+				}
+			}
+			popup.onclick = function(){
+				this.style.display ="none";
+			}
+		}
+		var cnt = 0;
+		var step = -10;
+		move = function(){
+			cnt += step;
+			if(cnt < -990 || cnt > -10) {
+				step *= -1;
+			}
+			ul.style.left = cnt + "px";
+		}
+		start = function(){
+			setEvent();
+			fn = setInterval("move()", 100);
+			banner.onmouseover = function(){
+				clearInterval(fn);
+			}
+			banner.onmouseout = function(){
+				fn = setInterval("move()", 100);
+			}
+		}
+		window.onload = function(){
+			init();
+			start();
+		}
+	</script>
+</head>
+<body>
+	<div id="banner"></div>
+	<div id="popup"></div>
+	<p>이미지를 클릭 하시면 크게 볼 수 있습니다.</p>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> jQuery example </title>
+<meta http-equiv="Content-Type" content="text/html; charset=EUC-KR">
+<title>Insert title here</title>
+</head>
+<script>
+function People() {
+	this.name = "";
+}
+People.prototype.setName = function(name) {
+	this.name = name;
+};
+People.prototype.getName = function() {
+	return this.name;
+};
+
+window.onload = function() {
+	var obj4 = new People();
+	obj4.setName("������");
+	console.log("obj4.getName() = " + obj4.getName() );
+};
+</script>
+
+<body>
+
+</body>
+</html>

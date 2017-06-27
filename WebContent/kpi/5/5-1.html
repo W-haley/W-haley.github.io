@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+<script type="text/javascript">
+    //html,css,javascript 파일 등이 전부 로딩되었을때 감지하는 이벤트 메서드
+    window.onload = function(){
+        win = window.open("","_blank","width=200,height=200");
+        setTimeout(function(){
+            win.moveTo(100,100);
+            setTimeout(function(){
+               win.resizeTo(500,500);
+                setTimeout(function(){
+                    win.close();
+                    document.write("<h1>감사합니당</h1>");
+                },1000);
+            },1000);
+        },1000);
+    };
+</script>
+<style>
+
+</style>
+</head>
+<body>
+   
+</body>
+</html>
+

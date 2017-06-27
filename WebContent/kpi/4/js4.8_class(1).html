@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> jQuery example </title>
+<meta http-equiv="Content-Type" content="text/html; charset=EUC-KR">
+<title>�ڹٽ�ũ��Ʈ���� ����� ���� ��ü�� ����ϴ� ���</title>
+</head>
+<script>
+window.onload = function() {
+	//1. ���ͷ��� �̿��� ��ü ���.
+	var obj1 = {
+		name:"������", 
+		getName:function() {
+			return this.name;
+		}
+	};
+	console.log("obj1.getName() = " + obj1.getName() );
+
+	//2. new Object()�� �̿��� ��ü ���.
+	var obj2 = new Object();
+	obj2.name = "������";
+	obj2.getName = function(){
+		return this.name;
+	};
+	console.log("obj2.getName() = " + obj2.getName() );
+
+	//3. Ŭ������ ��� ��ü ���.
+	function People() {
+		this.name = "������";
+		this.getName = function() {
+			return this.name;
+		};
+	};
+	var obj3 = new People();
+	console.log("obj3.getName() = " + obj3.getName() );
+};
+</script>
+
+<body>
+
+</body>
+</html>

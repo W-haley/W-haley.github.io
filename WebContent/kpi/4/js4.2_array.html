@@ -1,0 +1,37 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=EUC-KR">
+<script>
+window.onload = function() {
+	cells = document.getElementsByTagName("td");
+	arr = new Array(4);
+	for(var i=0; i<4; i++) {
+		arr[i] = new Array(4);
+		for(var j=0; j<4; j++) {
+			arr[i][j] = cells[4*i+j];
+			arr[i][j].innerHTML = 4*i+j;
+			arr[i][j].style.background = 
+				i%2==0&&(4*i+j)%2!=0 || i%2!=0&&(4*i+j)%2==0 ? "Yellow" : "Green";
+		}
+	}
+}
+</script>
+</head>
+<body>
+<table id="puzzle" border="1" width="400" height="400">
+	<tr>
+		<td>.</td><td>.</td><td>.</td><td>.</td>
+	</tr>
+	<tr>
+		<td>.</td><td>.</td><td>.</td><td>.</td>
+	</tr>
+	<tr>
+		<td>.</td><td>.</td><td>.</td><td>.</td>
+	</tr>
+	<tr>
+		<td>.</td><td>.</td><td>.</td><td>.</td>
+	</tr>
+</table>
+</body>
+</html>

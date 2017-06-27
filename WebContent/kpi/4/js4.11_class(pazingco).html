@@ -1,0 +1,80 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>New Web Project</title>
+<style type="text/css">
+#view {
+	position: relative;
+	width: 370px;
+	height: 100px;
+	border: 1px solid Green;
+	overflow: hidden;
+}
+.card_group {
+	position: relative;
+	width: 120px;
+	height: 700px;
+	border: 1px solid Red;
+	padding: 0;
+	margin: 0;
+	float: left;
+}
+.card {
+	position: relative;
+	width: 120px;
+	height: 98px;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	border: 1px solid Green;
+}
+</style>
+<script type="text/javascript">
+function CardGroup () {
+	this.group01 = document.createElement("ul");
+	this.group01.className = "card_group";
+	for(var i=1; i<=7; i++) {
+		var list = document.createElement("li");
+		list.innerHTML = ""+i;
+		list.className = "card";
+		this.group01.appendChild(list);
+	}
+	this.getCardGroup = function() {
+		return this.group01;
+	}
+	this.play = function() {
+		var y = 0;
+		var speed = -10;
+		var dest = Math.floor(Math.random()*3600) * -1;
+		var group = this.group01;
+		var fn = setInterval(function() {
+			y += speed;
+			if(y <= dest) {
+				clearInterval(fn);
+			}
+			group.style.top = y%600 + "px";
+		}, 10);
+	}
+}
+window.onload = function() {
+	var view = document.getElementById("view");
+	var cardGroup1 = new CardGroup();
+	var cardGroup2 = new CardGroup();
+	var cardGroup3 = new CardGroup();
+	view.appendChild(cardGroup1.getCardGroup());
+	view.appendChild(cardGroup2.getCardGroup());
+	view.appendChild(cardGroup3.getCardGroup());
+	cardGroup1.play();
+	cardGroup2.play();
+	cardGroup3.play();
+}
+</script>
+</head>
+<body>
+<h1>Javascript class game</h1>
+<div id="view"></div>
+</body>
+</html>
+

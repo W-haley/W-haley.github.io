@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>kpi 실습</title>
+
+	<script type="text/javascript">
+		setNumber = function(){
+			for(var i=0; i<tdArr.length; i++){
+				tdArr[i].innerHTML = "" + i;
+			}
+		}
+		setColor = function(){
+			var colors = ['red','orange','yellow','green','blue','navy','violet'];
+			for (var i=0; i<tdArr.length; i++){
+				tdArr[i].style.background = colors[i];
+			}
+		}
+		window.onload = function(){
+			tdArr = document.getElementsByTagName('td');
+		}
+	</script>
+</head>
+<body>
+	<table style="border:1px solid #333;">
+		<caption>예제테이블</caption>
+		<colgroup>
+			<col style="width:100px;">
+			<col style="width:100px;">
+			<col style="width:100px;">
+			<col style="width:100px;">
+			<col style="width:100px;">
+			<col style="width:100px;">
+			<col style="width:100px;">
+		</colgroup>
+		<tbody>
+			<tr>
+				<td>.</td>
+				<td>.</td>
+				<td>.</td>
+				<td>.</td>
+				<td>.</td>
+				<td>.</td>
+				<td>.</td>
+			</tr>
+		</tbody>
+	</table>
+	<button onclick="setNumber()">셀에 번호 채우기</button><br>
+	<button onclick="setColor()">셀에 색상 채우기</button>
+</body>
+</html>

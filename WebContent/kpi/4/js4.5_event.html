@@ -1,0 +1,20 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=euc-kr">
+<script>
+testEvent = function() {
+	console.log(event);
+	var str = event + '\n';
+	str += event.srcElement + '\n';
+	str += event.srcElement.innerHTML + '\n';
+	str += event.x + '\n';
+	str += event.y + '\n';
+	alert(str);
+}
+</script>
+</head>
+<body>
+<button onclick="testEvent()">함수 호출 event 객체 실습</button>
+</body>
+</html>

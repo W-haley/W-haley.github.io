@@ -1,0 +1,23 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=EUC-KR">
+<title>Insert title here</title>
+<script>
+url = "fileName?name=kim&memo=gildong";
+str = url.split("?")[1];
+query = str.split("&");
+arr = new Array();
+for(var i=0; i<query.length; i++) {
+	var key_value = query[i].split("=");
+	arr[key_value[0]] = key_value[1];
+}
+str2 = 'key = ' + arr['name'] + '<br>value = ' + arr['memo'];
+document.write(str2);
+//---- 5장에서 좀 더 자세한 내용이 이어 집니다.. ----//
+</script>
+</head>
+<body>
+
+</body>
+</html>

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>kpi 실습</title>
+
+	<style type="text/css">
+	td{width:100px; height:100px; font-size:18px; text-align:center;}
+	</style>
+
+	<script type="text/javascript">
+		function Puzzle(){
+			this.cells = null;
+			this.tdArr = new Array(4);
+			this.init = function(){
+				this.cells = document.getElementsByTagName("td");
+				for(var i=0; i<this.tdArr.length; i++){
+					this.tdArr[i] = new Array(4);
+					for(var j=0; j<this.tdArr[i].length; j++){
+						this.tdArr[i][j] = this.cells[i*4 + j];
+					}
+				}
+			};
+			this.start = function(){
+				var ch=0;
+				var row,col;
+				for(var i=0; i<this.cells.length;){
+					row = Math.floor(Math.random()*4);
+					col = Math.floor(Math.random()*4);
+					if(this.tdArr[row][col].innerHTML == "."){
+						this.tdArr[row][col].alphabet = String.fromCharCode(ch%8 + 65);
+						this.tdArr[row][col].innerHTML = this.tdArr[row][col].alphabet;
+						ch++;
+						i++;
+					}
+				}
+				// 5초 후에 알파벳을 감춘다.
+				var cells = this.cells;
+				var play = this.play;
+				setTimeout(function(){
+					play(cells);
+				}, 5000);
+			};
+			this.play = function(cells){
+				for(var i=1; i<=cells.length; i++){
+					cells[i-1].innerHTML = i;
+					cells[i-1].number = i;
+					cells[i-1].onclick = function(){
+						compare(this);
+					};
+				};
+				var tmpCell = null;
+				compare = function(cell){
+					if(tmpCell == null){
+						tmpCell = cell;
+						chageData(cell);
+					} else{
+						if(tmpCell == cell){
+							alert('처음 누른것과 같다.');
+						} else{
+							chageData(cell);
+							if(tmpCell.alphabet == cell.alphabet){
+								alert('짝이 맞습니다.');
+								tmpCell.onclick = null;
+								cell.onclick = null;
+							} else{
+								alert('오답입니다.');
+								resetData(cell);
+							}
+							tmpCell = null;
+						}
+					}
+				};
+				resetData = function(cell){
+					tmpCell.style.background = "";
+					cell.style.background = "";
+					tmpCell.innerHTML = "" + tmpCell.number;
+					cell.innerHTML = cell.number;
+				};
+				chageData = function(cell){
+					cell.style.background = "yellow";
+					cell.innerHTML = cell.alphabet;
+				};
+			};
+		};
+		window.onload = function(){
+			var puzzle = new Puzzle();
+			puzzle.init();
+			puzzle.start();
+		};
+	</script>
+</head>
+<body>
+	<table style="border:1px solid #333;">
+		<caption>예제테이블</caption>
+		<colgroup>
+			<col style="width:100px;">
+			<col style="width:100px;">
+			<col style="width:100px;">
+			<col style="width:100px;">
+		</colgroup>
+		<tbody>
+			<tr>
+				<td>.</td>
+				<td>.</td>
+				<td>.</td>
+				<td>.</td>
+			</tr>
+			<tr>
+				<td>.</td>
+				<td>.</td>
+				<td>.</td>
+				<td>.</td>
+			</tr>
+			<tr>
+				<td>.</td>
+				<td>.</td>
+				<td>.</td>
+				<td>.</td>
+			</tr>
+			<tr>
+				<td>.</td>
+				<td>.</td>
+				<td>.</td>
+				<td>.</td>
+			</tr>
+		</tbody>
+	</table>
+</body>
+</html>

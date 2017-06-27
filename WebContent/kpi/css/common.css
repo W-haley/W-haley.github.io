@@ -1,13 +1,50 @@
-.wrap{width:1200px;margin:0 auto;}
+html,body{width:100%;height:100%;}
+body{font-family:'Malgun Gothic';margin:0;}
 
+.wrap{width:1200px;margin:0 auto 100px;}
+h2,h3{margin-top:50px;}
 p{line-height:1.5em;}
+em{font-style:normal;font-weight:normal;}
+
+.main_wrap{position:relative;width:100%;height:100%;}
+.main_wrap .wrap{width:1400px;margin-bottom:0;padding-top:300px;}
+.content{text-align:center;}
+.content:after{display:block;clear:both;content:"";}
+.content a{display:inline-block;float:left;width:200px;height:170px;margin-left:40px;padding-top:130px;background:#00a888;color:#fff;;border-radius:15px;text-decoration:none;line-height:1.2em;}
+.content a:first-child{margin-left:0;}
+.content a:hover{border-color:#ffff66;}
+
 
 .is_block{display:block;}
 .first{padding-left:20px;}
 .second{padding-left:40px;}
+.third{padding-left:60px;}
+.fourth{padding-left:80px;}
+.fifth{padding-left:100px;}
 
 .ex_style{width:1140px;padding:30px;background:#e6f7fd;margin-bottom:30px;}
 .ex_style > p{margin:0;line-height:1.8em;}
+.ex_style2 > .stop{margin:10px 0;}
 .ex_style span{color:#00a4ed;}
 .ex_btn{display:inline-block;width:118px;height:38px;margin-bottom:30px;border:1px solid #006098;color:#006098;text-decoration:none;text-align:center;line-height:38px;border-radius:10px;}
 
+.stop{margin:30px 0 15px;font-size:18px;font-weight:bold;letter-spacing:-0.25px;}
+.stop p{margin:0;}
+.stop span{color:#db5149;}
+.ex_style .red{color:#db5149;}
+p .red{color:#db5149;}
+p .blue{color:#00a4ed;}
+.yellow{background:#ffe400;}
+
+.img_box{margin-top:30px;}
+.img_box img{width:500px;margin-right:60px}
+
+/* table */
+.table5{width:620px;margin:30px 0;}
+table{width:620px;border-collapse:collapse;}
+table caption{font-size:18px;font-weight:bold;color:#0044ed;line-height:1.8em;margin-bottom:5px;}
+table th{height:30px;padding:0 10px 0 15px;line-height:30px;border:1px solid #555;border-top:none;text-align:left;}
+table td{height:30px;padding-left:15px;line-height:30px;border-bottom:1px solid #555;border-right:1px solid #555;}
+thead th{background:#96e2c0;border-top:1px solid #555;}
+tbody th,tbody td{background:#edfaf4;}
+tbody tr:nth-child(2n) th,tbody tr:nth-child(2n) td{background:#c1ebd8;}

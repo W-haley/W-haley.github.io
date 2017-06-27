@@ -1,0 +1,19 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=EUC-KR">
+<title>Insert title here</title>
+</head>
+<body>
+<button id="openBtn">새 윈도우 열기</button>
+<script>
+openBtn.onclick = function() {
+	var w = 500;
+	var h = 300;
+	var l = screen.width/2 - w/2;
+	var t = screen.height/2 - h/2;
+	window.open("event.html","popup","width="+w+",height="+h+",left="+l+",top="+t);
+}
+</script>
+</body>
+</html>
