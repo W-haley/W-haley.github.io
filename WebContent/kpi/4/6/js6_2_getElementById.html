@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>kpi 실습</title>
+
+	<script type="text/javascript">
+		window.onload = function(){
+			var image = document.getElementById("image");
+			var result = document.getElementById("result");
+			var btn = document.getElementById("btn");
+			btn.onclick = function(){
+				image.src = "../img/img01.png";
+				result.innerHTML = "새로운 이미지로 변경되었다.";
+				result.style.background = "Red";
+			}
+		};
+	</script>
+</head>
+<body>
+	<img id="image" src="../img/img00.gif" alt="">
+	<div id="result">
+	확인을 누르면 이미지가 바뀝니다.
+	</div>
+	<button id="btn">확인</button>
+</body>
+</html>

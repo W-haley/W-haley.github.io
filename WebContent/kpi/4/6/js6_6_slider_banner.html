@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>kpi 실습</title>
+
+	<style type="text/css">
+	#bigimg > img{width:400px; height:400px;}
+	</style>
+
+	<script type="text/javascript">
+		var imgarr = new Array();
+		var bigimg, btn_prev, btn_next, thumb1, thumb2, thumb3, count;
+		var cnt =1;
+		init = function(){
+			for(var i=0; i<13; i++){
+				var filename = i<10 ? "img_num0"+i : "img_num"+i;
+				imgarr.push(filename+".gif");
+			}
+			bigimg = document.getElementById("bigimg");
+			btn_prev = document.getElementById("btn_prev");
+			btn_next = document.getElementById("btn_next");
+			thumb1 = document.getElementById("thumb1");
+			thumb2 = document.getElementById("thumb2");
+			thumb3 = document.getElementById("thumb3");
+			count = document.getElementById("count");
+
+			setimg();
+		};
+		setimg = function(){
+			count.innerHTML = cnt;
+			thumb1.innerHTML = '<img src="../img/'+imgarr[cnt-1]+'" heght="100">';
+			thumb2.innerHTML = '<img src="../img/'+imgarr[cnt]+'" heght="100">';
+			thumb3.innerHTML = '<img src="../img/'+imgarr[cnt+1]+'" heght="100">';
+			setbigimg(thumb2.innerHTML);
+		};
+		setbigimg = function(html){
+			bigimg.innerHTML = html;
+		};
+		start = function(){
+			thumb1.onclick = function(){
+				setbigimg(this.innerHTML)
+			};
+			thumb2.onclick = function(){
+				setbigimg(this.innerHTML)
+			};
+			thumb3.onclick = function(){
+				setbigimg(this.innerHTML)
+			};
+			btn_prev.onclick = function(){
+				cnt -= 1;
+				if(cnt < 1){
+					alert('처음입니다.');
+					cnt = 1;
+				}
+				setimg();
+			};
+			btn_next.onclick = function(){
+				cnt += 1;
+				if(cnt > 11){
+					alert('마지막입니다.');
+					cnt = 11;
+				}
+				setimg();
+			};
+			btn_prev.onmouseover = function(){
+				this.style.background = "yellow";
+			};
+			btn_prev.onmouseout = function(){
+				this.style.background = "";
+			};
+			btn_next.onmouseover = function(){
+				this.style.background = "yellow";
+			};
+			btn_next.onmouseout = function(){
+				this.style.background = "";
+			};
+		};
+		window.onload = function(){
+			init();
+			start();
+		};
+	</script>
+</head>
+<body>
+	<table style="border:1px solid #333;">
+		<caption>예제테이블</caption>
+		<colgroup>
+			<col style="width:100px;">
+			<col style="width:100px;">
+			<col style="width:100px;">
+			<col style="width:100px;">
+		</colgroup>
+		<tbody>
+			<tr>
+				<td colspan="5" id="bigimg"><img src="../img/img_num00.gif"></td>
+			</tr>
+			<tr>
+				<td id="btn_prev">뒤</td>
+				<td id="thumb1"><img src="../img/img_num00.gif"></td>
+				<td id="thumb2"><img src="../img/img_num00.gif"></td>
+				<td id="thumb3"><img src="../img/img_num00.gif"></td>
+				<td id="btn_next">앞</td>
+			</tr>
+			<tr>
+				<td id="count" colspan="5">0</td>
+			</tr>
+		</tbody>
+	</table>
+	<p>이미지를 클릭 하시면 크게 볼 수 있습니다.</p>
+</body>
+</html>

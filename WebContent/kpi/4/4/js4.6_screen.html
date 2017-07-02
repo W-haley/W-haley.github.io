@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="description" content="">
+		<meta name="author" content="hyeyoung">
+		<meta name="viewport" content="width=device-width; initial-scale=1.0">
+		<link rel="stylesheet" href="../css/common.css">
+		<title>4.자바스크립트 객체</title>
+
+	</head>
+<body>
+<button id="openBtn">새 윈도우 열기</button>
+<script>
+openBtn.onclick = function() {
+	var w = 500;
+	var h = 300;
+	var l = screen.width/2 - w/2;
+	var t = screen.height/2 - h/2;
+	window.open("event.html","popup","width="+w+",height="+h+",left="+l+",top="+t);
+};
+</script>
+</body>
+</html>

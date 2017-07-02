@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>kpi 실습</title>
+
+	<script type="text/javascript">
+		document.write('<h1>화면을 클릭하세요.</h1>');
+		document.write('<a href="http://www.naver.com" target="_blank">네이버로 이동</a><br>');
+		document.write('<a href="http://kr.yahoo.com" target="_blank">야후로 이동</a>');
+		document.onclick = function(){
+			document.bgColor="Yellow";
+			document.fgColor="Green";
+			document.title=document.lastModified;
+			//현재 문서의 마지막 저장 시간을 문서 제목으로 사용.
+			document.linkColor="Red";
+			document.alinkColor="Green";
+			document.vlinkColor="Orange";
+		};
+	</script>
+</head>
+<body>
+</body>
+</html>

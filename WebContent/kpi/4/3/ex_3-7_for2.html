@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="utf-8">
+
+		<!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame
+		Remove this if you use the .htaccess -->
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+		<title>ex_3-7_for</title>
+		<meta name="description" content="">
+		<meta name="author" content="hyeyoung">
+
+		<meta name="viewport" content="width=device-width; initial-scale=1.0">
+		<script>
+		for(var i=1; i<=100; i++){ //변수 i가 100이 될 때까지 반복 실행합니다.
+			if(i%5==0 && i%7!=0){ //5의 배수이고 7의 배수가 아닌 경우
+				document.write("<font color='red'>"+i+"</font>","<br />");
+			}else if(i%7==0 && i%5!=0){ //7의 배수이고 5의 배수가 아닌 경우
+				document.write("<font color='green'>"+i+"</font>","<br />");
+			}else if(i%7==0 && i%5==0){ //7의 배수이고 5의 배수인 경우
+				document.write("<font color='blue'>"+i+"</font>","<br />");
+			}
+		}
+		</script>
+
+	</head>
+
+	<body>
+		&nbsp;
+	</body>
+</html>

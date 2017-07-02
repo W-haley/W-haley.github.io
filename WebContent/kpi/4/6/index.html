@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="description" content="">
+		<meta name="author" content="hyeyoung">
+		<meta name="viewport" content="width=device-width; initial-scale=1.0">
+		<link rel="stylesheet" href="../css/common.css">
+		<title>6.문서 객체 모델</title>
+
+	</head>
+
+	<body>
+		<div class="wrap">
+			<header>
+				<h1>문서 객체 모델</h1>
+			</header>
+			<section>	
+				<h2>문서 객체 모델 DOM 이란?</h2>
+				<p class="stop">
+					1. Document Object Model<br />
+					2. 웹브라우저가 HTML페이지를 인식하는 방식<br />
+					3. document 객체와 관련된 객체의 집합<br />
+					4. 태그를 자바스크립트에서 이용할 수 있는 객체로 만든것이 문서 객체다.
+				</p>
+				<h3>노드</h3>
+				<p>- 요소노드</p>
+				<p>- 텍스트노드</p>
+				<br />
+				<p><img src="../img/dom1.png" alt="문서객체" /></p>
+				<p>
+					header 객체를 <span class="red">'문서 객체’</span>라고 부름.<br />
+					HTML 페이지를 트리 모양으로 나타낼 수 있다.<br />
+					각 요소를 '노드'라고 부른다.
+				</p>
+				<p>
+					HTML 페이지를 DOM으로 나타내면 요소 노드는 바로 HTML 태그를  의미하고,<br />
+					텍스트 노드는 요소 노드 안에 들어있는 글자를 의미한다.
+				</p>
+				<div class="ex_style">
+					<p>Ex) &#60;h1&#62;제목태그&#60;/h1&#62;  -> h1은 요소 노드, 제목태그는 텍스트 노드</p>
+					<p class="first"> # img태그는 텍스트 노드를 갖지 않는다.</p>
+				</div>
+				<p class="stop">
+					웹 페이지가 <span class="blue">처음 HTML 페이지에 적혀 있는 태그들을 읽으며 생성하는 것</span>을 <br />
+					"<span class="red">정적</span>으로 문서를 객체를 생성한다"라고 표현한다. <br />
+					페이지의 내용을 특별한 변화 없이 생성하기에 붙은 이름이다. 
+				</p>
+				<p class="stop">
+					반면에 <span class="blue">자바스크립트를 이용해 원래 HTML 페이지에는 없던 객체를 생성하는 것</span>을<br />
+					"<span class="red">동적</span> 문서 객체를 생성한다"라고 표현한다.
+				</p>
+			</section>
+			<section>
+				<h2>문서 객체 만들기</h2>
+				<h3>- 텍스트 노드 O 문서 객체 생성</h3>
+				<p>
+					<span class="blue">텍스트 노드를 갖는 문서 객체를 생성하려면 요소 노드와 텍스트 노드를 생성한 후에 텍스트 노드를 요소 노드에 붙여준다.</span><br />
+					<span class="blue">document 객체가 가지는 메서드를 사용해 요소 노드와 텍스트 노드를 생성할 수 있다.</span>
+				</p>
+				<p>
+					화면에 문서 객체를 츨력하려면 생성한 문서 객체를 body 문서 객체에 연결해야 한다.<br />
+					또한 생성한 요소 노드와 텍스트 노드도 연결해야 한다.
+				</p>
+				<p><img src="../img/dom_ex1.png" alt="예제1" /></p>	
+				<div class="ex_style">
+					<p><span>createElement(tagName)</span> - 요소 노드를 생성</p>
+					<p>createTextNode(text) -  텍스트 노드를 생성</p>
+					<p>appendChild(node) - 객체에 노드를 연결</p>
+				</div>
+				
+				<h3>- 텍스트 노드 X 문서 객체 생성</h3>
+				<p>
+					DOM에서는 속성도 하나의 노드이므로, 속성 노드를 생성해 요소 노드에 붙어야한다.
+				</p>
+				<p>
+					img 태그에 이미지를 넣으려면 src 속성을 지정해야 한다.<br />
+					<span class="blue">웹 표준이 정의하거나 웹 브라우저가 지원하는 태그의 속성에만 사용할 수 있다.</span>
+				</p>
+				<p><img src="../img/dom_ex2.png" alt="예제2" /></p>
+				<p>
+					웹 브라우저가 지원하지 않는 속성은 아래 메서드를 사용해야 속성을 넣을 수 있다. 
+				</p>
+				<p><img src="../img/dom_ex3.png" alt="예제3" /></p>
+				
+				<div class="ex_style">
+					<p>setAttribute(name, value) -  객체의 속성을 지정</p>
+					<p>getAttribute(name) - 객체의 속성을 가져옴</p>
+				</div>
+				<p><a href="js6_4_createElement.html" class="ex_btn" target="_blank">예제보기</a></p>
+			</section>
+			<section>
+				<h2>문서 객체 가져오기</h2>
+				<h3><span class="red">getElementById(id)</span></h3>
+				<p class="stop">태그의 id 속성이 id와 일치하는 문서 객체를 가져옵니다. <br />
+									document 객체의 getElementById() 메서드는 한 번에 한 가지 문서 객체만 가져올 수 있습니다. </p>
+				<p><img src="../img/dom_ex4.png" alt="예제4" /></p>
+				<p><a href="js6_2_getElementById.html" class="ex_btn" target="_blank">예제보기</a></p>
+				<div class="ex_style">
+					<p class="stop">getElementsByName(name) <em>- 태그의 name 속성이 name과 일치하는 문서 객체를 배열로 가져옵니다.</em></p>
+					<p class="stop"><span>getElementsByTagName(tagname) </span><em>- tagname과 일치하는 문서 객체를 배열로 가져옵니다.</em></p>
+				</div>
+				<p>배열로 순서대로 들어감</p>
+				<p>-> 반복문 사용시,' for in' 반복문 사용 불가 </p>
+				<p class="first">(브라우저에 따라 속성과 메서드 종류에 차이가 있음)</p>    
+				<p> -> '단순 반복 for문' 사용</p>
+				<p><img src="../img/dom_ex5.png" alt="예제5" /></p>
+				<p><a href="js6_3_getElementByTagName.html" class="ex_btn" target="_blank">예제보기</a></p>
+			</section>
+			<section>
+				<h2>문서 객체 스타일 조작</h2>
+				<p class="stop">
+					1. getElementById()메서드를 사용해 문서 객체를 가져옴<br />
+					2. 문서객체의 style 속성을 지정 &#60;문서객체.style.속성 = '값'&#62;
+				</p>
+				<p><img src="../img/dom_ex6.png" alt="예제6" /></p>
+
+			</section>
+			<section>
+				<h2>문서 객체 제거하기</h2>
+				<p class="stop"><span class="blue">removeChild(Child)</span> <em>- 문서 객체의 자식 노드를 제거합니다.</em></p>
+				<p>
+					h1 태그를 가져오고, body 문서 객체에서 removeChild() 메서드를 사용해 h1 태그를 제거한다.<br />
+					body 문서 객체 바로 아래에 제거하고자 하는 문서 객체가 있으므로 가능한 코드다.
+				</p>
+				<p>
+					willRemove.parentNode.removeChild(willRemove);<br />
+					h1 태그에서 부모 노드로 이동한 후 부모 노드에서 자식 노드를 삭제된 것.
+				</p>
+				<p><img src="../img/dom_ex7.png" alt="예제7" /></p>
+			</section>
+		</div>
+	</body>
+</html>

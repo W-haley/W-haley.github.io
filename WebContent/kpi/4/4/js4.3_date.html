@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="description" content="">
+		<meta name="author" content="hyeyoung">
+		<meta name="viewport" content="width=device-width; initial-scale=1.0">
+		<link rel="stylesheet" href="../css/common.css">
+		<title>4.자바스크립트 객체</title>
+
+	</head>
+	<script>
+		date = new Date(); //변수 date가 참조할 Date 객체생성
+		date.setYear(1975); //date 객체에 년,월,일을 추가
+		date.setMonth(2);
+		date.setDate(7);
+
+		var strTime = ""; //date 객체에 추가된 날짜를 뽑아 문자열 형태로 저장할 문자열 변수 선언
+
+		strTime += date.getYear() + "년 "; //date 객체에 년,월,일을 뽑아서 strTime에 문자열로 변환 후 저장
+		strTime += date.getFullYear() + "년 ";
+		strTime += date.getMonth() + "월 ";
+		strTime += date.getDate() + "일";
+
+		document.write(strTime);//strTime에 문자열로 변환되어 저장된 날짜 추가
+	</script>
+<body>
+
+</body>
+</html>
