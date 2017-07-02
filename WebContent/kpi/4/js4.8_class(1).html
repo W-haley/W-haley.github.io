@@ -1,32 +1,37 @@
 <!DOCTYPE html>
-<html>
-<head>
-<title> jQuery example </title>
-<meta http-equiv="Content-Type" content="text/html; charset=EUC-KR">
-<title>�ڹٽ�ũ��Ʈ���� ����� ���� ��ü�� ����ϴ� ���</title>
-</head>
+<html lang="ko">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="description" content="">
+		<meta name="author" content="hyeyoung">
+		<meta name="viewport" content="width=device-width; initial-scale=1.0">
+		<link rel="stylesheet" href="../css/common.css">
+		<title>4.자바스크립트 객체</title>
+
+	</head>
 <script>
 window.onload = function() {
-	//1. ���ͷ��� �̿��� ��ü ���.
+	//1. 리터럴을 이용한 객체 사용
 	var obj1 = {
-		name:"������", 
+		name:"김육섭", 
 		getName:function() {
 			return this.name;
 		}
 	};
 	console.log("obj1.getName() = " + obj1.getName() );
 
-	//2. new Object()�� �̿��� ��ü ���.
+	//2. new Object()를 이용한 객체 사용
 	var obj2 = new Object();
-	obj2.name = "������";
+	obj2.name = "장희정";
 	obj2.getName = function(){
 		return this.name;
 	};
 	console.log("obj2.getName() = " + obj2.getName() );
 
-	//3. Ŭ������ ��� ��ü ���.
+	//3. 클래스로 묶어서 객체 사용
 	function People() {
-		this.name = "������";
+		this.name = "오정원";
 		this.getName = function() {
 			return this.name;
 		};

@@ -1,42 +1,49 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
-<html>
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=EUC-KR">
-<title>Insert title here</title>
-<script type="text/javascript">
-//ÃÖÃÊ People Å¬·¡½º ¼±¾ğ
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="description" content="">
+		<meta name="author" content="hyeyoung">
+		<meta name="viewport" content="width=device-width; initial-scale=1.0">
+		<link rel="stylesheet" href="../css/common.css">
+		<title>4.ìë°”ìŠ¤í¬ë¦½íŠ¸ ê°ì²´</title>
+
+	</head>
+<script>
+//ìµœì´ˆ People í´ë˜ìŠ¤ ì„ ì–¸
 function People() {
 	this.name = "";
 }
 People.prototype.setName = function(name) {
 	this.name = name;
-}
+};
 People.prototype.getName = function() {
 	return this.name;
-}
+};
 
 function PeopleSub() {
 	this.age = 0;
 }
-//People Å¬·¡½º¸¦ »ó¼Ó ¹ŞÀ» PeopleSub Å¬·¡½º ¼±¾ğ
+//People í´ë˜ìŠ¤ë¥¼ ìƒì†ë°›ì„  PeopleSub í´ë˜ìŠ¤ ì„ ì–¸
 PeopleSub.prototype = new People();
 PeopleSub.prototype.constructor = PeopleSub;
 PeopleSub.prototype.setAge = function(age) {
 	this.age = age;
-}
+};
 PeopleSub.prototype.getAge = function() {
 	return this.age;
-}
+};
 
 window.onload = function() {
 	var obj5 = new PeopleSub();
-	obj5.setName("±èÀ°¼·");
+	obj5.setName("ê¹€ìœ¡ì„­");
 	obj5.setAge(25);
-	console.log("¼º¸í: " + obj5.getName() );
-	console.log("¿¬¼¼: " + obj5.getAge() + "¼¼");
-}
+	console.log("ì„±ëª…: " + obj5.getName() );
+	console.log("ì—°ì„¸: " + obj5.getAge() + "ì„¸");
+};
 </script>
-</head>
+
 <body>
 
 </body>

@@ -1,7 +1,15 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
-<html>
-<head>
-<meta http-equiv="content-type" content="text/html; charset=euc-kr">
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="description" content="">
+		<meta name="author" content="hyeyoung">
+		<meta name="viewport" content="width=device-width; initial-scale=1.0">
+		<link rel="stylesheet" href="../css/common.css">
+		<title>4.자바스크립트 객체</title>
+
+	</head>
 <script>
 testEvent = function() {
 	console.log(event);
@@ -11,10 +19,10 @@ testEvent = function() {
 	str += event.x + '\n';
 	str += event.y + '\n';
 	alert(str);
-}
+};
 </script>
-</head>
+
 <body>
-<button onclick="testEvent()">�Լ� ȣ�� event ��ü �ǽ�</button>
+<button onclick="testEvent()">함수 호출 event 객체 실습</button>
 </body>
 </html>
